@@ -1,0 +1,1 @@
+window.addEventListener("load",(function(){let e=document.querySelector(".header-container__burger"),t=document.querySelector(".header-container__menu"),c=document.querySelector("body");e.onclick=function(){e.classList.toggle("active-menu"),t.classList.toggle("active-menu"),c.classList.toggle("lock")}}));
