@@ -1,0 +1,259 @@
+.footer {
+    width: 100vw;
+    height: 370px;
+    background-color: $font-color-black-main;
+    padding-top: 20px;
+
+    @include media_from('sm') {
+        height: 320px;
+        padding-top: 30px;
+    }
+
+    @include media_from('lg') {
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .footer-container {
+        position: relative;
+        padding: 0 10px;
+        margin: 0 auto;
+        height: 330px;
+
+        @include media_from('sm') {
+            max-width: 740px;
+            height: 265px;
+        }
+
+        @include media_from('lg') {
+            max-width: 1880px;
+            height: 160px;
+        }
+
+        &__logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+            @include media_from('sm') {
+                top: auto;
+                bottom: 30px;
+                left: 10px;
+            }
+
+            @include media_from('lg') {
+                top: 0;
+                bottom: auto;
+                left: 10px;
+            }
+
+            a {
+                cursor: pointer;
+                img {
+                    width: 92px;
+                    height: 42px;
+
+                    @include media_from('sm') {
+                        width: 220px;
+                        height: 105px;
+                    }
+
+                    @include media_from('lg') {
+                        width: 141px;
+                        height: 67px;
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            position: absolute;
+            bottom: 70px;
+            left: 10px;
+
+            @include media_from('sm') {
+                bottom: auto;
+                top: 0;
+                left: 10px;
+            }
+
+            @include media_from('lg') {
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &__nav {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                @include media_from('sm') {
+                    gap: 40px;
+                }
+    
+                @include media_from('lg') {
+                    gap: 30px;
+                }
+
+                &__link {
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    cursor: pointer;
+                    color: $font-color-white;
+
+                    @include media_from('sm') {
+                        font-size: 20px;
+                    }
+        
+                    @include media_from('lg') {
+                        font-size: 22px;
+                    }
+
+                    &:nth-of-type(1) {
+                        order: 1;
+                    }
+
+                    &:nth-of-type(2) {
+                        order: 2;
+                    }
+
+                    &:nth-of-type(3) {
+                        order: 6;
+                        @include media_from('sm') {
+                            order: 3;
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        order: 4;
+                    }
+
+                    &:nth-of-type(5) {
+                        order: 5;
+                    }
+
+                    &:nth-of-type(6) {
+                        order: 3;
+                        @include media_from('sm') {
+                            order: 6;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__privacy-policy {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+
+            @include media_from('sm') {
+                bottom: 0;
+                left: 10px;
+            }
+
+            @include media_from('lg') {
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &__link {
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                cursor: pointer;
+                color: $font-color-white;
+
+                @include media_from('sm') {
+                    font-size: 14px;
+                }
+    
+                @include media_from('lg') {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__tel {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+
+            @include media_from('sm') {
+                top: auto;
+                bottom: 80px;
+                right: 10px;
+                gap: 30px;
+            }
+
+            @include media_from('lg') {
+                bottom: auto;
+                top: 10px;
+                right: 10px;
+                gap: 10px;
+            }
+
+            &__item {
+                cursor: pointer;
+            }
+
+            &__link {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                cursor: pointer;
+                color: $font-color-white;
+
+                @include media_from('sm') {
+                    font-size: 18px;
+                }
+    
+                @include media_from('lg') {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &__social-links {
+            position: absolute;
+            bottom: 200px;
+            left: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            @include media_from('sm') {
+                bottom: 0;
+                left: auto;
+                right: 10px;
+                gap: 20px;
+            }
+
+            @include media_from('lg') {
+                gap: 23px;
+            }
+
+            &__item {
+                cursor: pointer;
+                width: 32px;
+                height: 32px;
+
+                @include media_from('sm') {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

@@ -90,6 +90,10 @@
                         @include media_from('lg') {
                             font-size: 22px;
                         }
+
+                        &.black-color {
+                            color: $font-color-black-main;
+                        }
                     }
                 }
     
@@ -147,6 +151,10 @@
 
                 @include media_from('lg') {
                     font-size: 22px;
+                }
+
+                &.black-color {
+                    color: $font-color-black-main;
                 }
             }
         }
