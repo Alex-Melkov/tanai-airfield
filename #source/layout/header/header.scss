@@ -4,23 +4,36 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 740px;
+        width: 100vw;
+        max-width: 1880px;
         height: 145px;
         margin: 20px auto 0 auto;
-        padding: 0 10px;
+        padding: 0 20px;
         z-index: 2;
 
+        @include media_from('sm') {
+            padding: 0 60px;
+        }
+
+        @include media_from('md') {
+            padding: 0 100px;
+        }
+
         @include media_from('lg') {
-            max-width: 1880px;
             height: 106px;
             margin-bottom: 10px;
             margin: 0 auto 0 auto;
+            padding: 0 10px;
         }
 
         &__logo {
             align-self: start;
             z-index: 3;
             background-color: transparent;
+
+            @include media_from('lg') {
+                align-self: center;
+            }
             a {
                 cursor: pointer;
                 img {
@@ -28,6 +41,11 @@
                     height: 95px;
 
                     @include media_from('lg') {
+                        width: 141px;
+                        height: 67px;
+                    }
+
+                    @include media_from('xl') {
                         width: 223px;
                         height: 106px;
                     }
@@ -44,7 +62,6 @@
             background-color: transparent;
             transform: translateY(-100%);
             opacity: 0;
-            transition: opacity 1s ease;
 
             @include media_from('lg') {
                 display: flex;
@@ -58,25 +75,52 @@
 
             &__wrapper {
                 max-width: 720px;
-                margin-top: 285px;
+                margin-top: 185px;
+                padding: 0 20px;
+
+                @include media_from('sm') {
+                    margin-top: 200px;
+                    padding: 0 60px;
+                }
+
+                @include media_from('md') {
+                    padding: 0 100px;
+                }
 
                 @include media_from('lg') {
                     max-width: none;
                     margin-top: 0;
+                    padding: 0;
                 }
 
                 &__nav {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
                     align-items: flex-start;
-                    gap: 60px;
-                    margin-bottom: 120px;
+                    gap: 30px;
+                    margin-bottom: 60px;
+
+                    @include media_from('sm') {
+                        margin-bottom: 80px;
+                    }
+
+                    @include media_from('md') {
+                        gap: 50px;
+                        margin-bottom: 120px;
+                    }
 
                     @include media_from('lg') {
                         flex-direction: row;
-                        gap: 40px;
+                        gap: 20px;
                         margin-bottom: 0;
+                    }
+
+                    @include media_from('2xl') {
+                        gap: 30px;
+                    }
+    
+                    @include media_from('3xl') {
+                        gap: 40px;
                     }
     
                     &__link {
@@ -86,8 +130,21 @@
                         line-height: normal;
                         color: $font-color-white;
                         cursor: pointer;
+                        white-space: nowrap;
 
                         @include media_from('lg') {
+                            font-size: 15px;
+                        }
+
+                        @include media_from('xl') {
+                            font-size: 16px;
+                        }
+
+                        @include media_from('2xl') {
+                            font-size: 18px;
+                        }
+        
+                        @include media_from('3xl') {
                             font-size: 22px;
                         }
 
@@ -113,6 +170,7 @@
 
             &.active-menu {
                 transform: translateY(0);
+                transition: opacity 1s ease;
                 opacity: 1;
             }
         }
@@ -120,12 +178,20 @@
         &__tel {
             position: absolute;
             bottom: 0;
-            left: 10px;
+            left: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
             z-index: 3;
             background-color: transparent;
+
+            @include media_from('sm') {
+                left: 60px;
+            }
+
+            @include media_from('md') {
+                left: 100px;
+            }
 
             @include media_from('lg') {
                 position: static;
@@ -136,6 +202,11 @@
                 height: 30px;
 
                 @include media_from('lg') {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                @include media_from('xl') {
                     width: 30px;
                     height: 30px;
                 }
@@ -148,8 +219,21 @@
                 line-height: normal;
                 color: $font-color-white;
                 cursor: pointer;
+                white-space: nowrap;
 
                 @include media_from('lg') {
+                    font-size: 15px;
+                }
+
+                @include media_from('xl') {
+                    font-size: 16px;
+                }
+
+                @include media_from('2xl') {
+                    font-size: 18px;
+                }
+
+                @include media_from('3xl') {
                     font-size: 22px;
                 }
 
@@ -230,7 +314,7 @@
         background: radial-gradient(311811199.28% 24944.64% at 50% -5.78%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
         display: none;
 
-        @include media_from('xl') {
+        @include media_from('lg') {
             display: block;
         }
     }
