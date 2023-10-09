@@ -1,0 +1,34 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-orange {
+    width: 248px;
+    height: 59px;
+    border-radius: 50px;
+    background-color: $color-orange;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $font-color-white;
+
+    @include media_from('lg') {
+        width: 315px;
+        height: 73px;
+        font-size: 18px;
+    }
+
+    @include media_from('2xl') {
+        width: 354px;
+        height: 78px;
+        font-size: 20px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

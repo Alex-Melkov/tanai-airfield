@@ -1,16 +1,17 @@
 .header {
+    width: 100%;
     position: absolute;
+    z-index: 5;
     .header-container {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         max-width: 1880px;
         height: 145px;
         margin: 20px auto 0 auto;
         padding: 0 20px;
-        z-index: 2;
 
         @include media_from('sm') {
             padding: 0 60px;
@@ -29,7 +30,6 @@
 
         &__logo {
             align-self: start;
-            z-index: 3;
             background-color: transparent;
 
             @include media_from('lg') {
@@ -183,7 +183,6 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            z-index: 3;
             background-color: transparent;
 
             @include media_from('sm') {
@@ -310,7 +309,7 @@
     }
 
     .header-line {
-        width: 100vw;
+        width: 100%;
         height: 1px;
         background: radial-gradient(311811199.28% 24944.64% at 50% -5.78%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
         display: none;
