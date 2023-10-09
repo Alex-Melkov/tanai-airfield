@@ -523,12 +523,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body {
-  background-color: #424242;
-}
-
 body.lock {
   overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 1 auto;
 }
 
 @keyframes slideme {
@@ -597,6 +603,9 @@ body.lock {
     transform: scale(2);
     opacity: 1;
   }
+}
+.header {
+  position: absolute;
 }
 .header .header-container {
   position: relative;
@@ -1199,5 +1208,36 @@ body.lock {
     width: 40px;
     height: 40px;
   }
+}
+
+.main-header .main-background {
+  width: 100vw;
+  height: 100vh;
+  max-width: 2560px;
+  max-height: 1440px;
+  min-height: 812px;
+  background-color: white;
+  background-image: url("/img/bg-image-small.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+@media only screen and (min-width: 576px) {
+  .main-header .main-background {
+    background-image: url("/img/bg-image-mid.png");
+  }
+}
+@media only screen and (min-width: 991px) {
+  .main-header .main-background {
+    background-image: url("/img/bg-image-big.png");
+  }
+}
+.main-header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1880px;
+  padding: 0 20px;
 }
 /*# sourceMappingURL=style.css.map */

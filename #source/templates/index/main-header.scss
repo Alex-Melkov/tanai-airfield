@@ -1,0 +1,52 @@
+.main-header {
+    .main-background {
+        width: 100vw;
+        height: 100vh;
+        max-width: 2560px;
+        max-height: 1440px;
+        min-height: 812px;
+        background-color: white;
+        background-image: url("/img/bg-image-small.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        @include media_from('sm') {
+            background-image: url("/img/bg-image-mid.png");
+        }
+
+        @include media_from('lg') {
+            background-image: url("/img/bg-image-big.png");
+        }
+    }
+
+    .main-container {
+        // position: relative;
+    }
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1880px;
+        padding: 0 20px;
+        .main-header__content__title {
+        }
+        .main-header__content__title__heading {
+        }
+        .main-header__content__nav {
+        }
+        .main-header__content__nav__vertical-line {
+        }
+        .main-header__content__nav__link-item {
+        }
+    }
+    .main-header__social-links {
+        .main-header__social-links__item {
+        }
+    }
+}
+.btn {
+}
+.btn-orange {
+}
