@@ -67,3 +67,36 @@ body.lock {
 .content{
 	flex: 1 1 auto;
 }
+
+.heading-h2 {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	color: $font-color-black-main;
+
+	@include media_from('sm') {
+		font-size: 30px;
+	}
+
+	@include media_from('md') {
+		font-size: 35px;
+	}
+
+	@include media_from('lg') {
+		font-size: 40px;
+	}
+
+	@include media_from('xl') {
+		font-size: 50px;
+	}
+
+	@include media_from('2xl') {
+		font-size: 60px;
+	}
+
+	@include media_from('3xl') {
+		font-size: 72px;
+	}
+}

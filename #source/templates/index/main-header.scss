@@ -44,9 +44,17 @@
         margin: 0 auto;
 
         @include media_from('lg') {
-            justify-content: space-between;
             align-items: center;
-            padding: 0 10px;
+            gap: 100px;
+        }
+
+        @include media_from('2xl') {
+            gap: 200px;
+        }
+
+        @include media_from('3xl') {
+            justify-content: space-between;
+            gap: 0;
         }
 
         &__title {
@@ -173,6 +181,7 @@
                 color: $font-color-white;
                 margin-bottom: 10px;
                 white-space: nowrap;
+                transition: transform 0.3s ease-in-out;
 
                 @include media_from('xl') {
                     font-size: 16px;
@@ -194,7 +203,6 @@
                 &:hover,
                 &:active {
                     transform: scale(1.3);
-                    transition: transform 0.3s ease-in-out;
                 }
             }
         }
