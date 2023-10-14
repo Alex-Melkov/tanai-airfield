@@ -11,4 +11,27 @@ window.addEventListener('load', function () {
     lock.classList.toggle('lock');
     mask.classList.toggle('mask-active');
   };
+
+  //Инициализация свайпера Команда
+  const main_team_slide = new Swiper('.main-team-swiper', {
+    direction: 'horizontal',
+    breakpoints: {
+      320: {
+        spaceBetween: 24,
+        slidesPerView: 2,
+      },
+      576: {
+        spaceBetween: 26,
+        slidesPerView: 2,
+      },
+      768: {
+        spaceBetween: 30,
+        slidesPerView: 2,
+      },
+    },
+    navigation: {
+      nextEl: '.main-team-swiper-button-next',
+      prevEl: '.main-team-swiper-button-prev',
+    },
+  });
 });
