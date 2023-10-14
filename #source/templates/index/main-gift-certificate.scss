@@ -1,0 +1,309 @@
+.main-gift-certificate {
+    width: 100%;
+    max-width: 1880px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+
+    @include media_from('sm') {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include media_from('lg') {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @include media_from('xl') {
+        padding-left: 135px;
+        padding-right: 135px;
+        padding-top: 180px;
+    }
+
+    @include media_from('3xl') {
+        padding-top: 273px;
+        padding-bottom: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        &__title {
+            margin-bottom: 40px;
+            @include media_from('lg') {
+                margin-bottom: 60px;
+            }
+
+            @include media_from('xl') {
+                font-size: 40px;
+            }
+        
+            @include media_from('2xl') {
+                font-size: 40px;
+            }
+
+            @include media_from('3xl') {
+                font-size: 48px;
+                margin-bottom: 80px;
+            }
+        }
+        &__text {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $font-color-black-main;
+
+            @include media_from('lg') {
+                font-size: 18px;
+            }
+
+            @include media_from('3xl') {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        position: relative;
+
+        @include media_from('lg') {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @include media_from('3xl') {
+            padding-top: 39px;
+        }
+
+        &__image {
+            display: none;
+
+            @include media_from('lg') {
+                display: block;
+                position: absolute;
+                object-fit: cover;
+                width: 470px;
+                height: 298px;
+            }
+
+            @include media_from('3xl') {
+                width: 440px;
+                height: 279px;
+            }
+
+            &:first-of-type {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+                @include media_from('3xl') {
+                    top: 50px;
+                    left: 25px;
+                    transform: rotate(-15deg);
+                }
+            }
+
+            &:last-of-type {
+                display: none;
+
+                @include media_from('3xl') {
+                    display: block;
+                    top: 50px;
+                    right: 25px;
+                    transform: rotate(15deg);
+                }
+            }
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            @include media_from('lg') {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            &__item {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-color: $font-color-white;
+                box-shadow: 3px -2px 40px 7px rgba(0, 0, 0, 0.10);
+                font-style: normal;
+                line-height: normal;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+
+                @media (min-width: 375px) {
+                    width: 355px;
+                }
+
+                @include media_from('lg') {
+                    width: 345px;
+                }
+
+                @include media_from('3xl') {
+                    width: 600px;
+                }
+
+                &__bg-image {
+                    position: absolute;
+                    top: -1px;
+                    left: 0;
+                    width: 100%;
+                    height: 74px;
+                    background-image: url("/img/gift-certificate-item-small.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+
+                    @include media_from('lg') {
+                        height: 134px;
+                        background-image: url("/img/gift-certificate-item-mid.svg");
+                    }
+
+                    @include media_from('3xl') {
+                        height: 233px;
+                        background-image: url("/img/gift-certificate-item-big.svg");
+                    }
+                }
+
+                &__height {
+                    font-size: 20px;
+                    font-weight: 600;
+                    z-index: 3;
+                    color: $font-color-white;
+                    margin-top: 20px;
+                    margin-bottom: 60px;
+
+                    @include media_from('lg') {
+                        font-size: 28px;
+                        margin-top: 30px;
+                        margin-bottom: 105px;
+                    }
+
+                    @include media_from('3xl') {
+                        font-weight: 700;
+                        font-size: 48px;
+                        margin-top: 20px;
+                        margin-bottom: 40px;
+                    }
+                }
+                &__cost {
+                    display: none;
+
+                    @include media_from('3xl') {
+                        display: block;
+                        font-size: 36px;
+                        font-weight: 700;
+                        z-index: 3;
+                        color: $font-color-white;
+                        margin-bottom: 122px;
+                    }
+                }
+                &__types {
+                    z-index: 3;
+                    text-align: center;
+                    margin-bottom: 30px;
+
+                    @include media_from('lg') {
+                        margin-bottom: 40px;
+                    }
+
+                    @include media_from('3xl') {
+                        margin-bottom: 110px;
+                    }
+
+                    &__type {
+                        margin-bottom: 20px;
+
+                        @include media_from('lg') {
+                            margin-bottom: 30px;
+                        }
+    
+                        @include media_from('3xl') {
+                            margin-bottom: 40px;
+                        }
+
+                        &__name {
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $color-blue;
+                            margin-bottom: 20px;
+
+                            @include media_from('lg') {
+                                font-size: 20px;
+                            }
+        
+                            @include media_from('3xl') {
+                                font-size: 24px;
+                            }
+                        }
+                        &__price {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: $color-blue;
+
+                            @include media_from('lg') {
+                                font-size: 24px;
+                            }
+        
+                            @include media_from('3xl') {
+                                font-size: 36px;
+                            }
+                        }
+                    }
+                }
+
+                &__buttons {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    gap: 24px;
+
+                    @include media_from('md') {
+                        flex-direction: row;
+                        gap: 20px;
+                    }
+
+                    @include media_from('lg') {
+                        flex-direction: column;
+                        margin-bottom: 24px;
+                        gap: 20px;
+                    }
+
+                    @include media_from('3xl') {
+                        flex-direction: row;
+                        margin-bottom: 29px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__attention {
+        display: none;
+
+        @include media_from('lg') {
+            display: block;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $color-red;
+        }
+    }
+}

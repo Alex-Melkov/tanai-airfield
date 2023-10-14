@@ -60,3 +60,49 @@
         line-height: 54px;
     }
 }
+
+.btn-blue {
+    width: 166px;
+    height: 48px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    border-radius: 100px;
+    color: $font-color-white;
+    background-color: $color-blue;
+    gap: 10px;
+
+    @include media_from('lg') {
+        width: 255px;
+        height: 68px;
+        font-size: 18px;
+        line-height: 68px;
+    }
+
+    @include media_from('2xl') {
+        width: 270px;
+        height: 72px;
+        font-size: 20px;
+        line-height: 72px;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+
+        @include media_from('lg') {
+            width: 28px;
+            height: 28px;
+        }
+    
+        @include media_from('2xl') {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
