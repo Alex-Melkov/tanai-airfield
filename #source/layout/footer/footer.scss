@@ -156,6 +156,7 @@
             @include media_from('sm') {
                 bottom: 0;
                 left: 10px;
+                transform: none;
             }
 
             @include media_from('lg') {
