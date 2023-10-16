@@ -1,0 +1,278 @@
+.main-photo-video {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include media_from('lg') {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include media_from('3xl') {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @include media_from('sm') {
+            padding-left: 50px;
+            padding-right: 0;
+        }
+
+        @include media_from('lg') {
+            margin-bottom: 60px;
+            padding-left: 100px;
+        }
+    
+        @include media_from('xl') {
+            padding-left: 135px;
+        }
+    
+        @include media_from('3xl') {
+            padding-left: 0;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    }
+    &__content {
+        position: relative;
+        color: $font-color-black-main;
+        display: flex;
+        padding-bottom: 280px;
+
+        @include media_from('sm') {
+            padding-bottom: 517px;
+        }
+
+        @include media_from('xl') {
+            padding-bottom: 644px;
+        }
+
+        @include media_from('3xl') {
+            flex-direction: row;
+            gap: 30px;
+            padding-bottom: 0;
+            padding-left: 200px;
+        }
+
+        @media (min-width:2560px) {
+            padding-left: 350px;
+        }
+    
+        @media (min-width:3000px) {
+            max-width: 2643px;
+            padding-left: 0;
+            margin: 0 auto;
+        }
+
+        &__info-block {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            @include media_from('md') {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            @include media_from('lg') {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            @include media_from('xl') {
+                padding-left: 135px;
+                padding-right: 135px;
+            }
+
+            @include media_from('3xl') {
+                width: 750px;
+                min-width: 750px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &__text {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 20px;
+
+                @include media_from('lg') {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+            
+                @include media_from('3xl') {
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                }
+            }
+            &__text-red {
+                color: $color-red;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 20px;
+
+                @include media_from('lg') {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+            
+                @include media_from('3xl') {
+                    font-size: 20px;
+                    margin-bottom: 60px;
+                }
+            }
+
+            &__price {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                @include media_from('lg') {
+                    gap: 15px;
+                }
+            
+                @include media_from('3xl') {
+                    gap: 20px;
+                }
+
+                &__item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &__name {
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        max-width: 231px;
+
+                        @include media_from('sm') {
+                            max-width: none;
+                        }
+        
+                        @include media_from('lg') {
+                            font-size: 18px;
+                        }
+                    
+                        @include media_from('3xl') {
+                            font-size: 20px;
+                        }
+                    }
+                    &__value {
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        @include media_from('sm') {
+                            font-size: 24px;
+                        }
+        
+                        @include media_from('lg') {
+                            font-size: 28px;
+                        }
+                    
+                        @include media_from('3xl') {
+                            font-size: 36px;
+                        }
+                    }
+                }
+                &__line {
+                    background-color: $color-blue;
+                    width: 100%;
+                    height: 1px;
+
+                    @include media_from('lg') {
+                        max-width: 175px;
+                        height: 2px;
+                    }
+                
+                    @include media_from('3xl') {
+                        height: 4px;
+                    }
+                }
+            }
+        }
+
+        &__image-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include media_from('sm') {
+                gap: 16px;
+            }
+        
+            @include media_from('xl') {
+                gap: 30px;
+            }
+
+            @include media_from('3xl') {
+                position: static;
+                transform: none;
+            }
+
+            &__item {
+                width: 140px;
+                min-width: 140px;
+                height: 140px;
+                border-radius: 10px;
+                box-shadow: 3px -2px 40px 7px rgba(0, 0, 0, 0.10);
+                overflow: hidden;
+
+                @include media_from('sm') {
+                    width: 355px;
+                    min-width: 355px;
+                    height: 345px;
+                }
+            
+                @include media_from('xl') {
+                    width: 601px;
+                    min-width: 601px;
+                    height: 584px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:nth-of-type(2) {
+                    width: 240px;
+                    min-width: 240px;
+                    height: 240px;
+
+                    @include media_from('sm') {
+                        width: 470px;
+                        min-width: 470px;
+                        height: 457px;
+                    }
+
+                    @include media_from('xl') {
+                        width: 601px;
+                        min-width: 601px;
+                        height: 584px;
+                    }
+                }
+            }
+        }
+    }
+}
