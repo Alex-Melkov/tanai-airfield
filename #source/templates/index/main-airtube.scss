@@ -1,0 +1,492 @@
+.main-airtube {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include media_from('lg') {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include media_from('xl') {
+        overflow: hidden;
+    }
+
+    @include media_from('3xl') {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__header {
+        width: 100%;
+        max-width: 1880px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+        color: $font-color-black-main;
+        margin-bottom: 30px;
+    
+        @include media_from('sm') {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include media_from('lg') {
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-bottom: 40px;
+        }
+    
+        @include media_from('xl') {
+            padding-left: 135px;
+            padding-right: 135px;
+            margin-bottom: 950px;
+        }
+    
+        @include media_from('3xl') {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 1157px;
+        }
+
+        &__heading {
+            margin-bottom: 40px;
+            @include media_from('lg') {
+                margin-bottom: 60px;
+            }
+        
+            @include media_from('3xl') {
+                text-align: center;
+                margin-bottom: 80px;
+            }
+        }
+        
+        &__text-block {
+            &__heading {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 30px;
+                @include media_from('lg') {
+                    font-size: 24px;
+                }
+            
+                @include media_from('3xl') {
+                    font-size: 32px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            &__item {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 16px;
+                @include media_from('lg') {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+            
+                @include media_from('3xl') {
+                    font-size: 20px;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__slider {
+        position: static;
+        margin-bottom: 80px;
+
+        @include media_from('xl') {
+            position: absolute;
+            top: 530px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 0;
+        }
+
+        @include media_from('3xl') {
+            top: 587px;
+        }
+    }
+
+    &__invitation {
+        width: 100%;
+        max-width: 1880px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+        color: $font-color-black-main;
+
+        @include media_from('sm') {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    
+        @include media_from('lg') {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    
+        @include media_from('xl') {
+            padding-left: 135px;
+            padding-right: 135px;
+        }
+    
+        @include media_from('3xl') {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &__text {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 40px;
+
+            @include media_from('sm') {
+                margin-bottom: 60px;
+            }
+
+            @include media_from('lg') {
+                font-size: 24px;
+            }
+        
+            @include media_from('3xl') {
+                font-size: 32px;
+                margin-bottom: 80px;
+                text-align: center;
+            }
+        }
+
+        &__address {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            @include media_from('lg') {
+                gap: 60px;
+            }
+        
+            @include media_from('2xl') {
+                flex-direction: row;
+                gap: 80px;
+            }
+
+            &__elem {
+                &__city {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: $color-blue;
+                    margin-bottom: 30px;
+
+                    @include media_from('lg') {
+                        font-size: 32px;
+                        margin-bottom: 40px;
+                    }
+                
+                    @include media_from('3xl') {
+                        font-size: 48px;
+                        margin-bottom: 60px;
+                    }
+                }
+
+                &__contact-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    @include media_from('lg') {
+                        gap: 30px;
+                    }
+                
+                    @include media_from('3xl') {
+                        gap: 40px;
+                    }
+
+                    &__item {
+                        display: flex;
+                        align-items: center;
+
+                        &__text {
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-left: 12px;
+                            @include media_from('lg') {
+                                font-size: 24px;
+                                margin-left: 20px;
+                            }
+                        
+                            @include media_from('3xl') {
+                                font-size: 32px;
+                            }
+                        }
+
+                        &:nth-of-type(1) {
+                            .main-airtube__invitation__address__elem__contact-list__item__icon {
+                                width: 24px;
+                                height: 31px;
+                                @include media_from('lg') {
+                                    width: 36px;
+                                    height: 46px;
+                                }
+                            
+                                @include media_from('3xl') {
+                                    width: 50px;
+                                    height: 65px;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            .main-airtube__invitation__address__elem__contact-list__item__icon {
+                                width: 30px;
+                                height: 30px;
+                                @include media_from('lg') {
+                                    width: 36px;
+                                    height: 37px;
+                                }
+                            
+                                @include media_from('3xl') {
+                                    width: 50px;
+                                    height: 51px;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(3) {
+                            .main-airtube__invitation__address__elem__contact-list__item__icon {
+                                width: 31px;
+                                height: 31px;
+                                @include media_from('lg') {
+                                    width: 36px;
+                                    height: 37px;
+                                }
+                            
+                                @include media_from('3xl') {
+                                    width: 50px;
+                                    height: 51px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-airtube-swiper {
+    width: 100%;
+    padding-bottom: 40px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include media_from('md') {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include media_from('xl') {
+        max-width: 1677px;
+        min-width: 1677px;
+        padding-bottom: 120px;
+    }
+
+    @include media_from('3xl') {
+        max-width: 2179px;
+        min-width: 2179px;
+    }
+
+    .main-airtube-swiper-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .main-airtube-swiper-slide {
+            width: 100%;
+            height: 237px;
+            cursor: grab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include media_from('sm') {
+                height: 400px;
+            }
+
+            @include media_from('md') {
+                height: 480px;
+            }
+
+            @include media_from('xl') {
+                height: 637px;
+            }
+
+            @include media_from('3xl') {
+                height: 837px;
+            }
+
+            .slide-container {
+                width: 100%;
+                height: 237px;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: all 0.2s ease;
+
+                @include media_from('sm') {
+                    height: 400px;
+                }
+
+                @include media_from('md') {
+                    width: 720px;
+                    min-width: 720px;
+                    height: 480px;
+                }
+
+                @include media_from('xl') {
+                    width: 451px;
+                    min-width: 451px;
+                    height: 434px;
+                    box-shadow: 3px -2px 40px 7px rgba(0, 0, 0, 0.10);
+                }
+    
+                @include media_from('3xl') {
+                    width: 601px;
+                    min-width: 601px;
+                    height: 584px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .swiper-slide-active .slide-container {
+            width: 100%;
+            height: 237px;
+
+            @include media_from('sm') {
+                height: 400px;
+            }
+
+            @include media_from('md') {
+                min-width: 720px;
+                width: 720px;
+                height: 480px;
+            }
+
+            @include media_from('xl') {
+                min-width: 715px;
+                width: 715px;
+                height: 637px;
+            }
+
+            @include media_from('3xl') {
+                min-width: 915px;
+                width: 915px;
+                height: 837px;
+            }
+        }
+
+        .swiper-slide-prev .slide-container {
+            @include media_from('xl') {
+                margin-right: auto;
+            }
+        }
+
+        .swiper-slide-next .slide-container {
+            @include media_from('xl') {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .swiper-pagination-bullets {
+        display: none;
+    }
+}
+
+// Стрелки навигации
+.main-airtube-swiper-navigation-block {
+    display: none;
+
+    @include media_from('xl') {
+        width: 240px;
+        display: flex;
+        gap: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-airtube-swiper-button-prev {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .main-airtube-swiper-button-next {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+// Буллеты
+.main-airtube-swiper-pagination-block {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    .main-airtube-swiper-pagination {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        @include media_from('xl') {
+            display: none;
+        }
+    
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: $color-blue;
+            opacity: 0.8;
+        }
+    
+        .swiper-pagination-bullet-active {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
+    }
+}

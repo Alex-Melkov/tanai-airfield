@@ -34,4 +34,34 @@ window.addEventListener('load', function () {
       prevEl: '.main-team-swiper-button-prev',
     },
   });
+
+  //Инициализация свайпера Аэротруба
+  const main_airtube_swiper = new Swiper('.main-airtube-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    initialSlide: 1,
+    breakpoints: {
+      320: {
+        spaceBetween: 20,
+        slidesPerView: 1,
+      },
+      1200: {
+        spaceBetween: 30,
+        slidesPerView: 3,
+      },
+      1920: {
+        spaceBetween: 50,
+        slidesPerView: 3,
+      },
+    },
+    pagination: {
+      el: '.main-airtube-swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.main-airtube-swiper-button-next',
+      prevEl: '.main-airtube-swiper-button-prev',
+    },
+  });
 });
