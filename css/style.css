@@ -4348,4 +4348,213 @@ body.lock {
   height: 16px;
   opacity: 1;
 }
+
+.main-aircrafts {
+  width: 100%;
+  max-width: 1880px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 576px) {
+  .main-aircrafts {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-aircrafts {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-aircrafts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.main-aircrafts__header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__header {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__header {
+    text-align: center;
+  }
+}
+.main-aircrafts__content {
+  color: #1F1E1E;
+}
+.main-aircrafts__content__item {
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item {
+    margin-bottom: 303px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item {
+    margin-bottom: 20px;
+  }
+}
+.main-aircrafts__content__item:nth-of-type(1) {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item:nth-of-type(1) {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item:nth-of-type(1) {
+    align-items: normal;
+  }
+}
+.main-aircrafts__content__item:nth-of-type(1) .main-aircrafts__content__item__image {
+  max-width: 355px;
+  max-height: 304px;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item:nth-of-type(1) .main-aircrafts__content__item__image {
+    width: 458px;
+    height: 396px;
+    min-width: 458px;
+    min-height: 396px;
+    margin-right: 20px;
+    max-width: none;
+    max-height: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item:nth-of-type(1) .main-aircrafts__content__item__image {
+    width: 764px;
+    height: 682px;
+    min-width: 764px;
+    min-height: 682px;
+    margin-right: 24px;
+  }
+}
+.main-aircrafts__content__item:nth-of-type(2) {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item:nth-of-type(2) {
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item:nth-of-type(2) {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+}
+.main-aircrafts__content__item:nth-of-type(2) .main-aircrafts__content__item__image {
+  max-width: 355px;
+  max-height: 304px;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item:nth-of-type(2) .main-aircrafts__content__item__image {
+    width: 468px;
+    height: 396px;
+    min-width: 468px;
+    min-height: 396px;
+    max-width: none;
+    max-height: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item:nth-of-type(2) .main-aircrafts__content__item__image {
+    width: 885px;
+    height: 682px;
+    min-width: 885px;
+    min-height: 682px;
+    margin-left: 42px;
+  }
+}
+.main-aircrafts__content__item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-aircrafts__content__item__description__title {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item__description__title {
+    display: block;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-aircrafts__content__item__description__title {
+    margin-top: 168px;
+  }
+}
+.main-aircrafts__content__item__description__text {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item__description__text {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-aircrafts__content__item__description__text {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .main-aircrafts__content__item__description__text__accent {
+    position: absolute;
+    top: 105%;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-aircrafts__content__item__description__text__accent {
+    position: static;
+  }
+}
 /*# sourceMappingURL=style.css.map */
