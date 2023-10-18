@@ -12,6 +12,22 @@ window.addEventListener('load', function () {
     mask.classList.toggle('mask-active');
   };
 
+  // Скрипт плавного перехода по якорям
+  const anchors = document.querySelectorAll('a[href*="#"]');
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const blockID = anchor.getAttribute('href').slice(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+
   //Инициализация свайпера Команда
   const main_team_slide = new Swiper('.main-team-swiper', {
     direction: 'horizontal',

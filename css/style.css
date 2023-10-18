@@ -4557,4 +4557,298 @@ body.lock {
     position: static;
   }
 }
+
+.main-contacts {
+  width: 100%;
+  max-width: 1880px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 576px) {
+  .main-contacts {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .main-contacts {
+    padding-top: 90px;
+    padding-bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-contacts {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-contacts {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-contacts {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.main-contacts__header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 991px) {
+  .main-contacts__header {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-contacts__header {
+    text-align: center;
+  }
+}
+.main-contacts__content {
+  color: #1F1E1E;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (min-width: 991px) {
+  .main-contacts__content {
+    gap: 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-contacts__content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-contacts__content {
+    gap: 102px;
+  }
+}
+.main-contacts__content__info-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media only screen and (min-width: 991px) {
+  .main-contacts__content__info-block {
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-contacts__content__info-block {
+    width: auto;
+  }
+}
+.main-contacts__content__info-block__item {
+  display: flex;
+  gap: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .main-contacts__content__info-block__item {
+    gap: 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item {
+    display: block;
+  }
+}
+.main-contacts__content__info-block__item__title {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__title {
+    display: block;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+}
+.main-contacts__content__info-block__item__image {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__image {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+.main-contacts__content__info-block__item__route {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__route {
+    display: none;
+  }
+}
+.main-contacts__content__info-block__item__route__title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.main-contacts__content__info-block__item__route__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-contacts__content__info-block__item__route__list__elem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-contacts__content__info-block__item__route__list__elem__text {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.main-contacts__content__info-block__item__travel-time {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time {
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 0;
+  }
+}
+.main-contacts__content__info-block__item__travel-time__distance {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time__distance {
+    gap: 20px;
+  }
+}
+.main-contacts__content__info-block__item__travel-time__distance__value {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #F05D30;
+}
+@media only screen and (min-width: 576px) {
+  .main-contacts__content__info-block__item__travel-time__distance__value {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time__distance__value {
+    font-size: 36px;
+  }
+}
+.main-contacts__content__info-block__item__travel-time__distance__title {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (min-width: 576px) {
+  .main-contacts__content__info-block__item__travel-time__distance__title {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time__distance__title {
+    font-size: 20px;
+  }
+}
+.main-contacts__content__info-block__item__travel-time__time {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time__time {
+    gap: 20px;
+  }
+}
+.main-contacts__content__info-block__item__travel-time__time__value {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #F05D30;
+}
+@media only screen and (min-width: 576px) {
+  .main-contacts__content__info-block__item__travel-time__time__value {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time__time__value {
+    font-size: 36px;
+  }
+}
+.main-contacts__content__info-block__item__travel-time__time__title {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (min-width: 576px) {
+  .main-contacts__content__info-block__item__travel-time__time__title {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacts__content__info-block__item__travel-time__time__title {
+    font-size: 20px;
+  }
+}
+.main-contacts__content__info-block__line {
+  width: 100%;
+  height: 1px;
+  background-color: #3455C9;
+}
+@media only screen and (min-width: 1920px) {
+  .main-contacts__content__info-block__line {
+    max-width: 589px;
+  }
+}
+.main-contacts__content__map {
+  width: 100%;
+  max-width: 720px;
+  height: 900px;
+  align-self: center;
+}
+@media only screen and (min-width: 1440px) {
+  .main-contacts__content__map {
+    align-self: flex-end;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .main-contacts__content__map {
+    max-width: 1073px;
+    height: 747px;
+  }
+}
+.main-contacts__content__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
