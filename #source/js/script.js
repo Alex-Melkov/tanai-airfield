@@ -12,6 +12,21 @@ window.addEventListener('load', function () {
     mask.classList.toggle('mask-active');
   };
 
+  // Скрипт добавления еще одного инпута с именем в modal-subscribe
+  const btn_add_person = document.querySelector('.modal-subscribe__form__wrapper__name-block__add-person');
+
+  btn_add_person.addEventListener('click', function (e) {
+    const container_inputs = document.querySelector('.modal-subscribe__form__wrapper__name-block__inputs')
+
+    let input = document.createElement('input');
+    input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
+    input.setAttribute('type', 'text');
+    input.setAttribute('name', 'name');
+    input.setAttribute('placeholder', 'Имя и Фамилия');
+    input.setAttribute('required', true);
+    container_inputs.append(input);
+  });
+
   // Скрипт плавного перехода по якорям
   const anchors = document.querySelectorAll('a[href*="#"]');
 
