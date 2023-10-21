@@ -1,55 +1,96 @@
-<div id="modal-subscribe" class="fancybox__content">
-    <div class="modal-subscribe">
-        <h4 class="modal-subscribe__header">Запишитесь на тандем-прыжок онлайн</h4>
-        <form action="" class="modal-subscribe__form">
-            <div class="modal-subscribe__form__wrapper">
-                <div class="modal-subscribe__form__wrapper__height-block">
-                    <h5 class="modal-subscribe__form__wrapper__height-block__title">С какой высоты вы хотите прыгнуть?</h5>
-                    <div class="modal-subscribe__form__wrapper__height-block__content">
-                        <div class="modal-subscribe__form__wrapper__height-block__content__item">
-                            <input id="modal-subscribe-height-4000" type="radio" name="height" value="4000m" checked required>
-                            <label for="modal-subscribe-height-4000"></label>
-                            <p class="modal-subscribe__form__wrapper__height-block__content__item__title">4000 метров</p>
-                        </div>
-                        <div class="modal-subscribe__form__wrapper__height-block__content__item">
-                            <input id="modal-subscribe-height-3000" type="radio" name="height" value="3000m" required>
-                            <label for="modal-subscribe-height-3000"></label>
-                            <p class="modal-subscribe__form__wrapper__height-block__content__item__title">3000 метров</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-subscribe__form__wrapper__name-block">
-                    <div class="modal-subscribe__form__wrapper__name-block__inputs">
-                        <input class="modal-subscribe__form__wrapper__name-block__inputs__item" type="text" name="name" placeholder="Имя и Фамилия" required>
-                    </div>
-                    <button class="modal-subscribe__form__wrapper__name-block__add-person btn" type="button">
-                        <svg class="modal-subscribe__form__wrapper__name-block__add-person__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.1105 7 12.2165 7.0439 12.2946 7.12204C12.3728 7.20018 12.4167 7.30616 12.4167 7.41667V11.5833H16.5833C16.6938 11.5833 16.7998 11.6272 16.878 11.7054C16.9561 11.7835 17 11.8895 17 12C17 12.1105 16.9561 12.2165 16.878 12.2946C16.7998 12.3728 16.6938 12.4167 16.5833 12.4167H12.4167V16.5833C12.4167 16.6938 12.3728 16.7998 12.2946 16.878C12.2165 16.9561 12.1105 17 12 17C11.8895 17 11.7835 16.9561 11.7054 16.878C11.6272 16.7998 11.5833 16.6938 11.5833 16.5833V12.4167H7.41667C7.30616 12.4167 7.20018 12.3728 7.12204 12.2946C7.0439 12.2165 7 12.1105 7 12C7 11.8895 7.0439 11.7835 7.12204 11.7054C7.20018 11.6272 7.30616 11.5833 7.41667 11.5833H11.5833V7.41667C11.5833 7.30616 11.6272 7.20018 11.7054 7.12204C11.7835 7.0439 11.8895 7 12 7Z" fill="#3455C9"/>
-                            <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#3455C9"/>
-                        </svg>
-                        <span class="modal-subscribe__form__wrapper__name-block__add-person__text">Добавить человека</span>
-                    </button>
-                </div>
-                <div class="modal-subscribe__form__wrapper__tel-and-email-block">
-                    <div class="modal-subscribe__form__wrapper__tel-and-email-block__tel">
-                        <input type="tel" name="tel" placeholder="Номер телефона" required>
-                    </div>
-                    <div class="modal-subscribe__form__wrapper__tel-and-email-block__email">
-                        <input type="email" name="email" placeholder="E-mail" required>
-                    </div>
-                </div>
-                <div class="modal-subscribe__form__wrapper__gift-block">
-                    <input type="text" name="gift" placeholder="Номер подарочного сертификата">
-                </div>
-                <div class="modal-subscribe__form__wrapper__personal-data-block">
-                    <div class="modal-subscribe__form__wrapper__personal-data-block__container">
-                        <input id="personal-data" type="checkbox" name="personal-data" value="true" required>
-                        <label for="personal-data"></label>
-                        <p class="modal-subscribe__form__wrapper__personal-data-block__container__title">Согласен с условиями обработки персональных данных</p>
-                    </div>
-                </div>
-                <button class="modal-subscribe__form__wrapper__send-btn btn" type="submit">Отправить заявку</button>
-            </div>
-        </form>
+<div class="modal-subscribe">
+  <h4 class="modal-subscribe__header">Запишитесь на тандем-прыжок онлайн</h4>
+  <form action="" class="modal-subscribe__form">
+    <div class="modal-subscribe__form__wrapper">
+      <div class="modal-subscribe__form__wrapper__height-block">
+        <h5 class="modal-subscribe__form__wrapper__height-block__title">
+          С какой высоты вы хотите прыгнуть?
+        </h5>
+        <div class="modal-subscribe__form__wrapper__height-block__content">
+          <div class="modal-subscribe__form__wrapper__height-block__content__item">
+            <input
+              id="modal-subscribe-height-4000"
+              type="radio"
+              name="height"
+              value="4000m"
+              checked
+              required
+            />
+            <label for="modal-subscribe-height-4000"></label>
+            <p class="modal-subscribe__form__wrapper__height-block__content__item__title">
+              4000 метров
+            </p>
+          </div>
+          <div class="modal-subscribe__form__wrapper__height-block__content__item">
+            <input
+              id="modal-subscribe-height-3000"
+              type="radio"
+              name="height"
+              value="3000m"
+              required
+            />
+            <label for="modal-subscribe-height-3000"></label>
+            <p class="modal-subscribe__form__wrapper__height-block__content__item__title">
+              3000 метров
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-subscribe__form__wrapper__name-block">
+        <div class="modal-subscribe__form__wrapper__name-block__inputs">
+          <input
+            class="modal-subscribe__form__wrapper__name-block__inputs__item"
+            type="text"
+            name="name"
+            placeholder="Имя и Фамилия"
+            required
+          />
+        </div>
+        <button class="modal-subscribe__form__wrapper__name-block__add-person btn" type="button">
+          <svg
+            class="modal-subscribe__form__wrapper__name-block__add-person__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 7C12.1105 7 12.2165 7.0439 12.2946 7.12204C12.3728 7.20018 12.4167 7.30616 12.4167 7.41667V11.5833H16.5833C16.6938 11.5833 16.7998 11.6272 16.878 11.7054C16.9561 11.7835 17 11.8895 17 12C17 12.1105 16.9561 12.2165 16.878 12.2946C16.7998 12.3728 16.6938 12.4167 16.5833 12.4167H12.4167V16.5833C12.4167 16.6938 12.3728 16.7998 12.2946 16.878C12.2165 16.9561 12.1105 17 12 17C11.8895 17 11.7835 16.9561 11.7054 16.878C11.6272 16.7998 11.5833 16.6938 11.5833 16.5833V12.4167H7.41667C7.30616 12.4167 7.20018 12.3728 7.12204 12.2946C7.0439 12.2165 7 12.1105 7 12C7 11.8895 7.0439 11.7835 7.12204 11.7054C7.20018 11.6272 7.30616 11.5833 7.41667 11.5833H11.5833V7.41667C11.5833 7.30616 11.6272 7.20018 11.7054 7.12204C11.7835 7.0439 11.8895 7 12 7Z"
+              fill="#3455C9"
+            />
+            <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#3455C9" />
+          </svg>
+          <span class="modal-subscribe__form__wrapper__name-block__add-person__text"
+            >Добавить человека</span
+          >
+        </button>
+      </div>
+      <div class="modal-subscribe__form__wrapper__tel-and-email-block">
+        <div class="modal-subscribe__form__wrapper__tel-and-email-block__tel">
+          <input type="tel" name="tel" placeholder="Номер телефона" required />
+        </div>
+        <div class="modal-subscribe__form__wrapper__tel-and-email-block__email">
+          <input type="email" name="email" placeholder="E-mail" required />
+        </div>
+      </div>
+      <div class="modal-subscribe__form__wrapper__gift-block">
+        <input type="text" name="gift" placeholder="Номер подарочного сертификата" />
+      </div>
+      <div class="modal-subscribe__form__wrapper__personal-data-block">
+        <div class="modal-subscribe__form__wrapper__personal-data-block__container">
+          <input id="personal-data" type="checkbox" name="personal-data" value="true" required />
+          <label for="personal-data"></label>
+          <p class="modal-subscribe__form__wrapper__personal-data-block__container__title">
+            Согласен с условиями обработки персональных данных
+          </p>
+        </div>
+      </div>
+      <button class="modal-subscribe__form__wrapper__send-btn btn" type="submit">
+        Отправить заявку
+      </button>
     </div>
+  </form>
 </div>

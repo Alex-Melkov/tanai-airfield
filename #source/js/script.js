@@ -12,19 +12,52 @@ window.addEventListener('load', function () {
     mask.classList.toggle('mask-active');
   };
 
+  //Скрипт добавляет/удаляет паддинг справа header при открытии/закрытии модального окна
+  const btns_open_modal = document.querySelectorAll('[data-fancybox]');
+  const header = document.querySelector('.header');
+
+  for (let btn of btns_open_modal) {
+    btn.addEventListener('click', function (e) {
+      const lockPaddingValue = window.innerWidth - header.offsetWidth + 'px';
+
+      header.style.paddingRight = lockPaddingValue;
+    });
+  }
+
+  document.body.addEventListener('click', function (e) {
+    if (e.target.closest('.fancybox__container')) {
+      if (e.target.closest('.fancybox__content') && !e.target.closest('.is-close')) return;
+
+      setTimeout(function () {
+        header.style.paddingRight = '0px';
+      }, 90);
+    }
+  });
+
   // Скрипт добавления еще одного инпута с именем в modal-subscribe
-  const btn_add_person = document.querySelector('.modal-subscribe__form__wrapper__name-block__add-person');
+  const btn_add_person = document.querySelector(
+    '.modal-subscribe__form__wrapper__name-block__add-person',
+  );
 
   btn_add_person.addEventListener('click', function (e) {
-    const container_inputs = document.querySelector('.modal-subscribe__form__wrapper__name-block__inputs')
-
-    let input = document.createElement('input');
-    input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
-    input.setAttribute('type', 'text');
-    input.setAttribute('name', 'name');
-    input.setAttribute('placeholder', 'Имя и Фамилия');
-    input.setAttribute('required', true);
-    container_inputs.append(input);
+    const container_inputs = document.querySelector(
+      '.modal-subscribe__form__wrapper__name-block__inputs',
+    );
+    const inputs = document.querySelectorAll(
+      '.modal-subscribe__form__wrapper__name-block__inputs__item',
+    );
+    //Если количество инпутов равно 5, то отключаем кнопку
+    if (inputs.length === 5) {
+      btn_add_person.setAttribute('disabled', true);
+    } else {
+      let input = document.createElement('input');
+      input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
+      input.setAttribute('type', 'text');
+      input.setAttribute('name', 'name');
+      input.setAttribute('placeholder', 'Имя и Фамилия');
+      input.setAttribute('required', true);
+      container_inputs.append(input);
+    }
   });
 
   // Скрипт плавного перехода по якорям
