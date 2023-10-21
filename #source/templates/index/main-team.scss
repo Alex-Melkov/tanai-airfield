@@ -251,6 +251,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     @include media_from('sm') {
         right: 90px;
@@ -268,9 +269,13 @@
         }
     }
 
+    &:hover {
+        opacity: 0.8;
+    }
+
     &:disabled {
         cursor: default;
-        opacity: 0.8;
+        opacity: 0.5;
     }
 }
 .main-team-swiper-button-next {
@@ -284,6 +289,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     @include media_from('sm') {
         width: 60px;
@@ -300,8 +306,12 @@
         }
     }
 
+    &:hover {
+        opacity: 0.8;
+    }
+
     &:disabled {
         cursor: default;
-        opacity: 0.8;
+        opacity: 0.5;
     }
 }

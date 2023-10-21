@@ -105,6 +105,7 @@
                     line-height: normal;
                     cursor: pointer;
                     color: $font-color-white;
+                    transition: color 0.3s ease;
 
                     @include media_from('sm') {
                         font-size: 20px;
@@ -143,6 +144,10 @@
                             order: 6;
                         }
                     }
+
+                    &:hover {
+                        color: $color-hover-link-white;
+                    }
                 }
             }
         }
@@ -172,6 +177,7 @@
                 line-height: normal;
                 cursor: pointer;
                 color: $font-color-white;
+                transition: color 0.3s ease;
 
                 @include media_from('sm') {
                     font-size: 14px;
@@ -179,6 +185,10 @@
     
                 @include media_from('lg') {
                     font-size: 18px;
+                }
+
+                &:hover {
+                    color: $color-hover-link-white;
                 }
             }
         }
@@ -206,10 +216,6 @@
                 gap: 10px;
             }
 
-            &__item {
-                cursor: pointer;
-            }
-
             &__link {
                 font-size: 15px;
                 font-style: normal;
@@ -217,6 +223,7 @@
                 line-height: normal;
                 cursor: pointer;
                 color: $font-color-white;
+                transition: color 0.3s ease;
 
                 @include media_from('sm') {
                     font-size: 18px;
@@ -224,6 +231,10 @@
     
                 @include media_from('lg') {
                     font-size: 22px;
+                }
+
+                &:hover {
+                    color: $color-hover-link-white;
                 }
             }
         }
@@ -251,10 +262,15 @@
                 cursor: pointer;
                 width: 32px;
                 height: 32px;
+                transition: opacity 0.3s ease;
 
                 @include media_from('sm') {
                     width: 40px;
                     height: 40px;
+                }
+
+                &:hover {
+                    opacity: 0.8;
                 }
             }
         }

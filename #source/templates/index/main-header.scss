@@ -179,9 +179,10 @@
                 font-weight: 500;
                 line-height: normal;
                 color: $font-color-white;
+                opacity: 0.8;
                 margin-bottom: 10px;
                 white-space: nowrap;
-                transition: transform 0.3s ease-in-out;
+                transition: all 0.3s ease;
 
                 @include media_from('xl') {
                     font-size: 16px;
@@ -203,6 +204,7 @@
                 &:hover,
                 &:active {
                     transform: scale(1.3);
+                    opacity: 1;
                 }
             }
         }
@@ -230,6 +232,11 @@
             }
             &__item {
                 cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    opacity: 0.8;
+                }
 
                 svg {
                     width: 40px;

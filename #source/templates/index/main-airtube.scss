@@ -442,6 +442,12 @@
         height: 80px;
         border-radius: 50%;
         cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
         svg {
             width: 80px;
             height: 80px;
@@ -452,6 +458,12 @@
         height: 80px;
         border-radius: 50%;
         cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+        
         svg {
             width: 80px;
             height: 80px;

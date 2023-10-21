@@ -131,6 +131,7 @@
                         color: $font-color-white;
                         cursor: pointer;
                         white-space: nowrap;
+                        transition: color 0.3s ease;
 
                         @include media_from('sm') {
                             font-size: 24px;
@@ -150,6 +151,10 @@
         
                         @include media_from('3xl') {
                             font-size: 22px;
+                        }
+
+                        &:hover {
+                            color: $color-hover-link-white;
                         }
 
                         &.black-color {
@@ -223,6 +228,7 @@
                 color: $font-color-white;
                 cursor: pointer;
                 white-space: nowrap;
+                transition: color 0.3s ease;
 
                 @include media_from('lg') {
                     font-size: 15px;
@@ -238,6 +244,10 @@
 
                 @include media_from('3xl') {
                     font-size: 22px;
+                }
+
+                &:hover {
+                    color: $color-hover-link-white;
                 }
 
                 &.black-color {
