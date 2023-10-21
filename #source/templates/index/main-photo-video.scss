@@ -45,12 +45,12 @@
         display: flex;
         padding-bottom: 280px;
 
-        @include media_from('sm') {
+        @include media_from('md') {
             padding-bottom: 517px;
         }
 
         @include media_from('xl') {
-            padding-bottom: 644px;
+            padding-bottom: 900px;
         }
 
         @include media_from('3xl') {
@@ -271,6 +271,144 @@
                         height: 584px;
                     }
                 }
+            }
+        }
+
+        &__slider {
+            max-width: 2177px;
+            height: 240px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include media_from('md') {
+                height: 457px;
+            }
+
+            @include media_from('xl') {
+                height: 837px;
+            }
+
+            @include media_from('3xl') {
+                position: static;
+                transform: none;
+                height: 584px;
+            }
+        }
+    }
+}
+
+.main-photo-video-swiper {
+    max-width: 540px;
+    min-width: 540px;
+    height: 240px;
+
+    @include media_from('md') {
+        max-width: 1212px;
+        min-width: 1212px;
+        height: 457px;
+    }
+
+    @include media_from('xl') {
+        max-width: 2177px;
+        min-width: 2177px;
+        height: 837px;
+    }
+
+    @include media_from('3xl') {
+        max-width: 1863px;
+        min-width: 1863px;
+        height: 584px;
+    }
+
+    .main-photo-video-swiper-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .main-photo-video-swiper-slide {
+            width: 100%;
+            height: 240px;
+            cursor: grab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include media_from('md') {
+                height: 457px;
+            }
+
+            @include media_from('xl') {
+                height: 837px;
+            }
+
+            @include media_from('3xl') {
+                height: 584px;
+            }
+
+            .slide-container {
+                width: 140px;
+                min-width: 140px;
+                height: 140px;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: all 0.2s ease;
+
+                @include media_from('md') {
+                    width: 355px;
+                    min-width: 355px;
+                    height: 345px;
+                }
+
+                @include media_from('xl') {
+                    width: 601px;
+                    min-width: 601px;
+                    height: 584px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .swiper-slide-active .slide-container {
+            min-width: 240px;
+            width: 240px;
+            height: 240px;
+
+            @include media_from('md') {
+                min-width: 470px;
+                width: 470px;
+                height: 457px;
+            }
+
+            @include media_from('xl') {
+                min-width: 915px;
+                width: 915px;
+                height: 837px;
+            }
+
+            @include media_from('3xl') {
+                width: 601px;
+                min-width: 601px;
+                height: 584px;
+            }
+        }
+
+        .swiper-slide-prev .slide-container {
+            margin-right: auto;
+            @include media_from('3xl') {
+                margin-right: 0;
+            }
+        }
+
+        .swiper-slide-next .slide-container {
+            margin-left: auto;
+            @include media_from('3xl') {
+                margin-left: 0;
             }
         }
     }

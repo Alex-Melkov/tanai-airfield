@@ -128,4 +128,26 @@ window.addEventListener('load', function () {
       prevEl: '.main-airtube-swiper-button-prev',
     },
   });
+
+  //Инициализация свайпера Фото-Видео съёмка прыжка
+  const main_photo_video_swiper = new Swiper('.main-photo-video-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    initialSlide: 1,
+    breakpoints: {
+      320: {
+        spaceBetween: 10,
+        slidesPerView: 3,
+      },
+      768: {
+        spaceBetween: 16,
+        slidesPerView: 3,
+      },
+      1200: {
+        spaceBetween: 30,
+        slidesPerView: 3,
+      },
+    },
+  });
 });
