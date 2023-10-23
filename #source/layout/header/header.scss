@@ -158,11 +158,19 @@
                         }
 
                         &.black-color {
-                            color: $font-color-black-main;
+                            color: $font-color-white;
+
+                            @include media_from('lg') {
+                                color: $font-color-black-main;
+                            }
                         }
 
                         &.black-color:hover {
-                            color: $color-hover-link-black;
+                            color: $color-hover-link-white;
+
+                            @include media_from('lg') {
+                                color: $color-hover-link-black;
+                            }
                         }
                     }
                 }

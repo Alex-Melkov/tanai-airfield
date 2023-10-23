@@ -12,16 +12,9 @@
         padding-right: 50px;
     }
 
-    // @include media_from('lg') {
-    //     padding-left: 100px;
-    //     padding-right: 100px;
-    //     margin-bottom: 160px;
-    // }
-
-    // @include media_from('xl') {
-    //     padding-left: 135px;
-    //     padding-right: 135px;
-    // }
+    @include media_from('lg') {
+        margin-bottom: 160px;
+    }
 
     @include media_from('3xl') {
         padding-left: 10px;
@@ -199,6 +192,7 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
+                            white-space: nowrap;
 
                             @include media_from('lg') {
                                 font-size: 24px;
