@@ -160,6 +160,10 @@
                         &.black-color {
                             color: $font-color-black-main;
                         }
+
+                        &.black-color:hover {
+                            color: $color-hover-link-black;
+                        }
                     }
                 }
     
@@ -253,6 +257,10 @@
                 &.black-color {
                     color: $font-color-black-main;
                 }
+
+                &.black-color:hover {
+                    color: $color-hover-link-black;
+                }
             }
         }
 
@@ -277,6 +285,10 @@
                 height: 3px;
                 border-radius: 30px;
                 transition: all 0.3s ease;
+
+                &.black-color {
+                    background-color: $font-color-black-main;
+                }
             }
 
             &__item-center {
@@ -287,7 +299,11 @@
                 right: 0;
                 border-radius: 30px;
                 background-color: $font-color-white;
-                transition: all 0.3s ease; 
+                transition: all 0.3s ease;
+
+                &.black-color {
+                    background-color: $font-color-black-main;
+                }
             }
 
             &__item-bottom{
@@ -298,7 +314,11 @@
                 left: 0;
                 border-radius: 30px;
                 background-color: $font-color-white;
-                transition: all 0.3s ease; 
+                transition: all 0.3s ease;
+
+                &.black-color {
+                    background-color: $font-color-black-main;
+                }
             }
 
             &.active-menu .header-container__burger__item-top {

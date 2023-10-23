@@ -1,0 +1,36 @@
+@import "../../components/btn/btn.scss";
+@import "./price-jump-tandem.scss";
+
+.price-header {
+    width: 100%;
+    max-width: 1880px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-top: 245px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include media_from('sm') {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include media_from('lg') {
+        margin-bottom: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: left;
+    }
+
+    @include media_from('xl') {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+
+    @include media_from('3xl') {
+        margin-top: 226px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
