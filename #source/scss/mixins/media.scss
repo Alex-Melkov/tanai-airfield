@@ -1,4 +1,4 @@
-$sizes: ("xs":320px, "sm":576px, "md":768px, "lg":991px, "xl":1200px, "2xl":1440px, "3xl":1920px);
+$sizes: ("xs":320px, "sm":576px, "md":768px, "lg":991px, "xl":1200px, "2xl":1440px, "3xl":1921px);
 
 @mixin media_from($media) {
   @each $size, $resolution in $sizes {

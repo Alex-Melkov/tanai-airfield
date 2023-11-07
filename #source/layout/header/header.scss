@@ -8,24 +8,25 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-width: 1880px;
         height: 145px;
         margin: 20px auto 0 auto;
-        padding: 0 20px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         @include media_from('sm') {
-            padding: 0 60px;
-        }
-
-        @include media_from('md') {
-            padding: 0 100px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         @include media_from('lg') {
             height: 106px;
             margin-bottom: 10px;
             margin: 0 auto 0 auto;
-            padding: 0 10px;
+        }
+
+        @include media_from('xl') {
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         &__logo {
@@ -84,10 +85,6 @@
                     padding: 0 60px;
                 }
 
-                @include media_from('md') {
-                    padding: 0 100px;
-                }
-
                 @include media_from('lg') {
                     max-width: none;
                     margin-top: 0;
@@ -111,7 +108,7 @@
 
                     @include media_from('lg') {
                         flex-direction: row;
-                        gap: 20px;
+                        gap: 15px;
                         margin-bottom: 0;
                     }
 
@@ -124,33 +121,21 @@
                     }
     
                     &__link {
-                        font-size: 18px;
+                        font-size: 0.92rem;
                         font-style: normal;
                         font-weight: 700;
-                        line-height: normal;
+                        line-height: 1.2;
                         color: $font-color-white;
                         cursor: pointer;
                         white-space: nowrap;
                         transition: color 0.3s ease;
 
                         @include media_from('sm') {
-                            font-size: 24px;
+                            font-size: 1.5rem;
                         }
 
                         @include media_from('lg') {
-                            font-size: 15px;
-                        }
-
-                        @include media_from('xl') {
-                            font-size: 16px;
-                        }
-
-                        @include media_from('2xl') {
-                            font-size: 18px;
-                        }
-        
-                        @include media_from('3xl') {
-                            font-size: 22px;
+                            font-size: 0.88rem;
                         }
 
                         &:hover {
@@ -209,12 +194,13 @@
                 left: 60px;
             }
 
-            @include media_from('md') {
-                left: 100px;
-            }
-
             @include media_from('lg') {
                 position: static;
+                gap: 5px;
+            }
+
+            @include media_from('2xl') {
+                gap: 10px;
             }
 
             &__icon {
@@ -233,30 +219,14 @@
             }
 
             &__link {
-                font-size: 18px;
+                font-size: 0.92rem;
                 font-style: normal;
                 font-weight: 700;
-                line-height: normal;
+                line-height: 1.2;
                 color: $font-color-white;
                 cursor: pointer;
                 white-space: nowrap;
                 transition: color 0.3s ease;
-
-                @include media_from('lg') {
-                    font-size: 15px;
-                }
-
-                @include media_from('xl') {
-                    font-size: 16px;
-                }
-
-                @include media_from('2xl') {
-                    font-size: 18px;
-                }
-
-                @include media_from('3xl') {
-                    font-size: 22px;
-                }
 
                 &:hover {
                     color: $color-hover-link-white;
@@ -357,6 +327,10 @@
 
         @include media_from('lg') {
             display: block;
+        }
+
+        @include media_from('xl') {
+            margin-top: 10px;
         }
     }
 }
