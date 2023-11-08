@@ -1,135 +1,75 @@
 .main-team {
-    width: 100%;
-    max-width: 1880px;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 auto;
-
-    @include media_from('sm') {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
 
     @include media_from('lg') {
         padding-top: 80px;
-        padding-bottom: 90px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    @include media_from('xl') {
-        padding-left: 135px;
-        padding-right: 135px;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
 
     @include media_from('3xl') {
         padding-top: 100px;
-        padding-bottom: 200px;
+        padding-bottom: 100px;
+    }
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    &__header {
-        text-align: left;
-        margin-bottom: 20px;
 
         @include media_from('sm') {
-            margin-bottom: 40px;
-        }
-
-        @include media_from('lg') {
-            margin-bottom: 60px;
-            text-align: center;
-        }
-    
-        @include media_from('3xl') {
-            margin-bottom: 120px;
-        }
-    }
-
-    &__content {
-        display: none;
-
-        @include media_from('lg') {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(300px, 443px));
-            justify-content: center;
-            column-gap: 30px;
-            row-gap: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         @include media_from('xl') {
-            grid-template-columns: repeat(3, minmax(300px, 443px));
-            column-gap: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
-        @include media_from('2xl') {
-            grid-template-columns: repeat(3, minmax(300px, 443px));
-            column-gap: 30px;
-            row-gap: 80px;
-        } 
-
-        @include media_from('3xl') {
-            grid-template-columns: repeat(4, minmax(300px, 443px));
-        }                
-
-        &__item {
-            color: $font-color-black-1;
-            font-style: normal;
-            line-height: normal;
-
-            &__image {
-                width: 100%;
-                height: 600px;
-                border-radius: 10px;
-                overflow: hidden;
-                margin-bottom: 20px;
-
-                @include media_from('lg') {
-                    height: 600px;
-                } 
-
-                @include media_from('xl') {
-                    height: 500px;
-                } 
+        &__header {
+            text-align: left;
+            margin-bottom: 20px;
+    
+            @include media_from('sm') {
+                margin-bottom: 40px;
+            }
+    
+            @include media_from('lg') {
+                margin-bottom: 60px;
+                text-align: center;
+            }
         
-                @include media_from('2xl') {
-                    height: 600px;
-                } 
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            @include media_from('3xl') {
+                margin-bottom: 120px;
             }
-            &__name {
-                font-size: 28px;
-                font-weight: 600;
-                margin-bottom: 20px;
+        }
+    
+        &__content {
+            display: none;
+    
+            @include media_from('lg') {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+                column-gap: 30px;
+                row-gap: 60px;
             }
-            &__post {
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 20px;
+    
+            @include media_from('xl') {
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 20px;
             }
-            &__line {   
-                max-width: 229px;
-                height: 4px;
-                background: #3455C9;
-                margin-bottom: 20px;
-            }
-            &__jumps {
-                font-size: 32px;
-                font-weight: 500;
-            }
+    
+            @include media_from('2xl') {
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 30px;
+                row-gap: 80px;
+            } 
         }
     }
 }
-
 
 .main-team-swiper {
     width: 100%;
@@ -148,96 +88,6 @@
     .main-team-swiper-wrapper {
         width: 100%;
         height: 100%;
-
-        .main-team-swiper-slide {
-            .main-team-slide {
-                max-width: 345px;
-                font-style: normal;
-                line-height: normal;
-                cursor: grab;
-
-                &__image {
-                    height: 216px;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    margin-bottom: 12px;
-
-                    @include media_from('sm') {
-                        height: 350px;
-                        margin-bottom: 16px;
-                    }
-
-                    @include media_from('md') {
-                        margin-bottom: 20px;
-                        height: 450px;
-                    } 
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-                &__name {
-                    font-size: 18px;
-                    font-weight: 600;
-                    margin-bottom: 12px;
-
-                    @include media_from('sm') {
-                        font-size: 20px;
-                        margin-bottom: 16px;
-                    }
-
-                    @include media_from('md') {
-                        font-size: 24px;
-                        margin-bottom: 20px;
-                    } 
-                }
-                &__post {
-                    font-size: 15px;
-                    font-weight: 500;
-                    margin-bottom: 12px;
-
-                    @include media_from('sm') {
-                        font-size: 16px;
-                        margin-bottom: 16px;
-                    }
-
-                    @include media_from('md') {
-                        font-size: 18px;
-                        margin-bottom: 20px;
-                    } 
-                }
-                &__line {
-                    max-width: 100%;
-                    height: 2px;
-                    background: #3455C9;
-                    margin-bottom: 12px;
-
-                    @include media_from('sm') {
-                        margin-bottom: 16px;
-                    }
-
-                    @include media_from('md') {
-                        max-width: 172px;
-                        height: 4px;
-                        margin-bottom: 20px;
-                    } 
-                }
-                &__jumps {
-                    font-size: 18px;
-                    font-weight: 500;
-
-                    @include media_from('sm') {
-                        font-size: 20px;
-                    }
-
-                    @include media_from('md') {
-                        font-size: 24px;
-                    } 
-                }
-            }
-        }
     }
 }
 .main-team-swiper-button-prev {
