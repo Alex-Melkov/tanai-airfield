@@ -1,12 +1,8 @@
 @import "../../components/btn/btn.scss";
 
 .fancybox__container {
-    --fancybox-bg: rgba(24, 24, 27, 0);
-
     .fancybox__carousel {
-        cursor: default;
         .fancybox__slide  {
-            cursor: default;
             padding: 0;
             background-color: $font-color-white;
 
@@ -22,7 +18,6 @@
                 align-items: center;
                 padding: 60px 10px 40px 10px;
                 background-color: $font-color-white;
-                cursor: default;
 
                 @include media_from('lg') {
                     height: auto;

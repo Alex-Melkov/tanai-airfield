@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fancybox.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css.map" type="text/css" />
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -30,22 +31,37 @@
                 </div>
                 <div class="main-header__content__nav">
                   <div class="main-header__content__nav__vertical-line"></div>
-                  <a class="main-header__content__nav__link-item" href="#main-schedule"
+                  <a class="main-header__content__nav__link-item" data-anchor href="#main-schedule"
                     >Расписание</a
                   >
-                  <a class="main-header__content__nav__link-item" href="#main-team">Команда</a>
-                  <a class="main-header__content__nav__link-item" href="#main-gift-certificate"
+                  <a class="main-header__content__nav__link-item" data-anchor href="#main-team"
+                    >Команда</a
+                  >
+                  <a
+                    class="main-header__content__nav__link-item"
+                    data-anchor
+                    href="#main-gift-certificate"
                     >Сертификат</a
                   >
-                  <a class="main-header__content__nav__link-item" href="#main-program-aff">AFF</a>
-                  <a class="main-header__content__nav__link-item" href="#main-photo-video"
+                  <a
+                    class="main-header__content__nav__link-item"
+                    data-anchor
+                    href="#main-program-aff"
+                    >AFF</a
+                  >
+                  <a
+                    class="main-header__content__nav__link-item"
+                    data-anchor
+                    href="#main-photo-video"
                     >Съемка прыжка</a
                   >
-                  <a class="main-header__content__nav__link-item" href="#main-airtube">Аэротруба</a>
-                  <a class="main-header__content__nav__link-item" href="#main-aircrafts"
+                  <a class="main-header__content__nav__link-item" data-anchor href="#main-airtube"
+                    >Аэротруба</a
+                  >
+                  <a class="main-header__content__nav__link-item" data-anchor href="#main-aircrafts"
                     >Авиатехника</a
                   >
-                  <a class="main-header__content__nav__link-item" href="#main-contacts"
+                  <a class="main-header__content__nav__link-item" data-anchor href="#main-contacts"
                     >Как доехать</a
                   >
                   <div class="main-header__content__nav__vertical-line"></div>
@@ -438,7 +454,12 @@
                     </g>
                     <defs>
                       <clipPath id="clip0_209_1763">
-                        <rect width="60" height="60" fill="white" transform="matrix(-1 0 0 1 60 0)" />
+                        <rect
+                          width="60"
+                          height="60"
+                          fill="white"
+                          transform="matrix(-1 0 0 1 60 0)"
+                        />
                       </clipPath>
                     </defs>
                   </svg>
@@ -476,29 +497,56 @@
                   <div class="main-gift-certificate__container__content__items__item">
                     <div class="main-gift-certificate__container__content__items__item__bg-image">
                       <picture>
-                        <source srcset="img/gift-certificate-item-big.png" type="image/png" media="(min-width:1200px)">
-                        <source srcset="img/gift-certificate-item-small.png" type="image/png" media="(min-width:0px)">
-                        <img src="img/gift-certificate-item-big.png" width="600" height="233" alt="Фон">
+                        <source
+                          srcset="img/gift-certificate-item-big.png"
+                          type="image/png"
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="img/gift-certificate-item-small.png"
+                          type="image/png"
+                          media="(min-width:0px)"
+                        />
+                        <img
+                          src="img/gift-certificate-item-big.png"
+                          width="600"
+                          height="233"
+                          alt="Фон"
+                        />
                       </picture>
                     </div>
                     <p class="main-gift-certificate__container__content__items__item__height">
                       Высота 3 000 метров
                     </p>
-                    <p class="main-gift-certificate__container__content__items__item__cost">12 500 ₽</p>
+                    <p class="main-gift-certificate__container__content__items__item__cost">
+                      12 500 ₽
+                    </p>
                     <div class="main-gift-certificate__container__content__items__item__types">
-                      <div class="main-gift-certificate__container__content__items__item__types__type">
-                        <p class="main-gift-certificate__container__content__items__item__types__type__name">
+                      <div
+                        class="main-gift-certificate__container__content__items__item__types__type"
+                      >
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__name"
+                        >
                           Видеосъемка с руки инструктора
                         </p>
-                        <p class="main-gift-certificate__container__content__items__item__types__type__price">
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__price"
+                        >
                           + 2 000 ₽
                         </p>
                       </div>
-                      <div class="main-gift-certificate__container__content__items__item__types__type">
-                        <p class="main-gift-certificate__container__content__items__item__types__type__name">
+                      <div
+                        class="main-gift-certificate__container__content__items__item__types__type"
+                      >
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__name"
+                        >
                           Фото-видеосъемка воздушным оператором
                         </p>
-                        <p class="main-gift-certificate__container__content__items__item__types__type__price">
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__price"
+                        >
                           + 4 000 ₽
                         </p>
                       </div>
@@ -535,29 +583,56 @@
                   <div class="main-gift-certificate__container__content__items__item">
                     <div class="main-gift-certificate__container__content__items__item__bg-image">
                       <picture>
-                        <source srcset="img/gift-certificate-item-big.png" type="image/png" media="(min-width:991px)">
-                        <source srcset="img/gift-certificate-item-small.png" type="image/png" media="(min-width:0px)">
-                        <img src="img/gift-certificate-item-big.png" width="600" height="233" alt="Фон">
+                        <source
+                          srcset="img/gift-certificate-item-big.png"
+                          type="image/png"
+                          media="(min-width:991px)"
+                        />
+                        <source
+                          srcset="img/gift-certificate-item-small.png"
+                          type="image/png"
+                          media="(min-width:0px)"
+                        />
+                        <img
+                          src="img/gift-certificate-item-big.png"
+                          width="600"
+                          height="233"
+                          alt="Фон"
+                        />
                       </picture>
                     </div>
                     <p class="main-gift-certificate__container__content__items__item__height">
                       Высота 4 000 метров
                     </p>
-                    <p class="main-gift-certificate__container__content__items__item__cost">16 000 ₽</p>
+                    <p class="main-gift-certificate__container__content__items__item__cost">
+                      16 000 ₽
+                    </p>
                     <div class="main-gift-certificate__container__content__items__item__types">
-                      <div class="main-gift-certificate__container__content__items__item__types__type">
-                        <p class="main-gift-certificate__container__content__items__item__types__type__name">
+                      <div
+                        class="main-gift-certificate__container__content__items__item__types__type"
+                      >
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__name"
+                        >
                           Видеосъемка с руки инструктора
                         </p>
-                        <p class="main-gift-certificate__container__content__items__item__types__type__price">
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__price"
+                        >
                           + 2 000 ₽
                         </p>
                       </div>
-                      <div class="main-gift-certificate__container__content__items__item__types__type">
-                        <p class="main-gift-certificate__container__content__items__item__types__type__name">
+                      <div
+                        class="main-gift-certificate__container__content__items__item__types__type"
+                      >
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__name"
+                        >
                           Фото-видеосъемка воздушным оператором
                         </p>
-                        <p class="main-gift-certificate__container__content__items__item__types__type__price">
+                        <p
+                          class="main-gift-certificate__container__content__items__item__types__type__price"
+                        >
                           + 5 100 ₽
                         </p>
                       </div>
@@ -603,7 +678,9 @@
             <div class="main-program-aff__container container">
               <div class="main-program-aff__container__top">
                 <div class="main-program-aff__container__top__header">
-                  <h2 class="main-program-aff__container__top__header__title heading-h2">ПРОГРАММА AFF</h2>
+                  <h2 class="main-program-aff__container__top__header__title heading-h2">
+                    ПРОГРАММА AFF
+                  </h2>
                   <p class="main-program-aff__container__top__header__text">
                     Аэродром Танай проводит подготовку начинающих парашютистов, желающих выполнять
                     самостоятельные прыжки с парашютом с высоты 4000 метров. по программе
@@ -611,25 +688,35 @@
                   </p>
                   <p class="main-program-aff__container__top__header__text">
                     AFF (Accelerated Freefall) — современный курс обучения свободному падению. Эта
-                    методика разработана для интенсивного индивидуального обучения желающих заниматься
-                    парашютным спортом. Программа состоит из теоретической части и практической —
-                    непосредственно прыжков. Все прыжки с парашютом совершаются с современными
-                    парашютами типа «крыло», с высоты 4000 метров, в зависимости от уровня — с одним
-                    или двумя инструкторами. Рабочее время в свободном падении — около минуты. После
-                    открытия парашюта действия студента контролируются с земли и корректируются по
-                    радиосвязи.С первого по третий уровень студент прыгает с двумя инструкторами, с
-                    четвертого — с одним. Общими задачами на всех уровнях являются контроль
-                    направления и высоты, самостоятельное раскрытие парашюта, пилотирование парашюта.
-                    На каждом уровне перед студентом стоит ряд заданий, которые ему необходимо
-                    выполнить для перехода на следующий уровень.
+                    методика разработана для интенсивного индивидуального обучения желающих
+                    заниматься парашютным спортом. Программа состоит из теоретической части и
+                    практической — непосредственно прыжков. Все прыжки с парашютом совершаются с
+                    современными парашютами типа «крыло», с высоты 4000 метров, в зависимости от
+                    уровня — с одним или двумя инструкторами. Рабочее время в свободном падении —
+                    около минуты. После открытия парашюта действия студента контролируются с земли и
+                    корректируются по радиосвязи.С первого по третий уровень студент прыгает с двумя
+                    инструкторами, с четвертого — с одним. Общими задачами на всех уровнях являются
+                    контроль направления и высоты, самостоятельное раскрытие парашюта, пилотирование
+                    парашюта. На каждом уровне перед студентом стоит ряд заданий, которые ему
+                    необходимо выполнить для перехода на следующий уровень.
                   </p>
                 </div>
                 <div class="main-program-aff__container__top__image-block">
                   <div class="main-program-aff__container__top__image-block__item">
-                    <img src="img/main-program-aff-img-01.png" width="915" height="499" alt="Фото" />
+                    <img
+                      src="img/main-program-aff-img-01.png"
+                      width="915"
+                      height="499"
+                      alt="Фото"
+                    />
                   </div>
                   <div class="main-program-aff__container__top__image-block__item">
-                    <img src="img/main-program-aff-img-02.png" width="915" height="499" alt="Фото" />
+                    <img
+                      src="img/main-program-aff-img-02.png"
+                      width="915"
+                      height="499"
+                      alt="Фото"
+                    />
                   </div>
                 </div>
                 <div class="main-program-aff__container__top__required">
@@ -639,19 +726,25 @@
                   <ul class="main-program-aff__container__top__required__blue-list">
                     <li class="main-program-aff__container__top__required__blue-list__item">
                       Скачать и начать изучать методический материал
-                      <a class="main-program-aff__container__top__required__blue-list__item__link" href=""
+                      <a
+                        class="main-program-aff__container__top__required__blue-list__item__link"
+                        href=""
                         >по ссылке</a
                       >
                     </li>
                     <li class="main-program-aff__container__top__required__blue-list__item">
                       Пройти водительскую медицинскую комиссию либо получить справку на оружие.
-                      Комиссия или справка не должна быть старше одного года. Если у Вас есть «свежая»
-                      водительская комиссия либо справка на оружие то предоставьте ее
+                      Комиссия или справка не должна быть старше одного года. Если у Вас есть
+                      «свежая» водительская комиссия либо справка на оружие то предоставьте ее
                     </li>
                     <li class="main-program-aff__container__top__required__blue-list__item">
                       Узнать о дате ближайшей теории у старшего инструктора АФФ и записаться на
-                      теоретическую подготовку по телефону 
-                      <a class="main-program-aff__container__top__required__blue-list__item__tel-link" href="tel:79130851784">+7 913 085-17-84</a>
+                      теоретическую подготовку по телефону
+                      <a
+                        class="main-program-aff__container__top__required__blue-list__item__tel-link"
+                        href="tel:79130851784"
+                        >+7 913 085-17-84</a
+                      >
                     </li>
                     <li class="main-program-aff__container__top__required__blue-list__item">
                       Приехать на Аэродром Танай в день теоретической подготовки и при себе иметь:
@@ -664,8 +757,12 @@
                     <li class="main-program-aff__container__top__required__orange-list__item">
                       Фотографию 3 на 4 см для заведения парашютной книжки
                     </li>
-                    <li class="main-program-aff__container__top__required__orange-list__item">Паспорт</li>
-                    <li class="main-program-aff__container__top__required__orange-list__item">Страховку</li>
+                    <li class="main-program-aff__container__top__required__orange-list__item">
+                      Паспорт
+                    </li>
+                    <li class="main-program-aff__container__top__required__orange-list__item">
+                      Страховку
+                    </li>
                   </ul>
                   <p class="main-program-aff__container__top__required__insurance">
                     Страховку можно оформить на аэродроме, либо оформить самостоятельно. Сумма
@@ -695,14 +792,23 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-0-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-0-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
-                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом, контроль
-                        направления и высоты, три имитации раскрытия парашюта, управление парашютом и
-                        построение захода на посадку под руководством инструктора
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
+                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом,
+                        контроль направления и высоты, три имитации раскрытия парашюта, управление
+                        парашютом и построение захода на посадку под руководством инструктора
                       </p>
                     </div>
                   </div>
@@ -724,11 +830,20 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-1-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-1-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
                         Контроль направления и высоты, три имитации раскрытия парашюта,
                         самостоятельное раскрытие парашюта на заданной высоте.
                       </p>
@@ -752,11 +867,20 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-2-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-2-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
                         Контроль направления и высоты, три имитации раскрытия парашюта, развороты
                         группой на 90° и движение группой, самостоятельное раскрытие
                       </p>
@@ -780,14 +904,23 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-3-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-3-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
-                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом, контроль
-                        направления и высоты, три имитации раскрытия парашюта, управление парашютом и
-                        построение захода на посадку под руководством инструктора
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
+                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом,
+                        контроль направления и высоты, три имитации раскрытия парашюта, управление
+                        парашютом и построение захода на посадку под руководством инструктора
                       </p>
                     </div>
                   </div>
@@ -809,14 +942,23 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-4-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-4-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
-                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом, контроль
-                        направления и высоты, три имитации раскрытия парашюта, управление парашютом и
-                        построение захода на посадку под руководством инструктора
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
+                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом,
+                        контроль направления и высоты, три имитации раскрытия парашюта, управление
+                        парашютом и построение захода на посадку под руководством инструктора
                       </p>
                     </div>
                   </div>
@@ -838,14 +980,23 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-5-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-5-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
-                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом, контроль
-                        направления и высоты, три имитации раскрытия парашюта, управление парашютом и
-                        построение захода на посадку под руководством инструктора
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
+                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом,
+                        контроль направления и высоты, три имитации раскрытия парашюта, управление
+                        парашютом и построение захода на посадку под руководством инструктора
                       </p>
                     </div>
                   </div>
@@ -867,14 +1018,23 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-6-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-6-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
-                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом, контроль
-                        направления и высоты, три имитации раскрытия парашюта, управление парашютом и
-                        построение захода на посадку под руководством инструктора
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
+                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом,
+                        контроль направления и высоты, три имитации раскрытия парашюта, управление
+                        парашютом и построение захода на посадку под руководством инструктора
                       </p>
                     </div>
                   </div>
@@ -896,14 +1056,23 @@
                           type="image/png"
                           media="(min-width:0px)"
                         />
-                        <img src="img/program-aff-number-7-big.png" width="116" height="114" alt="Цифра" />
+                        <img
+                          src="img/program-aff-number-7-big.png"
+                          width="116"
+                          height="114"
+                          alt="Цифра"
+                        />
                       </picture>
                     </div>
-                    <div class="main-program-aff__container__bottom__levels-list__item__description">
-                      <p class="main-program-aff__container__bottom__levels-list__item__description__text">
-                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом, контроль
-                        направления и высоты, три имитации раскрытия парашюта, управление парашютом и
-                        построение захода на посадку под руководством инструктора
+                    <div
+                      class="main-program-aff__container__bottom__levels-list__item__description"
+                    >
+                      <p
+                        class="main-program-aff__container__bottom__levels-list__item__description__text"
+                      >
+                        Прыжок в тандеме с инструктором. Основные задачи: знакомство с небом,
+                        контроль направления и высоты, три имитации раскрытия парашюта, управление
+                        парашютом и построение захода на посадку под руководством инструктора
                       </p>
                     </div>
                   </div>
@@ -915,891 +1084,461 @@
             </div>
           </section>
           <section class="main-photo-video" id="main-photo-video">
-            <h2 class="main-photo-video__header heading-h2">ФОТО-ВИДЕОСЪЕМКА ВАШЕГО ПРЫЖКА</h2>
-            <div class="main-photo-video__content">
-              <div class="main-photo-video__content__info-block">
-                <p class="main-photo-video__content__info-block__text">
-                  Фото и видеосъемка внешним оператором производится на земле, в самолете, в
-                  свободном падении и на приземлении. В течение 30 минут после приземления вы
-                  получаете исходные файлы записи на нашей фирменной флешке.Полученные фото и
-                  видеоматериалы позволят вам вспоминать ощущения эйфории полета и счастья каждый
-                  раз, когда вы будете просматривать их в компании друзей и родственников.
-                </p>
-                <p class="main-photo-video__content__info-block__text-red">
-                  Монтаж видеоролика не входит в стоимость услуги фото-видеосъемка. Дополнительную
-                  услугу «монтаж видеоролика» можно заказать на аэродроме после совершения прыжка.
-                </p>
-                <div class="main-photo-video__content__info-block__price">
-                  <div class="main-photo-video__content__info-block__price__item">
-                    <p class="main-photo-video__content__info-block__price__item__name">
-                      Фото-видеосъемка внешним оператором с 3000 метров
-                    </p>
-                    <p class="main-photo-video__content__info-block__price__item__value">5 100 ₽</p>
-                  </div>
-                  <div class="main-photo-video__content__info-block__price__line"></div>
-                  <div class="main-photo-video__content__info-block__price__item">
-                    <p class="main-photo-video__content__info-block__price__item__name">
-                      Фото-видеосъемка внешним оператором с 4000 метров
-                    </p>
-                    <p class="main-photo-video__content__info-block__price__item__value">5 100 ₽</p>
-                  </div>
-                  <div class="main-photo-video__content__info-block__price__line"></div>
-                  <div class="main-photo-video__content__info-block__price__item">
-                    <p class="main-photo-video__content__info-block__price__item__name">
-                      Видеосъемка с руки инструктора
-                    </p>
-                    <p class="main-photo-video__content__info-block__price__item__value">5 100 ₽</p>
+            <div class="main-photo-video__container container">
+              <h2 class="main-photo-video__container__header heading-h2">
+                ФОТО-ВИДЕОСЪЕМКА ВАШЕГО ПРЫЖКА
+              </h2>
+              <div class="main-photo-video__container__content">
+                <div class="main-photo-video__container__content__info-block">
+                  <p class="main-photo-video__container__content__info-block__text">
+                    Фото и видеосъемка внешним оператором производится на земле, в самолете, в
+                    свободном падении и на приземлении. В течение 30 минут после приземления вы
+                    получаете исходные файлы записи на нашей фирменной флешке.Полученные фото и
+                    видеоматериалы позволят вам вспоминать ощущения эйфории полета и счастья каждый
+                    раз, когда вы будете просматривать их в компании друзей и родственников.
+                  </p>
+                  <p class="main-photo-video__container__content__info-block__text-red">
+                    Монтаж видеоролика не входит в стоимость услуги фото-видеосъемка. Дополнительную
+                    услугу «монтаж видеоролика» можно заказать на аэродроме после совершения прыжка.
+                  </p>
+                  <div class="main-photo-video__container__content__info-block__price">
+                    <div class="main-photo-video__container__content__info-block__price__item">
+                      <p
+                        class="main-photo-video__container__content__info-block__price__item__name"
+                      >
+                        Фото-видеосъемка внешним оператором с 3000 метров
+                      </p>
+                      <p
+                        class="main-photo-video__container__content__info-block__price__item__value"
+                      >
+                        5 100 ₽
+                      </p>
+                    </div>
+                    <div
+                      class="main-photo-video__container__content__info-block__price__line"
+                    ></div>
+                    <div class="main-photo-video__container__content__info-block__price__item">
+                      <p
+                        class="main-photo-video__container__content__info-block__price__item__name"
+                      >
+                        Фото-видеосъемка внешним оператором с 4000 метров
+                      </p>
+                      <p
+                        class="main-photo-video__container__content__info-block__price__item__value"
+                      >
+                        5 100 ₽
+                      </p>
+                    </div>
+                    <div
+                      class="main-photo-video__container__content__info-block__price__line"
+                    ></div>
+                    <div class="main-photo-video__container__content__info-block__price__item">
+                      <p
+                        class="main-photo-video__container__content__info-block__price__item__name"
+                      >
+                        Видеосъемка с руки инструктора
+                      </p>
+                      <p
+                        class="main-photo-video__container__content__info-block__price__item__value"
+                      >
+                        5 100 ₽
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="main-photo-video__content__slider">
-                <div class="swiper main-photo-video-swiper">
-                  <div class="swiper-wrapper main-photo-video-swiper-wrapper">
-                    <div class="swiper-slide main-photo-video-swiper-slide">
-                      <div class="slide-container">
-                        <img src="img/main-photo-video-img-01.png" alt="Фото" />
+                <div class="main-photo-video__container__content__slider">
+                  <div class="swiper main-photo-video-swiper">
+                    <div class="swiper-wrapper main-photo-video-swiper-wrapper">
+                      <div class="swiper-slide main-photo-video-swiper-slide">
+                        <div class="slide-container">
+                          <img
+                            src="img/main-photo-video-img-01.png"
+                            width="601"
+                            height="584"
+                            alt="Фото"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide main-photo-video-swiper-slide">
+                        <div class="slide-container">
+                          <img
+                            src="img/main-photo-video-img-02.png"
+                            width="601"
+                            height="584"
+                            alt="Фото"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide main-photo-video-swiper-slide">
+                        <div class="slide-container">
+                          <img
+                            src="img/main-photo-video-img-03.png"
+                            width="601"
+                            height="584"
+                            alt="Фото"
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div class="swiper-slide main-photo-video-swiper-slide">
-                      <div class="slide-container">
-                        <img src="img/main-photo-video-img-02.png" alt="Фото" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide main-photo-video-swiper-slide">
-                      <div class="slide-container">
-                        <img src="img/main-photo-video-img-03.png" alt="Фото" />
-                      </div>
-                    </div>
+                    <div class="swiper-scrollbar"></div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <section class="main-airtube" id="main-airtube">
-            <div class="main-airtube__header">
-              <h2 class="main-airtube__header__heading heading-h2">АЭРОТРУБА</h2>
-              <div class="main-airtube__header__text-block">
-                <p class="main-airtube__header__text-block__heading">
-                  Самая технологичная аэротруба в России
-                </p>
-                <p class="main-airtube__header__text-block__item">
-                  Аэротруба позволит почувствовать ощущение свободного падения. Каждый полет
-                  сопровождает опытный, сертифицированный по международной системе подготовки
-                  инструктор. Для полета не нужна специальная спортивная подготовка. Попробовать
-                  могут все желающие!
-                </p>
-                <p class="main-airtube__header__text-block__item">
-                  Скорость потока воздуха достигает 300 км/ч. Подходит как новичкам, так и
-                  профессиональным спортсменам. Можно даже детям от 4-х лет. В стоимость полета
-                  включены: инструктаж, специальная спортивная экипировка, сопровождение
-                  инструктора.
-                </p>
-              </div>
-            </div>
-            <div class="main-airtube__slider">
-              <div class="swiper main-airtube-swiper">
-                <div class="swiper-wrapper main-airtube-swiper-wrapper">
-                  <div class="swiper-slide main-airtube-swiper-slide">
-                    <div class="slide-container">
-                      <img src="img/main-airtube-img-01.png" alt="Фото" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide main-airtube-swiper-slide">
-                    <div class="slide-container">
-                      <img src="img/main-airtube-img-02.png" alt="Фото" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide main-airtube-swiper-slide">
-                    <div class="slide-container">
-                      <img src="img/main-airtube-img-03.png" alt="Фото" />
-                    </div>
-                  </div>
-                </div>
-                <div class="main-airtube-swiper-pagination-block">
-                  <div class="main-airtube-swiper-pagination"></div>
-                </div>
-                <div class="main-airtube-swiper-pagination"></div>
-                <div class="main-airtube-swiper-navigation-block">
-                  <button class="main-airtube-swiper-button-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
-                      <g clip-path="url(#clip0_143_870)">
-                        <path
-                          d="M40 0C29.3913 0 19.2172 4.21427 11.7157 11.7157C4.21427 19.2172 0 29.3913 0 40C0 50.6087 4.21427 60.7828 11.7157 68.2843C19.2172 75.7857 29.3913 80 40 80C50.6087 80 60.7828 75.7857 68.2843 68.2843C75.7857 60.7828 80 50.6087 80 40C80 29.3913 75.7857 19.2172 68.2843 11.7157C60.7828 4.21427 50.6087 0 40 0V0ZM57.5 37.5C58.163 37.5 58.7989 37.7634 59.2678 38.2322C59.7366 38.7011 60 39.337 60 40C60 40.663 59.7366 41.2989 59.2678 41.7678C58.7989 42.2366 58.163 42.5 57.5 42.5H28.535L39.27 53.23C39.5024 53.4624 39.6868 53.7384 39.8126 54.0421C39.9384 54.3458 40.0032 54.6713 40.0032 55C40.0032 55.3287 39.9384 55.6542 39.8126 55.9579C39.6868 56.2616 39.5024 56.5376 39.27 56.77C39.0376 57.0024 38.7616 57.1868 38.4579 57.3126C38.1542 57.4384 37.8287 57.5032 37.5 57.5032C37.1713 57.5032 36.8458 57.4384 36.5421 57.3126C36.2384 57.1868 35.9624 57.0024 35.73 56.77L20.73 41.77C20.4972 41.5378 20.3125 41.2619 20.1864 40.9582C20.0604 40.6544 19.9955 40.3288 19.9955 40C19.9955 39.6712 20.0604 39.3456 20.1864 39.0418C20.3125 38.7381 20.4972 38.4622 20.73 38.23L35.73 23.23C36.1994 22.7606 36.8361 22.4968 37.5 22.4968C38.1639 22.4968 38.8006 22.7606 39.27 23.23C39.7394 23.6994 40.0032 24.3361 40.0032 25C40.0032 25.6639 39.7394 26.3006 39.27 26.77L28.535 37.5H57.5Z"
-                          fill="#3455C9"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_143_870">
-                          <rect width="80" height="80" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                  <button class="main-airtube-swiper-button-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
-                      <g clip-path="url(#clip0_143_872)">
-                        <path
-                          d="M40 0C50.6087 0 60.7828 4.21427 68.2843 11.7157C75.7857 19.2172 80 29.3913 80 40C80 50.6087 75.7857 60.7828 68.2843 68.2843C60.7828 75.7857 50.6087 80 40 80C29.3913 80 19.2172 75.7857 11.7157 68.2843C4.21427 60.7828 0 50.6087 0 40C0 29.3913 4.21427 19.2172 11.7157 11.7157C19.2172 4.21427 29.3913 0 40 0V0ZM22.5 37.5C21.837 37.5 21.2011 37.7634 20.7322 38.2322C20.2634 38.7011 20 39.337 20 40C20 40.663 20.2634 41.2989 20.7322 41.7678C21.2011 42.2366 21.837 42.5 22.5 42.5H51.465L40.73 53.23C40.4976 53.4624 40.3132 53.7384 40.1874 54.0421C40.0616 54.3458 39.9968 54.6713 39.9968 55C39.9968 55.3287 40.0616 55.6542 40.1874 55.9579C40.3132 56.2616 40.4976 56.5376 40.73 56.77C40.9624 57.0024 41.2384 57.1868 41.5421 57.3126C41.8458 57.4384 42.1713 57.5032 42.5 57.5032C42.8287 57.5032 43.1542 57.4384 43.4579 57.3126C43.7616 57.1868 44.0376 57.0024 44.27 56.77L59.27 41.77C59.5028 41.5378 59.6875 41.2619 59.8136 40.9582C59.9396 40.6544 60.0045 40.3288 60.0045 40C60.0045 39.6712 59.9396 39.3456 59.8136 39.0418C59.6875 38.7381 59.5028 38.4622 59.27 38.23L44.27 23.23C43.8006 22.7606 43.1639 22.4968 42.5 22.4968C41.8361 22.4968 41.1994 22.7606 40.73 23.23C40.2606 23.6994 39.9968 24.3361 39.9968 25C39.9968 25.6639 40.2606 26.3006 40.73 26.77L51.465 37.5H22.5Z"
-                          fill="#3455C9"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_143_872">
-                          <rect
-                            width="80"
-                            height="80"
-                            fill="white"
-                            transform="matrix(-1 0 0 1 80 0)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="main-airtube__invitation">
-              <p class="main-airtube__invitation__text">
-                Желаете получить массу ярких, незабываемых эмоций? Мы ждем вас!
-              </p>
-              <div class="main-airtube__invitation__address">
-                <div class="main-airtube__invitation__address__elem">
-                  <p class="main-airtube__invitation__address__elem__city">Аэротруба в Кемерово</p>
-                  <ul class="main-airtube__invitation__address__elem__contact-list">
-                    <li class="main-airtube__invitation__address__elem__contact-list__item">
-                      <svg
-                        class="main-airtube__invitation__address__elem__contact-list__item__icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 65"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M23.9707 63.9009C23.9714 63.9013 23.972 63.9016 25 62.443L23.9707 63.9009ZM26.0293 63.9009L26.0357 63.8963L26.052 63.8849L26.1087 63.8442C26.1575 63.8092 26.2277 63.7585 26.3177 63.6925C26.4977 63.5603 26.7575 63.3668 27.0859 63.1147C27.7423 62.6103 28.6734 61.871 29.7877 60.9192C32.0138 59.0175 34.9836 56.2572 37.958 52.8194C43.8641 45.9935 50 36.2517 50 25.1144C50 18.4571 47.3686 12.0702 42.6814 7.35953C37.9937 2.64855 31.6337 0 25 0C18.3662 0 12.0063 2.64855 7.31857 7.35953C2.63143 12.0702 0 18.4571 0 25.1144C0 36.2517 6.13589 45.9935 12.042 52.8194C15.0164 56.2572 17.9862 59.0175 20.2123 60.9192C21.3266 61.871 22.2577 62.6103 22.9141 63.1147C23.2425 63.3668 23.5023 63.5603 23.6823 63.6925C23.7723 63.7585 23.8425 63.8092 23.8913 63.8442L23.948 63.8849L23.9643 63.8963L23.9707 63.9009C24.5873 64.3346 25.4127 64.3346 26.0293 63.9009ZM25 62.443L26.0293 63.9009C26.0286 63.9013 26.028 63.9016 25 62.443ZM33.9286 24.9772C33.9286 29.9038 29.9311 33.8976 25 33.8976C20.0689 33.8976 16.0714 29.9038 16.0714 24.9772C16.0714 20.0506 20.0689 16.0568 25 16.0568C29.9311 16.0568 33.9286 20.0506 33.9286 24.9772Z"
-                          fill="#3455C9"
-                        />
-                      </svg>
-                      <span
-                        class="main-airtube__invitation__address__elem__contact-list__item__text"
-                        >Притомский проспект, 10, Вход №1, 2 этаж, ресепшн</span
-                      >
-                    </li>
-                    <li class="main-airtube__invitation__address__elem__contact-list__item">
-                      <svg
-                        class="main-airtube__invitation__address__elem__contact-list__item__icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 51"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M5.89191 1.82092C6.43869 1.27492 7.09525 0.851368 7.81809 0.578329C8.54093 0.305291 9.31354 0.189001 10.0847 0.237167C10.8559 0.285332 11.608 0.496853 12.2913 0.857711C12.9745 1.21857 13.5733 1.72053 14.0479 2.33032L19.6571 9.5369C20.6852 10.8588 21.0477 12.5808 20.6415 14.2059L18.9321 21.0499C18.8438 21.4044 18.8485 21.7757 18.946 22.1278C19.0434 22.4799 19.2303 22.8008 19.4884 23.0594L27.1662 30.7379C27.4251 30.9965 27.7465 31.1836 28.0992 31.2811C28.4519 31.3786 28.8238 31.3831 29.1787 31.2941L36.0191 29.5847C36.821 29.3842 37.658 29.3686 38.4668 29.5391C39.2756 29.7097 40.035 30.0619 40.6877 30.5691L47.8937 36.1756C50.4843 38.1913 50.7218 42.0196 48.4031 44.3354L45.1719 47.5668C42.8595 49.8794 39.4034 50.895 36.1816 49.7606C27.9355 46.859 20.4486 42.1379 14.276 35.9475C8.0865 29.7754 3.36577 22.2889 0.463957 14.0434C-0.667257 10.8245 0.348336 7.36492 2.66076 5.05232L5.89191 1.82092Z"
-                          fill="#3455C9"
-                        />
-                      </svg>
-                      <span
-                        class="main-airtube__invitation__address__elem__contact-list__item__text"
-                        >+7 (800) 301-16-33</span
-                      >
-                    </li>
-                    <li class="main-airtube__invitation__address__elem__contact-list__item">
-                      <svg
-                        class="main-airtube__invitation__address__elem__contact-list__item__icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 51"
-                        fill="none"
-                      >
-                        <path
-                          d="M25 50.2266C38.8071 50.2266 50 39.0337 50 25.2266C50 11.4194 38.8071 0.226562 25 0.226562C11.1929 0.226562 0 11.4194 0 25.2266C0 39.0337 11.1929 50.2266 25 50.2266Z"
-                          fill="#3455C9"
-                        />
-                        <path
-                          d="M25 11.3379V25.2268L30.5556 33.5601"
-                          stroke="#FDFDFD"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span
-                        class="main-airtube__invitation__address__elem__contact-list__item__text"
-                        >Пн-Вс 10:00 - 22:00</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="main-airtube__invitation__address__elem">
-                  <p class="main-airtube__invitation__address__elem__city">
-                    Аэротруба в Новосибирске
+            <div class="main-airtube__container container">
+              <div class="main-airtube__container__header">
+                <h2 class="main-airtube__container__header__heading heading-h2">АЭРОТРУБА</h2>
+                <div class="main-airtube__container__header__text-block">
+                  <p class="main-airtube__container__header__text-block__heading">
+                    Самая технологичная аэротруба в России
                   </p>
-                  <ul class="main-airtube__invitation__address__elem__contact-list">
-                    <li class="main-airtube__invitation__address__elem__contact-list__item">
-                      <svg
-                        class="main-airtube__invitation__address__elem__contact-list__item__icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 65"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M23.9707 63.9009C23.9714 63.9013 23.972 63.9016 25 62.443L23.9707 63.9009ZM26.0293 63.9009L26.0357 63.8963L26.052 63.8849L26.1087 63.8442C26.1575 63.8092 26.2277 63.7585 26.3177 63.6925C26.4977 63.5603 26.7575 63.3668 27.0859 63.1147C27.7423 62.6103 28.6734 61.871 29.7877 60.9192C32.0138 59.0175 34.9836 56.2572 37.958 52.8194C43.8641 45.9935 50 36.2517 50 25.1144C50 18.4571 47.3686 12.0702 42.6814 7.35953C37.9937 2.64855 31.6337 0 25 0C18.3662 0 12.0063 2.64855 7.31857 7.35953C2.63143 12.0702 0 18.4571 0 25.1144C0 36.2517 6.13589 45.9935 12.042 52.8194C15.0164 56.2572 17.9862 59.0175 20.2123 60.9192C21.3266 61.871 22.2577 62.6103 22.9141 63.1147C23.2425 63.3668 23.5023 63.5603 23.6823 63.6925C23.7723 63.7585 23.8425 63.8092 23.8913 63.8442L23.948 63.8849L23.9643 63.8963L23.9707 63.9009C24.5873 64.3346 25.4127 64.3346 26.0293 63.9009ZM25 62.443L26.0293 63.9009C26.0286 63.9013 26.028 63.9016 25 62.443ZM33.9286 24.9772C33.9286 29.9038 29.9311 33.8976 25 33.8976C20.0689 33.8976 16.0714 29.9038 16.0714 24.9772C16.0714 20.0506 20.0689 16.0568 25 16.0568C29.9311 16.0568 33.9286 20.0506 33.9286 24.9772Z"
-                          fill="#3455C9"
+                  <p class="main-airtube__container__header__text-block__item">
+                    Аэротруба позволит почувствовать ощущение свободного падения. Каждый полет
+                    сопровождает опытный, сертифицированный по международной системе подготовки
+                    инструктор. Для полета не нужна специальная спортивная подготовка. Попробовать
+                    могут все желающие!
+                  </p>
+                  <p class="main-airtube__container__header__text-block__item">
+                    Скорость потока воздуха достигает 300 км/ч. Подходит как новичкам, так и
+                    профессиональным спортсменам. Можно даже детям от 4-х лет. В стоимость полета
+                    включены: инструктаж, специальная спортивная экипировка, сопровождение
+                    инструктора.
+                  </p>
+                </div>
+              </div>
+              <div class="main-airtube__container__slider">
+                <div class="swiper main-airtube-swiper">
+                  <div class="swiper-wrapper main-airtube-swiper-wrapper">
+                    <div class="swiper-slide main-airtube-swiper-slide">
+                      <div class="slide-container">
+                        <img
+                          src="img/main-airtube-img-01.png"
+                          width="601"
+                          height="584"
+                          alt="Фото"
                         />
+                      </div>
+                    </div>
+                    <div class="swiper-slide main-airtube-swiper-slide">
+                      <div class="slide-container">
+                        <img
+                          src="img/main-airtube-img-02.png"
+                          width="601"
+                          height="584"
+                          alt="Фото"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide main-airtube-swiper-slide">
+                      <div class="slide-container">
+                        <img
+                          src="img/main-airtube-img-03.png"
+                          width="601"
+                          height="584"
+                          alt="Фото"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-airtube-swiper-pagination-block">
+                    <div class="main-airtube-swiper-pagination"></div>
+                  </div>
+                  <div class="main-airtube-swiper-pagination"></div>
+                  <div class="main-airtube-swiper-navigation-block">
+                    <button class="main-airtube-swiper-button-prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+                        <g clip-path="url(#clip0_143_870)">
+                          <path
+                            d="M40 0C29.3913 0 19.2172 4.21427 11.7157 11.7157C4.21427 19.2172 0 29.3913 0 40C0 50.6087 4.21427 60.7828 11.7157 68.2843C19.2172 75.7857 29.3913 80 40 80C50.6087 80 60.7828 75.7857 68.2843 68.2843C75.7857 60.7828 80 50.6087 80 40C80 29.3913 75.7857 19.2172 68.2843 11.7157C60.7828 4.21427 50.6087 0 40 0V0ZM57.5 37.5C58.163 37.5 58.7989 37.7634 59.2678 38.2322C59.7366 38.7011 60 39.337 60 40C60 40.663 59.7366 41.2989 59.2678 41.7678C58.7989 42.2366 58.163 42.5 57.5 42.5H28.535L39.27 53.23C39.5024 53.4624 39.6868 53.7384 39.8126 54.0421C39.9384 54.3458 40.0032 54.6713 40.0032 55C40.0032 55.3287 39.9384 55.6542 39.8126 55.9579C39.6868 56.2616 39.5024 56.5376 39.27 56.77C39.0376 57.0024 38.7616 57.1868 38.4579 57.3126C38.1542 57.4384 37.8287 57.5032 37.5 57.5032C37.1713 57.5032 36.8458 57.4384 36.5421 57.3126C36.2384 57.1868 35.9624 57.0024 35.73 56.77L20.73 41.77C20.4972 41.5378 20.3125 41.2619 20.1864 40.9582C20.0604 40.6544 19.9955 40.3288 19.9955 40C19.9955 39.6712 20.0604 39.3456 20.1864 39.0418C20.3125 38.7381 20.4972 38.4622 20.73 38.23L35.73 23.23C36.1994 22.7606 36.8361 22.4968 37.5 22.4968C38.1639 22.4968 38.8006 22.7606 39.27 23.23C39.7394 23.6994 40.0032 24.3361 40.0032 25C40.0032 25.6639 39.7394 26.3006 39.27 26.77L28.535 37.5H57.5Z"
+                            fill="#3455C9"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_143_870">
+                            <rect width="80" height="80" fill="white" />
+                          </clipPath>
+                        </defs>
                       </svg>
-                      <span
-                        class="main-airtube__invitation__address__elem__contact-list__item__text"
-                        >рп. Краснообск Восточная 31/1</span
-                      >
-                    </li>
-                    <li class="main-airtube__invitation__address__elem__contact-list__item">
-                      <svg
-                        class="main-airtube__invitation__address__elem__contact-list__item__icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 51"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M5.89191 1.82092C6.43869 1.27492 7.09525 0.851368 7.81809 0.578329C8.54093 0.305291 9.31354 0.189001 10.0847 0.237167C10.8559 0.285332 11.608 0.496853 12.2913 0.857711C12.9745 1.21857 13.5733 1.72053 14.0479 2.33032L19.6571 9.5369C20.6852 10.8588 21.0477 12.5808 20.6415 14.2059L18.9321 21.0499C18.8438 21.4044 18.8485 21.7757 18.946 22.1278C19.0434 22.4799 19.2303 22.8008 19.4884 23.0594L27.1662 30.7379C27.4251 30.9965 27.7465 31.1836 28.0992 31.2811C28.4519 31.3786 28.8238 31.3831 29.1787 31.2941L36.0191 29.5847C36.821 29.3842 37.658 29.3686 38.4668 29.5391C39.2756 29.7097 40.035 30.0619 40.6877 30.5691L47.8937 36.1756C50.4843 38.1913 50.7218 42.0196 48.4031 44.3354L45.1719 47.5668C42.8595 49.8794 39.4034 50.895 36.1816 49.7606C27.9355 46.859 20.4486 42.1379 14.276 35.9475C8.0865 29.7754 3.36577 22.2889 0.463957 14.0434C-0.667257 10.8245 0.348336 7.36492 2.66076 5.05232L5.89191 1.82092Z"
-                          fill="#3455C9"
-                        />
+                    </button>
+                    <button class="main-airtube-swiper-button-next">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+                        <g clip-path="url(#clip0_143_872)">
+                          <path
+                            d="M40 0C50.6087 0 60.7828 4.21427 68.2843 11.7157C75.7857 19.2172 80 29.3913 80 40C80 50.6087 75.7857 60.7828 68.2843 68.2843C60.7828 75.7857 50.6087 80 40 80C29.3913 80 19.2172 75.7857 11.7157 68.2843C4.21427 60.7828 0 50.6087 0 40C0 29.3913 4.21427 19.2172 11.7157 11.7157C19.2172 4.21427 29.3913 0 40 0V0ZM22.5 37.5C21.837 37.5 21.2011 37.7634 20.7322 38.2322C20.2634 38.7011 20 39.337 20 40C20 40.663 20.2634 41.2989 20.7322 41.7678C21.2011 42.2366 21.837 42.5 22.5 42.5H51.465L40.73 53.23C40.4976 53.4624 40.3132 53.7384 40.1874 54.0421C40.0616 54.3458 39.9968 54.6713 39.9968 55C39.9968 55.3287 40.0616 55.6542 40.1874 55.9579C40.3132 56.2616 40.4976 56.5376 40.73 56.77C40.9624 57.0024 41.2384 57.1868 41.5421 57.3126C41.8458 57.4384 42.1713 57.5032 42.5 57.5032C42.8287 57.5032 43.1542 57.4384 43.4579 57.3126C43.7616 57.1868 44.0376 57.0024 44.27 56.77L59.27 41.77C59.5028 41.5378 59.6875 41.2619 59.8136 40.9582C59.9396 40.6544 60.0045 40.3288 60.0045 40C60.0045 39.6712 59.9396 39.3456 59.8136 39.0418C59.6875 38.7381 59.5028 38.4622 59.27 38.23L44.27 23.23C43.8006 22.7606 43.1639 22.4968 42.5 22.4968C41.8361 22.4968 41.1994 22.7606 40.73 23.23C40.2606 23.6994 39.9968 24.3361 39.9968 25C39.9968 25.6639 40.2606 26.3006 40.73 26.77L51.465 37.5H22.5Z"
+                            fill="#3455C9"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_143_872">
+                            <rect
+                              width="80"
+                              height="80"
+                              fill="white"
+                              transform="matrix(-1 0 0 1 80 0)"
+                            />
+                          </clipPath>
+                        </defs>
                       </svg>
-                      <span
-                        class="main-airtube__invitation__address__elem__contact-list__item__text"
-                        >+7 (913) 917-79-65</span
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-airtube__container__invitation">
+                <p class="main-airtube__container__invitation__text">
+                  Желаете получить массу ярких, незабываемых эмоций? Мы ждем вас!
+                </p>
+                <div class="main-airtube__container__invitation__address">
+                  <div class="main-airtube__container__invitation__address__elem">
+                    <p class="main-airtube__container__invitation__address__elem__city">
+                      Аэротруба в Кемерово
+                    </p>
+                    <ul class="main-airtube__container__invitation__address__elem__contact-list">
+                      <li
+                        class="main-airtube__container__invitation__address__elem__contact-list__item"
                       >
-                    </li>
-                    <li class="main-airtube__invitation__address__elem__contact-list__item">
-                      <svg
-                        class="main-airtube__invitation__address__elem__contact-list__item__icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 51"
-                        fill="none"
+                        <svg
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 50 65"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.9707 63.9009C23.9714 63.9013 23.972 63.9016 25 62.443L23.9707 63.9009ZM26.0293 63.9009L26.0357 63.8963L26.052 63.8849L26.1087 63.8442C26.1575 63.8092 26.2277 63.7585 26.3177 63.6925C26.4977 63.5603 26.7575 63.3668 27.0859 63.1147C27.7423 62.6103 28.6734 61.871 29.7877 60.9192C32.0138 59.0175 34.9836 56.2572 37.958 52.8194C43.8641 45.9935 50 36.2517 50 25.1144C50 18.4571 47.3686 12.0702 42.6814 7.35953C37.9937 2.64855 31.6337 0 25 0C18.3662 0 12.0063 2.64855 7.31857 7.35953C2.63143 12.0702 0 18.4571 0 25.1144C0 36.2517 6.13589 45.9935 12.042 52.8194C15.0164 56.2572 17.9862 59.0175 20.2123 60.9192C21.3266 61.871 22.2577 62.6103 22.9141 63.1147C23.2425 63.3668 23.5023 63.5603 23.6823 63.6925C23.7723 63.7585 23.8425 63.8092 23.8913 63.8442L23.948 63.8849L23.9643 63.8963L23.9707 63.9009C24.5873 64.3346 25.4127 64.3346 26.0293 63.9009ZM25 62.443L26.0293 63.9009C26.0286 63.9013 26.028 63.9016 25 62.443ZM33.9286 24.9772C33.9286 29.9038 29.9311 33.8976 25 33.8976C20.0689 33.8976 16.0714 29.9038 16.0714 24.9772C16.0714 20.0506 20.0689 16.0568 25 16.0568C29.9311 16.0568 33.9286 20.0506 33.9286 24.9772Z"
+                            fill="#3455C9"
+                          />
+                        </svg>
+                        <span
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__text"
+                          >Притомский проспект, 10, Вход №1, 2 этаж, ресепшн</span
+                        >
+                      </li>
+                      <li
+                        class="main-airtube__container__invitation__address__elem__contact-list__item"
                       >
-                        <path
-                          d="M25 50.2266C38.8071 50.2266 50 39.0337 50 25.2266C50 11.4194 38.8071 0.226562 25 0.226562C11.1929 0.226562 0 11.4194 0 25.2266C0 39.0337 11.1929 50.2266 25 50.2266Z"
-                          fill="#3455C9"
-                        />
-                        <path
-                          d="M25 11.3379V25.2268L30.5556 33.5601"
-                          stroke="#FDFDFD"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span
-                        class="main-airtube__invitation__address__elem__contact-list__item__text"
-                        >Пн-Пт 10:00 -18:00</span
+                        <svg
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 50 51"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.89191 1.82092C6.43869 1.27492 7.09525 0.851368 7.81809 0.578329C8.54093 0.305291 9.31354 0.189001 10.0847 0.237167C10.8559 0.285332 11.608 0.496853 12.2913 0.857711C12.9745 1.21857 13.5733 1.72053 14.0479 2.33032L19.6571 9.5369C20.6852 10.8588 21.0477 12.5808 20.6415 14.2059L18.9321 21.0499C18.8438 21.4044 18.8485 21.7757 18.946 22.1278C19.0434 22.4799 19.2303 22.8008 19.4884 23.0594L27.1662 30.7379C27.4251 30.9965 27.7465 31.1836 28.0992 31.2811C28.4519 31.3786 28.8238 31.3831 29.1787 31.2941L36.0191 29.5847C36.821 29.3842 37.658 29.3686 38.4668 29.5391C39.2756 29.7097 40.035 30.0619 40.6877 30.5691L47.8937 36.1756C50.4843 38.1913 50.7218 42.0196 48.4031 44.3354L45.1719 47.5668C42.8595 49.8794 39.4034 50.895 36.1816 49.7606C27.9355 46.859 20.4486 42.1379 14.276 35.9475C8.0865 29.7754 3.36577 22.2889 0.463957 14.0434C-0.667257 10.8245 0.348336 7.36492 2.66076 5.05232L5.89191 1.82092Z"
+                            fill="#3455C9"
+                          />
+                        </svg>
+                        <span
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__text"
+                          >+7 (800) 301-16-33</span
+                        >
+                      </li>
+                      <li
+                        class="main-airtube__container__invitation__address__elem__contact-list__item"
                       >
-                    </li>
-                  </ul>
+                        <svg
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 50 51"
+                          fill="none"
+                        >
+                          <path
+                            d="M25 50.2266C38.8071 50.2266 50 39.0337 50 25.2266C50 11.4194 38.8071 0.226562 25 0.226562C11.1929 0.226562 0 11.4194 0 25.2266C0 39.0337 11.1929 50.2266 25 50.2266Z"
+                            fill="#3455C9"
+                          />
+                          <path
+                            d="M25 11.3379V25.2268L30.5556 33.5601"
+                            stroke="#FDFDFD"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__text"
+                          >Пн-Вс 10:00 - 22:00</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main-airtube__container__invitation__address__elem">
+                    <p class="main-airtube__container__invitation__address__elem__city">
+                      Аэротруба в Новосибирске
+                    </p>
+                    <ul class="main-airtube__container__invitation__address__elem__contact-list">
+                      <li
+                        class="main-airtube__container__invitation__address__elem__contact-list__item"
+                      >
+                        <svg
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 50 65"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.9707 63.9009C23.9714 63.9013 23.972 63.9016 25 62.443L23.9707 63.9009ZM26.0293 63.9009L26.0357 63.8963L26.052 63.8849L26.1087 63.8442C26.1575 63.8092 26.2277 63.7585 26.3177 63.6925C26.4977 63.5603 26.7575 63.3668 27.0859 63.1147C27.7423 62.6103 28.6734 61.871 29.7877 60.9192C32.0138 59.0175 34.9836 56.2572 37.958 52.8194C43.8641 45.9935 50 36.2517 50 25.1144C50 18.4571 47.3686 12.0702 42.6814 7.35953C37.9937 2.64855 31.6337 0 25 0C18.3662 0 12.0063 2.64855 7.31857 7.35953C2.63143 12.0702 0 18.4571 0 25.1144C0 36.2517 6.13589 45.9935 12.042 52.8194C15.0164 56.2572 17.9862 59.0175 20.2123 60.9192C21.3266 61.871 22.2577 62.6103 22.9141 63.1147C23.2425 63.3668 23.5023 63.5603 23.6823 63.6925C23.7723 63.7585 23.8425 63.8092 23.8913 63.8442L23.948 63.8849L23.9643 63.8963L23.9707 63.9009C24.5873 64.3346 25.4127 64.3346 26.0293 63.9009ZM25 62.443L26.0293 63.9009C26.0286 63.9013 26.028 63.9016 25 62.443ZM33.9286 24.9772C33.9286 29.9038 29.9311 33.8976 25 33.8976C20.0689 33.8976 16.0714 29.9038 16.0714 24.9772C16.0714 20.0506 20.0689 16.0568 25 16.0568C29.9311 16.0568 33.9286 20.0506 33.9286 24.9772Z"
+                            fill="#3455C9"
+                          />
+                        </svg>
+                        <span
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__text"
+                          >рп. Краснообск Восточная 31/1</span
+                        >
+                      </li>
+                      <li
+                        class="main-airtube__container__invitation__address__elem__contact-list__item"
+                      >
+                        <svg
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 50 51"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.89191 1.82092C6.43869 1.27492 7.09525 0.851368 7.81809 0.578329C8.54093 0.305291 9.31354 0.189001 10.0847 0.237167C10.8559 0.285332 11.608 0.496853 12.2913 0.857711C12.9745 1.21857 13.5733 1.72053 14.0479 2.33032L19.6571 9.5369C20.6852 10.8588 21.0477 12.5808 20.6415 14.2059L18.9321 21.0499C18.8438 21.4044 18.8485 21.7757 18.946 22.1278C19.0434 22.4799 19.2303 22.8008 19.4884 23.0594L27.1662 30.7379C27.4251 30.9965 27.7465 31.1836 28.0992 31.2811C28.4519 31.3786 28.8238 31.3831 29.1787 31.2941L36.0191 29.5847C36.821 29.3842 37.658 29.3686 38.4668 29.5391C39.2756 29.7097 40.035 30.0619 40.6877 30.5691L47.8937 36.1756C50.4843 38.1913 50.7218 42.0196 48.4031 44.3354L45.1719 47.5668C42.8595 49.8794 39.4034 50.895 36.1816 49.7606C27.9355 46.859 20.4486 42.1379 14.276 35.9475C8.0865 29.7754 3.36577 22.2889 0.463957 14.0434C-0.667257 10.8245 0.348336 7.36492 2.66076 5.05232L5.89191 1.82092Z"
+                            fill="#3455C9"
+                          />
+                        </svg>
+                        <span
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__text"
+                          >+7 (913) 917-79-65</span
+                        >
+                      </li>
+                      <li
+                        class="main-airtube__container__invitation__address__elem__contact-list__item"
+                      >
+                        <svg
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 50 51"
+                          fill="none"
+                        >
+                          <path
+                            d="M25 50.2266C38.8071 50.2266 50 39.0337 50 25.2266C50 11.4194 38.8071 0.226562 25 0.226562C11.1929 0.226562 0 11.4194 0 25.2266C0 39.0337 11.1929 50.2266 25 50.2266Z"
+                            fill="#3455C9"
+                          />
+                          <path
+                            d="M25 11.3379V25.2268L30.5556 33.5601"
+                            stroke="#FDFDFD"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span
+                          class="main-airtube__container__invitation__address__elem__contact-list__item__text"
+                          >Пн-Пт 10:00 -18:00</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
           <section class="main-aircrafts" id="main-aircrafts">
-            <h2 class="main-aircrafts__header heading-h2">АВИАТЕХНИКА</h2>
-            <div class="main-aircrafts__content">
-              <div class="main-aircrafts__content__item">
-                <div class="main-aircrafts__content__item__image">
-                  <picture>
-                    <source
-                      srcset="img/main-aircrafts-img-01-big.png"
-                      type="image/png"
-                      media="(min-width:1440px)"
-                    />
-                    <source
-                      srcset="img/main-aircrafts-img-01-mid.png"
-                      type="image/png"
-                      media="(min-width:991px)"
-                    />
-                    <source
-                      srcset="img/main-aircrafts-img-01-small.png"
-                      type="image/png"
-                      media="(min-width:0px)"
-                    />
-                    <img src="img/main-aircrafts-img-01-big.png" alt="Самолёт" />
-                  </picture>
+            <div class="main-aircrafts__container container">
+              <h2 class="main-aircrafts__container__header heading-h2">АВИАТЕХНИКА</h2>
+              <div class="main-aircrafts__container__content">
+                <div class="main-aircrafts__container__content__item">
+                  <div class="main-aircrafts__container__content__item__image">
+                    <picture>
+                      <source
+                        srcset="img/main-aircrafts-img-01-big.png"
+                        type="image/png"
+                        media="(min-width:991px)"
+                      />
+                      <source
+                        srcset="img/main-aircrafts-img-01-mid.png"
+                        type="image/png"
+                        media="(min-width:576px)"
+                      />
+                      <source
+                        srcset="img/main-aircrafts-img-01-small.png"
+                        type="image/png"
+                        media="(min-width:0px)"
+                      />
+                      <img
+                        src="img/main-aircrafts-img-01-big.png"
+                        width="764"
+                        height="682"
+                        alt="Самолёт"
+                      />
+                    </picture>
+                  </div>
+                  <div class="main-aircrafts__container__content__item__description">
+                    <h6 class="main-aircrafts__container__content__item__description__title">
+                      Ан-28
+                    </h6>
+                    <p class="main-aircrafts__container__content__item__description__text">
+                      Универсальный легкий транспортный самолет ближнего радиуса действия с двумя
+                      членами экипажа. Десантный вариант рассчитан на 18 парашютистов. Оснащен двумя
+                      турбовинтовыми двигателями ТВД-10Б. Этот самолет сочетает в себе простоту и
+                      надежность управления, мощное шасси, автономность запуска двигателей, реверс,
+                      наличие эффективного пилотажно-навигационного оборудования, ПОС крыла,
+                      оперения, двигателей и винтов, высокую механизацию крыла и, как следствие,
+                      низкие посадочные скорости которые делают возможным осуществление взлетов и
+                      посадок с грунтовых площадок длиной до 500 метров. Все эти уникальные
+                      параметры и технические возможности АН-28 делают его незаменимым при
+                      эксплуатации для прыжков с парашютом.
+                    </p>
+                  </div>
                 </div>
-                <div class="main-aircrafts__content__item__description">
-                  <h6 class="main-aircrafts__content__item__description__title">Ан-28</h6>
-                  <p class="main-aircrafts__content__item__description__text">
-                    Универсальный легкий транспортный самолет ближнего радиуса действия с двумя
-                    членами экипажа. Десантный вариант рассчитан на 18 парашютистов. Оснащен двумя
-                    турбовинтовыми двигателями ТВД-10Б.<span
-                      class="main-aircrafts__content__item__description__text__accent"
-                      >Этот самолет сочетает в себе простоту и надежность управления, мощное шасси,
-                      автономность запуска двигателей, реверс, наличие эффективного
-                      пилотажно-навигационного оборудования, ПОС крыла, оперения, двигателей и
-                      винтов, высокую механизацию крыла и, как следствие, низкие посадочные скорости
-                      которые делают возможным осуществление взлетов и посадок с грунтовых площадок
-                      длиной до 500 метров. Все эти уникальные параметры и технические возможности
-                      АН-28 делают его незаменимым при эксплуатации для прыжков с парашютом.</span
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="main-aircrafts__content__item">
-                <div class="main-aircrafts__content__item__image">
-                  <picture>
-                    <source
-                      srcset="img/main-aircrafts-img-02-big.png"
-                      type="image/png"
-                      media="(min-width:1440px)"
-                    />
-                    <source
-                      srcset="img/main-aircrafts-img-02-mid.png"
-                      type="image/png"
-                      media="(min-width:991px)"
-                    />
-                    <source
-                      srcset="img/main-aircrafts-img-02-small.png"
-                      type="image/png"
-                      media="(min-width:0px)"
-                    />
-                    <img src="img/main-aircrafts-img-02-big.png" alt="Самолёт" />
-                  </picture>
-                </div>
-                <div class="main-aircrafts__content__item__description">
-                  <h6 class="main-aircrafts__content__item__description__title">L-410</h6>
-                  <p class="main-aircrafts__content__item__description__text">
-                    Универсальный пассажирский самолет гражданской авиации, предназначен для
-                    выброски 19 парашютистов. L-410 оснащен 2 турбовинтовыми двигателями М 601-Е,
-                    приборы и оборудование самолета позволяют совершать полеты в сложных погодных
-                    условиях. Л-410 по своим техническим и экономическим качествам является одним из
-                    лучших самолетов своего класса в мире.
-                  </p>
+                <div class="main-aircrafts__container__content__item">
+                  <div class="main-aircrafts__container__content__item__image">
+                    <picture>
+                      <source
+                        srcset="img/main-aircrafts-img-02-big.png"
+                        type="image/png"
+                        media="(min-width:991px)"
+                      />
+                      <source
+                        srcset="img/main-aircrafts-img-02-mid.png"
+                        type="image/png"
+                        media="(min-width:576px)"
+                      />
+                      <source
+                        srcset="img/main-aircrafts-img-02-small.png"
+                        type="image/png"
+                        media="(min-width:0px)"
+                      />
+                      <img
+                        src="img/main-aircrafts-img-02-big.png"
+                        width="885"
+                        height="682"
+                        alt="Самолёт"
+                      />
+                    </picture>
+                  </div>
+                  <div class="main-aircrafts__container__content__item__description">
+                    <h6 class="main-aircrafts__container__content__item__description__title">
+                      L-410
+                    </h6>
+                    <p class="main-aircrafts__container__content__item__description__text">
+                      Универсальный пассажирский самолет гражданской авиации, предназначен для
+                      выброски 19 парашютистов. L-410 оснащен 2 турбовинтовыми двигателями М 601-Е,
+                      приборы и оборудование самолета позволяют совершать полеты в сложных погодных
+                      условиях. Л-410 по своим техническим и экономическим качествам является одним
+                      из лучших самолетов своего класса в мире.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
           <section class="main-contacts" id="main-contacts">
-            <h2 class="main-contacts__header heading-h2">КАК К НАМ ДОЕХАТЬ?</h2>
-            <div class="main-contacts__content">
-              <div class="main-contacts__content__info-block">
-                <div class="main-contacts__content__info-block__item">
-                  <h6 class="main-contacts__content__info-block__item__title">Из Новосибирска</h6>
-                  <div class="main-contacts__content__info-block__item__image">
-                    <img src="img/main-contacts-route-img-01.svg" alt="Путь" />
-                  </div>
-                  <div class="main-contacts__content__info-block__item__route">
-                    <p class="main-contacts__content__info-block__item__route__title">
-                      Из Новосибирска
-                    </p>
-                    <ul class="main-contacts__content__info-block__item__route__list">
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Новосибирск</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Плотниково</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Журавлёво</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Аэродром Танай</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="main-contacts__content__info-block__item__travel-time">
-                    <div class="main-contacts__content__info-block__item__travel-time__distance">
-                      <p
-                        class="main-contacts__content__info-block__item__travel-time__distance__value"
-                      >
-                        160 км
-                      </p>
-                      <p
-                        class="main-contacts__content__info-block__item__travel-time__distance__title"
-                      >
-                        Расстояние
-                      </p>
-                    </div>
-                    <div class="main-contacts__content__info-block__item__travel-time__time">
-                      <p class="main-contacts__content__info-block__item__travel-time__time__value">
-                        2 ч. 30 мин
-                      </p>
-                      <p class="main-contacts__content__info-block__item__travel-time__time__title">
-                        Время в пути
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="main-contacts__content__info-block__line"></div>
-                <div class="main-contacts__content__info-block__item">
-                  <h6 class="main-contacts__content__info-block__item__title">Из Кемерово</h6>
-                  <div class="main-contacts__content__info-block__item__image">
-                    <img src="img/main-contacts-route-img-02.svg" alt="Путь" />
-                  </div>
-                  <div class="main-contacts__content__info-block__item__route">
-                    <p class="main-contacts__content__info-block__item__route__title">
-                      Из Кемерово
-                    </p>
-                    <ul class="main-contacts__content__info-block__item__route__list">
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Новосибирск</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Плотниково</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Журавлёво</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Аэродром Танай</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="main-contacts__content__info-block__item__travel-time">
-                    <div class="main-contacts__content__info-block__item__travel-time__distance">
-                      <p
-                        class="main-contacts__content__info-block__item__travel-time__distance__value"
-                      >
-                        115 км
-                      </p>
-                      <p
-                        class="main-contacts__content__info-block__item__travel-time__distance__title"
-                      >
-                        Расстояние
-                      </p>
-                    </div>
-                    <div class="main-contacts__content__info-block__item__travel-time__time">
-                      <p class="main-contacts__content__info-block__item__travel-time__time__value">
-                        1 ч. 30 мин
-                      </p>
-                      <p class="main-contacts__content__info-block__item__travel-time__time__title">
-                        Время в пути
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="main-contacts__content__info-block__line"></div>
-                <div class="main-contacts__content__info-block__item">
-                  <h6 class="main-contacts__content__info-block__item__title">Из Новокузнецка</h6>
-                  <div class="main-contacts__content__info-block__item__image">
-                    <img src="img/main-contacts-route-img-03.svg" alt="Путь" />
-                  </div>
-                  <div class="main-contacts__content__info-block__item__route">
-                    <p class="main-contacts__content__info-block__item__route__title">
-                      Из Новокузнецка
-                    </p>
-                    <ul class="main-contacts__content__info-block__item__route__list">
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Новосибирск</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Плотниково</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Журавлёво</span
-                        >
-                      </li>
-                      <li class="main-contacts__content__info-block__item__route__list__elem">
-                        <svg
-                          class="main-contacts__content__info-block__item__route__list__elem__icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="20"
-                          viewBox="0 0 18 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            fill="#3455C9"
-                          />
-                          <path
-                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.3431 6 6 7.34315 6 9C6 10.6569 7.3431 12 9 12Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 19C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 19Z"
-                            stroke="#1F1E1E"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span
-                          class="main-contacts__content__info-block__item__route__list__elem__text"
-                          >Аэродром Танай</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="main-contacts__content__info-block__item__travel-time">
-                    <div class="main-contacts__content__info-block__item__travel-time__distance">
-                      <p
-                        class="main-contacts__content__info-block__item__travel-time__distance__value"
-                      >
-                        215 км
-                      </p>
-                      <p
-                        class="main-contacts__content__info-block__item__travel-time__distance__title"
-                      >
-                        Расстояние
-                      </p>
-                    </div>
-                    <div class="main-contacts__content__info-block__item__travel-time__time">
-                      <p class="main-contacts__content__info-block__item__travel-time__time__value">
-                        2ч. 50 мин
-                      </p>
-                      <p class="main-contacts__content__info-block__item__travel-time__time__title">
-                        Время в пути
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="main-contacts__content__map">
-                <picture>
-                  <source
-                    srcset="img/main-contacts-map-big.png"
-                    type="image/png"
-                    media="(min-width:1920px)"
-                  />
-                  <source
-                    srcset="img/main-contacts-map-small.png"
-                    type="image/png"
-                    media="(min-width:0px)"
-                  />
-                  <img src="img/main-contacts-map-big.png" alt="Карта" />
-                </picture>
+            <div class="main-contacts__container container">
+              <h2 class="main-contacts__container__header heading-h2">КАК К НАМ ДОЕХАТЬ?</h2>
+              <div class="main-contacts__container__content">
+                <!-- @import "components/driving-route/driving-route.html" -->
               </div>
             </div>
           </section>

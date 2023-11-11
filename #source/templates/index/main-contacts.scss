@@ -1,277 +1,43 @@
 .main-contacts {
-    width: 100%;
-    max-width: 1880px;
     padding-top: 60px;
-    padding-bottom: 120px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 auto;
-
-    @include media_from('sm') {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+    padding-bottom: 70px;
 
     @include media_from('lg') {
-        padding-top: 90px;
-        padding-bottom: 180px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+		padding-top: 80px;
+        padding-bottom: 140px;
+	}
 
-    @include media_from('xl') {
-        padding-left: 135px;
-        padding-right: 135px;
-    }
-
-    @include media_from('2xl') {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    @include media_from('3xl') {
-        padding-top: 100px;
+	@include media_from('3xl') {
+		padding-top: 100px;
         padding-bottom: 200px;
+	}
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
-    }
 
-    &__header {
-        text-align: left;
-        margin-bottom: 40px;
-        @include media_from('lg') {
-            margin-bottom: 80px;
-        }
-    
-        @include media_from('3xl') {
-            text-align: center;
-        }
-    }
-
-    &__content {
-        color: $font-color-black-main;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        @include media_from('lg') {
-            gap: 60px;
+        @include media_from('sm') {
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
-        @include media_from('2xl') {
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 50px;
-        }
-    
-        @include media_from('3xl') {
-            gap: 102px;
+        @include media_from('xl') {
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
-        &__info-block {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-
+        &__header {
+            text-align: left;
+            margin-bottom: 40px;
             @include media_from('lg') {
-                gap: 20px;
+                text-align: center;
+                margin-bottom: 60px;
             }
         
-            @include media_from('2xl') {
-                width: auto;
-            }
-
-            &__item {
-                display: flex;
-                gap: 30px;
-
-                @include media_from('sm') {
-                    gap: 60px;
-                }
-
-                @include media_from('md') {
-                    display: block;
-                }
-
-                &__title {
-                    display: none;
-                    @include media_from('md') {
-                        display: block;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        margin-bottom: 40px;
-                    }
-                }
-
-                &__image {
-                    display: none;
-                    @include media_from('md') {
-                        display: block;
-                        margin-bottom: 40px;
-                    }
-                }
-
-                &__route {
-                    display: block;
-                    @include media_from('md') {
-                        display: none;
-                    }
-
-                    &__title {
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        margin-bottom: 20px;
-                    }
-
-                    &__list {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-
-                        &__elem {
-                            display: flex;
-                            align-items: center;
-                            gap: 10px;
-
-                            &__text {
-                                font-size: 15px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: normal;
-                            }
-                        }
-                    }
-                }
-
-                &__travel-time {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 45px;
-
-                    @include media_from('md') {
-                        flex-direction: row;
-                        gap: 30px;
-                        margin-top: 0;
-                    }
-                
-                    &__distance {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-
-                        @include media_from('md') {
-                            gap: 20px;
-                        }
-                    
-                        &__value {
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: normal;
-                            color: $color-orange;
-
-                            @include media_from('sm') {
-                                font-size: 24px;
-                            }
-
-                            @include media_from('md') {
-                                font-size: 36px;
-                            }
-                        }
-
-                        &__title {
-                            font-size: 12px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-
-                            @include media_from('sm') {
-                                font-size: 15px;
-                            }
-
-                            @include media_from('md') {
-                                font-size: 20px;
-                            }
-                        }
-                    }
-
-                    &__time {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-
-                        @include media_from('md') {
-                            gap: 20px;
-                        }
-                    
-                        &__value {
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: normal;
-                            color: $color-orange;
-
-                            @include media_from('sm') {
-                                font-size: 24px;
-                            }
-
-                            @include media_from('md') {
-                                font-size: 36px;
-                            }                    
-                        }
-
-                        &__title {
-                            font-size: 12px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-
-                            @include media_from('sm') {
-                                font-size: 15px;
-                            }
-
-                            @include media_from('md') {
-                                font-size: 20px;
-                            }                       
-                        }
-                    }
-                }
-            }
-
-            &__line {
-                width: 100%;
-                height: 1px;
-                background-color: $color-blue;
-
-                @include media_from('3xl') {
-                    max-width: 589px;
-                }
-            }
-        }
-
-        &__map {
-            width: 100%;
-            max-width: 720px;
-            height: 900px;
-            align-self: center;
-
-            @include media_from('2xl') {
-                align-self: flex-end;
-            }
-
             @include media_from('3xl') {
-                max-width: 1073px;
-                height: 747px;
-            }
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                margin-bottom: 80px;
             }
         }
     }

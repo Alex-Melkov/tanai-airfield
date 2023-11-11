@@ -11,6 +11,7 @@ window.addEventListener('load', function () {
     lock.classList.toggle('lock');
     mask.classList.toggle('mask-active');
   };
+  //===================================================================================
 
   //Скрипт добавляет/удаляет паддинг справа header при открытии/закрытии модального окна
   const btns_open_modal = document.querySelectorAll('[data-fancybox]');
@@ -18,8 +19,9 @@ window.addEventListener('load', function () {
 
   for (let btn of btns_open_modal) {
     btn.addEventListener('click', function (e) {
-      const lockPaddingValue = window.innerWidth - header.offsetWidth + 'px';
+      let lockPaddingValue = window.innerWidth - header.offsetWidth + 'px';
 
+      lock.classList.add('lock');
       header.style.paddingRight = lockPaddingValue;
     });
   }
@@ -30,9 +32,11 @@ window.addEventListener('load', function () {
 
       setTimeout(function () {
         header.style.paddingRight = '0px';
+        lock.classList.remove('lock');
       }, 90);
     }
   });
+  //===================================================================================
 
   // Скрипт добавления еще одного инпута с именем в modal-subscribe
   const btn_add_person = document.querySelector(
@@ -59,9 +63,10 @@ window.addEventListener('load', function () {
       container_inputs.append(input);
     }
   });
+  //===================================================================================
 
   // Скрипт плавного перехода по якорям
-  const anchors = document.querySelectorAll('a[href*="#"]');
+  const anchors = document.querySelectorAll('a[data-anchor]');
 
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
@@ -75,6 +80,7 @@ window.addEventListener('load', function () {
       });
     });
   }
+  //===================================================================================
 
   //Инициализация свайпера Команда
   const main_team_slide = new Swiper('.main-team-swiper', {
@@ -98,6 +104,7 @@ window.addEventListener('load', function () {
       prevEl: '.main-team-swiper-button-prev',
     },
   });
+  //===================================================================================
 
   //Инициализация свайпера Аэротруба
   const main_airtube_swiper = new Swiper('.main-airtube-swiper', {
@@ -110,8 +117,8 @@ window.addEventListener('load', function () {
         spaceBetween: 20,
         slidesPerView: 1,
       },
-      1200: {
-        spaceBetween: 30,
+      991: {
+        spaceBetween: 50,
         slidesPerView: 3,
       },
       1920: {
@@ -128,6 +135,7 @@ window.addEventListener('load', function () {
       prevEl: '.main-airtube-swiper-button-prev',
     },
   });
+  //===================================================================================
 
   //Инициализация свайпера Фото-Видео съёмка прыжка
   const main_photo_video_swiper = new Swiper('.main-photo-video-swiper', {
@@ -145,9 +153,44 @@ window.addEventListener('load', function () {
         slidesPerView: 3,
       },
       1200: {
+        spaceBetween: 15,
+        slidesPerView: 3,
+      },
+      1920: {
         spaceBetween: 30,
         slidesPerView: 3,
       },
     },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+  });
+  //===================================================================================
+
+  //Инициализация мини-карты
+  let map = document.getElementById('map');
+
+  if (map) {
+    DG.then(function () {
+      map = DG.map('map', {
+        center: [54.760303, 85.112495],
+        zoom: 13,
+      });
+      mapicon = DG.icon({
+        iconUrl: 'img/pin.svg' /* Иконка маркера */,
+        iconAnchor: [71, 67],
+        popupAnchor: [0, 20],
+        className: 'map-icon',
+        iconSize: [141, 67] /* Размер иконки */,
+      });
+      DG.marker([54.760303, 85.112495], { icon: mapicon }).addTo(map); /* Координаты маркера */
+    });
+  }
+  //===================================================================================
+
+  //Отключаем перетаскивание у модалок
+  Fancybox.bind('[data-fancybox]', {
+    dragToClose: false,
   });
 });

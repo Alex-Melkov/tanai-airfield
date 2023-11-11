@@ -1,12 +1,11 @@
 .main-photo-video {
-    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     overflow: hidden;
 
     @include media_from('lg') {
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     @include media_from('3xl') {
@@ -14,286 +13,189 @@
         padding-bottom: 100px;
     }
 
-    &__header {
-        margin-bottom: 40px;
+    &__container {
+        width: 100%;
+        margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
 
         @include media_from('sm') {
             padding-left: 50px;
-            padding-right: 0;
-        }
-
-        @include media_from('lg') {
-            margin-bottom: 60px;
-            padding-left: 100px;
-        }
-    
-        @include media_from('xl') {
-            padding-left: 135px;
-        }
-    
-        @include media_from('3xl') {
-            padding-left: 0;
-            text-align: center;
-            margin-bottom: 80px;
-        }
-    }
-    &__content {
-        position: relative;
-        color: $font-color-black-main;
-        display: flex;
-        padding-bottom: 280px;
-
-        @include media_from('md') {
-            padding-bottom: 517px;
+            padding-right: 50px;
         }
 
         @include media_from('xl') {
-            padding-bottom: 900px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
-        @include media_from('3xl') {
-            flex-direction: row;
-            gap: 30px;
-            padding-bottom: 0;
-            padding-left: 200px;
-        }
-
-        @media (min-width:2560px) {
-            padding-left: 350px;
-        }
-    
-        @media (min-width:3000px) {
-            max-width: 2643px;
-            padding-left: 0;
-            margin: 0 auto;
-        }
-
-        &__info-block {
-            width: 100%;
-            padding-left: 10px;
-            padding-right: 10px;
-
-            @include media_from('md') {
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-
+        &__header {
+            margin-bottom: 40px;
+ 
             @include media_from('lg') {
-                padding-left: 100px;
-                padding-right: 100px;
+                text-align: center;
+                margin-bottom: 60px;
             }
-
-            @include media_from('xl') {
-                padding-left: 135px;
-                padding-right: 135px;
-            }
-
+        
             @include media_from('3xl') {
-                width: 750px;
-                min-width: 750px;
-                padding-left: 0;
-                padding-right: 0;
+                margin-bottom: 80px;
             }
-
-            &__text {
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                margin-bottom: 20px;
-
-                @include media_from('lg') {
-                    font-size: 18px;
-                    margin-bottom: 30px;
-                }
-            
-                @include media_from('3xl') {
-                    font-size: 20px;
-                    margin-bottom: 40px;
-                }
+        }
+        &__content {
+            position: relative;
+            color: $font-color-black-main;
+            display: flex;
+            padding-bottom: 306px;
+    
+            @include media_from('sm') {
+                padding-bottom: 543px;
             }
-            &__text-red {
-                color: $color-red;
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                margin-bottom: 20px;
-
-                @include media_from('lg') {
-                    font-size: 18px;
-                    margin-bottom: 30px;
-                }
-            
-                @include media_from('3xl') {
-                    font-size: 20px;
-                    margin-bottom: 60px;
-                }
+    
+            @include media_from('xl') {
+                align-items: center;
+                gap: 30px;
+                padding-bottom: 0;
             }
-
-            &__price {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                @include media_from('lg') {
-                    gap: 15px;
+    
+            &__info-block {
+                width: 100%;
+    
+                @include media_from('xl') {
+                    width: 550px;
+                    min-width: 550px;
                 }
-            
+    
                 @include media_from('3xl') {
-                    gap: 20px;
+                    width: 750px;
+                    min-width: 750px;
                 }
-
-                &__item {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    &__name {
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-                        max-width: 231px;
-
-                        @include media_from('sm') {
-                            max-width: none;
-                        }
-        
-                        @include media_from('lg') {
-                            font-size: 18px;
-                        }
-                    
-                        @include media_from('3xl') {
-                            font-size: 20px;
-                        }
-                    }
-                    &__value {
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-
-                        @include media_from('sm') {
-                            font-size: 24px;
-                        }
-        
-                        @include media_from('lg') {
-                            font-size: 28px;
-                        }
-                    
-                        @include media_from('3xl') {
-                            font-size: 36px;
-                        }
-                    }
-                }
-                &__line {
-                    background-color: $color-blue;
-                    width: 100%;
-                    height: 1px;
-
+    
+                &__text {
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+    
                     @include media_from('lg') {
-                        max-width: 175px;
-                        height: 2px;
+                        font-size: 18px;
+                        margin-bottom: 30px;
                     }
                 
                     @include media_from('3xl') {
-                        height: 4px;
+                        font-size: 20px;
+                        margin-bottom: 40px;
                     }
                 }
-            }
-        }
-
-        &__image-block {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-
-            @include media_from('sm') {
-                gap: 16px;
-            }
-        
-            @include media_from('xl') {
-                gap: 30px;
-            }
-
-            @include media_from('3xl') {
-                position: static;
-                transform: none;
-            }
-
-            &__item {
-                width: 140px;
-                min-width: 140px;
-                height: 140px;
-                border-radius: 10px;
-                box-shadow: 3px -2px 40px 7px rgba(0, 0, 0, 0.10);
-                overflow: hidden;
-
-                @include media_from('sm') {
-                    width: 355px;
-                    min-width: 355px;
-                    height: 345px;
+                &__text-red {
+                    color: $color-red;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+    
+                    @include media_from('lg') {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                    }
+                
+                    @include media_from('3xl') {
+                        font-size: 20px;
+                        margin-bottom: 60px;
+                    }
                 }
+    
+                &__price {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+    
+                    @include media_from('lg') {
+                        gap: 15px;
+                    }
+                
+                    @include media_from('3xl') {
+                        gap: 20px;
+                    }
+    
+                    &__item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+
+                        @include media_from('sm') {
+                            gap: 20px;
+                        }
+    
+                        &__name {
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 1.2;
+                            max-width: 231px;
+    
+                            @include media_from('sm') {
+                                max-width: none;
+                            }
             
+                            @include media_from('lg') {
+                                font-size: 18px;
+                            }
+                        
+                            @include media_from('3xl') {
+                                font-size: 20px;
+                            }
+                        }
+                        &__value {
+                            white-space: nowrap;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 1.2;
+    
+                            @include media_from('sm') {
+                                font-size: 24px;
+                            }
+            
+                            @include media_from('lg') {
+                                font-size: 28px;
+                            }
+                        
+                            @include media_from('3xl') {
+                                font-size: 36px;
+                            }
+                        }
+                    }
+                    &__line {
+                        background-color: $color-blue;
+                        width: 100%;
+                        height: 1px;
+    
+                        @include media_from('sm') {
+                            max-width: 175px;
+                            height: 2px;
+                        }
+                    
+                        @include media_from('xl') {
+                            height: 4px;
+                        }
+                    }
+                }
+            }
+
+            &__slider {
+                max-width: 1863px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+    
                 @include media_from('xl') {
-                    width: 601px;
-                    min-width: 601px;
-                    height: 584px;
+                    position: static;
+                    transform: none;
                 }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-
-                &:nth-of-type(2) {
-                    width: 240px;
-                    min-width: 240px;
-                    height: 240px;
-
-                    @include media_from('sm') {
-                        width: 470px;
-                        min-width: 470px;
-                        height: 457px;
-                    }
-
-                    @include media_from('xl') {
-                        width: 601px;
-                        min-width: 601px;
-                        height: 584px;
-                    }
-                }
-            }
-        }
-
-        &__slider {
-            max-width: 2177px;
-            height: 240px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-
-            @include media_from('md') {
-                height: 457px;
-            }
-
-            @include media_from('xl') {
-                height: 837px;
-            }
-
-            @include media_from('3xl') {
-                position: static;
-                transform: none;
-                height: 584px;
             }
         }
     }
@@ -302,24 +204,24 @@
 .main-photo-video-swiper {
     max-width: 540px;
     min-width: 540px;
-    height: 240px;
+    height: 266px;
 
-    @include media_from('md') {
+    @include media_from('sm') {
         max-width: 1212px;
         min-width: 1212px;
-        height: 457px;
+        height: 483px;
     }
 
     @include media_from('xl') {
-        max-width: 2177px;
-        min-width: 2177px;
-        height: 837px;
+        max-width: 1105px;
+        min-width: 1105px;
+        height: 371px;
     }
 
     @include media_from('3xl') {
         max-width: 1863px;
         min-width: 1863px;
-        height: 584px;
+        height: 610px;
     }
 
     .main-photo-video-swiper-wrapper {
@@ -334,12 +236,12 @@
             justify-content: center;
             align-items: center;
 
-            @include media_from('md') {
+            @include media_from('sm') {
                 height: 457px;
             }
 
             @include media_from('xl') {
-                height: 837px;
+                height: 345px;
             }
 
             @include media_from('3xl') {
@@ -354,13 +256,13 @@
                 overflow: hidden;
                 transition: all 0.2s ease;
 
-                @include media_from('md') {
+                @include media_from('sm') {
                     width: 355px;
                     min-width: 355px;
                     height: 345px;
                 }
 
-                @include media_from('xl') {
+                @include media_from('3xl') {
                     width: 601px;
                     min-width: 601px;
                     height: 584px;
@@ -379,16 +281,16 @@
             width: 240px;
             height: 240px;
 
-            @include media_from('md') {
+            @include media_from('sm') {
                 min-width: 470px;
                 width: 470px;
                 height: 457px;
             }
 
             @include media_from('xl') {
-                min-width: 915px;
-                width: 915px;
-                height: 837px;
+                width: 355px;
+                min-width: 355px;
+                height: 345px;
             }
 
             @include media_from('3xl') {
@@ -400,16 +302,23 @@
 
         .swiper-slide-prev .slide-container {
             margin-right: auto;
-            @include media_from('3xl') {
+            @include media_from('xl') {
                 margin-right: 0;
             }
         }
 
         .swiper-slide-next .slide-container {
             margin-left: auto;
-            @include media_from('3xl') {
+            @include media_from('xl') {
                 margin-left: 0;
             }
         }
+    }
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 10px;
+
+    .swiper-scrollbar-drag {
+        background-color: $color-orange;
     }
 }

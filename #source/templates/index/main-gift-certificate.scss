@@ -23,11 +23,6 @@
             padding-right: 50px;
         }
 
-        @include media_from('lg') {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
         @include media_from('xl') {
             padding-left: 0px;
             padding-right: 0px;
@@ -55,19 +50,11 @@
                 }
             }
             &__text {
-                font-size: 15px;
+                font-size: 1rem;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 1.2;
                 color: $font-color-black-main;
-    
-                @include media_from('lg') {
-                    font-size: 18px;
-                }
-    
-                @include media_from('3xl') {
-                    font-size: 24px;
-                }
             }
         }
     
@@ -134,6 +121,10 @@
                 gap: 30px;
     
                 @include media_from('md') {
+                    grid-template-columns: repeat(2, minmax(145px, 480px));
+                }
+
+                @include media_from('xl') {
                     grid-template-columns: repeat(2, minmax(145px, 600px));
                 }
     

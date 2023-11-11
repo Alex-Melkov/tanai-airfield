@@ -1,0 +1,258 @@
+.driving-route {
+    color: $font-color-black-main;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media_from('sm') {
+        gap: 60px;
+    }
+
+    @include media_from('lg') {
+        flex-direction: row;
+    }
+
+    @include media_from('2xl') {
+        gap: 80px;
+    }
+
+    @include media_from('3xl') {
+        gap: 102px;
+    }
+
+    &__info-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        @include media_from('sm') {
+            gap: 20px;
+        }
+
+        @include media_from('lg') {
+            justify-content: space-between;
+            width: 37%;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @include media_from('sm') {
+                display: block;
+            }
+
+            &__title {
+                display: none;
+                @include media_from('sm') {
+                    display: block;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin-bottom: 40px;
+                }
+
+                @include media_from('lg') {
+                    margin-bottom: 20px;
+                }
+
+                @include media_from('3xl') {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &__image {
+                display: none;
+                @include media_from('sm') {
+                    display: block;
+                    margin-bottom: 40px;
+                }
+
+                @include media_from('lg') {
+                    margin-bottom: 20px;
+                }
+
+                @include media_from('3xl') {
+                    margin-bottom: 40px;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            &__route {
+                display: block;
+                @include media_from('sm') {
+                    display: none;
+                }
+
+                &__title {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    &__elem {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        &__text {
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+            }
+
+            &__travel-time {
+                display: flex;
+                flex-direction: column;
+
+                @include media_from('sm') {
+                    flex-direction: row;
+                    gap: 30px;
+                }
+
+                &__distance {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    @include media_from('sm') {
+                        gap: 20px;
+                    }
+
+                    &__value {
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.2;
+                        color: $color-orange;
+
+                        @include media_from('sm') {
+                            font-size: 28px;
+                        }
+
+                        @include media_from('lg') {
+                            font-size: 20px;
+                        }
+
+                        @include media_from('2xl') {
+                            font-size: 36px;
+                        }
+                    }
+
+                    &__title {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.2;
+
+                        @include media_from('sm') {
+                            font-size: 18px;
+                        }
+
+                        @include media_from('lg') {
+                            font-size: 15px;
+                        }
+
+                        @include media_from('2xl') {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                &__time {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    @include media_from('sm') {
+                        gap: 20px;
+                    }
+
+                    &__value {
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.2;
+                        color: $color-orange;
+
+                        @include media_from('sm') {
+                            font-size: 28px;
+                        }
+
+                        @include media_from('lg') {
+                            font-size: 20px;
+                        }
+
+                        @include media_from('2xl') {
+                            font-size: 36px;
+                        } 
+                    }
+
+                    &__title {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.2;
+
+                        @include media_from('sm') {
+                            font-size: 18px;
+                        }
+
+                        @include media_from('lg') {
+                            font-size: 15px;
+                        }
+
+                        @include media_from('2xl') {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__line {
+            width: 100%;
+            height: 1px;
+            background-color: $color-blue;
+
+            @include media_from('lg') {
+                max-width: 589px;
+            }
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 350px;
+
+        @include media_from('sm') {
+            height: 450px;
+        }
+
+        @include media_from('md') {
+            height: 550px;
+        }
+
+        @include media_from('lg') {
+            width: 58%;
+            height: auto;
+        }
+    }
+}
