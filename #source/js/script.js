@@ -40,8 +40,9 @@ window.addEventListener('load', function () {
 
   // Скрипт добавления еще одного инпута с именем в modal-subscribe
   const btn_add_person = document.querySelector(
-    '.modal-subscribe__form__wrapper__name-block__add-person',
+    '.modal-subscribe__form__wrapper__name-block__buttons__add-person',
   );
+  const btn_remove_person = document.querySelector('.modal-subscribe__form__wrapper__name-block__buttons__remove-person');
 
   btn_add_person.addEventListener('click', function (e) {
     const container_inputs = document.querySelector(
@@ -50,10 +51,8 @@ window.addEventListener('load', function () {
     const inputs = document.querySelectorAll(
       '.modal-subscribe__form__wrapper__name-block__inputs__item',
     );
-    //Если количество инпутов равно 5, то отключаем кнопку
-    if (inputs.length === 5) {
-      btn_add_person.setAttribute('disabled', true);
-    } else {
+
+    function addInput () {
       let input = document.createElement('input');
       input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
       input.setAttribute('type', 'text');
@@ -61,8 +60,40 @@ window.addEventListener('load', function () {
       input.setAttribute('placeholder', 'Имя и Фамилия');
       input.setAttribute('required', true);
       container_inputs.append(input);
+    };
+
+    if (btn_remove_person.classList.contains('hidden')) {
+      btn_remove_person.classList.remove('hidden')
+    }
+
+    if (inputs.length < 4) {
+      addInput();
+    } else if (inputs.length === 4) {
+      addInput();
+      btn_add_person.setAttribute('disabled', true);
     }
   });
+
+  // Скрипт удаления одного инпута с именем из modal-subscribe
+  btn_remove_person.addEventListener('click', function (e) {
+    const inputs = document.querySelectorAll(
+      '.modal-subscribe__form__wrapper__name-block__inputs__item',
+    );
+
+    function removeInput(input) {
+      input.remove()
+    };
+
+    if (inputs.length > 2) {
+      if (inputs.length === 5) {
+        btn_add_person.removeAttribute('disabled');
+      }
+      removeInput(inputs[inputs.length - 1])
+    } else if (inputs.length === 2) {
+      removeInput(inputs[inputs.length - 1])
+      btn_remove_person.classList.add('hidden')
+    }
+  })
   //===================================================================================
 
   // Скрипт плавного перехода по якорям
