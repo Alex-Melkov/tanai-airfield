@@ -42,7 +42,9 @@ window.addEventListener('load', function () {
   const btn_add_person = document.querySelector(
     '.modal-subscribe__form__wrapper__name-block__buttons__add-person',
   );
-  const btn_remove_person = document.querySelector('.modal-subscribe__form__wrapper__name-block__buttons__remove-person');
+  const btn_remove_person = document.querySelector(
+    '.modal-subscribe__form__wrapper__name-block__buttons__remove-person',
+  );
 
   btn_add_person.addEventListener('click', function (e) {
     const container_inputs = document.querySelector(
@@ -52,7 +54,7 @@ window.addEventListener('load', function () {
       '.modal-subscribe__form__wrapper__name-block__inputs__item',
     );
 
-    function addInput () {
+    function addInput() {
       let input = document.createElement('input');
       input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
       input.setAttribute('type', 'text');
@@ -60,10 +62,10 @@ window.addEventListener('load', function () {
       input.setAttribute('placeholder', 'Имя и Фамилия');
       input.setAttribute('required', true);
       container_inputs.append(input);
-    };
+    }
 
     if (btn_remove_person.classList.contains('hidden')) {
-      btn_remove_person.classList.remove('hidden')
+      btn_remove_person.classList.remove('hidden');
     }
 
     if (inputs.length < 4) {
@@ -81,19 +83,19 @@ window.addEventListener('load', function () {
     );
 
     function removeInput(input) {
-      input.remove()
-    };
+      input.remove();
+    }
 
     if (inputs.length > 2) {
       if (inputs.length === 5) {
         btn_add_person.removeAttribute('disabled');
       }
-      removeInput(inputs[inputs.length - 1])
+      removeInput(inputs[inputs.length - 1]);
     } else if (inputs.length === 2) {
-      removeInput(inputs[inputs.length - 1])
-      btn_remove_person.classList.add('hidden')
+      removeInput(inputs[inputs.length - 1]);
+      btn_remove_person.classList.add('hidden');
     }
-  })
+  });
   //===================================================================================
 
   // Скрипт плавного перехода по якорям
@@ -195,6 +197,30 @@ window.addEventListener('load', function () {
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
+    },
+  });
+  //===================================================================================
+
+  const corporate_clients_top_swiper_1 = new Swiper('.corporate-clients-top-swiper-1', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.corporate-clients-top-swiper-1-pagination',
+      clickable: true,
+    },
+  });
+  //===================================================================================
+
+  const corporate_clients_top_swiper_2 = new Swiper('.corporate-clients-top-swiper-2', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.corporate-clients-top-swiper-2-pagination',
+      clickable: true,
     },
   });
   //===================================================================================
