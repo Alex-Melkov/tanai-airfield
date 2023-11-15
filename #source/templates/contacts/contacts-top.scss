@@ -1,0 +1,45 @@
+.contacts-top {
+    width: 100%;
+    padding-bottom: 60px;
+    color: $font-color-black-main;
+
+    @include media_from('lg') {
+        padding-bottom: 80px;
+    }
+
+    @include media_from('3xl') {
+        padding-bottom: 100px;
+    }
+
+    .contacts-top__container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @include media_from('sm') {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include media_from('xl') {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 30px;
+
+            @include media_from('sm') {
+                margin-bottom: 40px;
+            }
+        }
+
+        .contacts-top__container__content {
+        }
+    }
+}

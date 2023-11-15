@@ -1,11 +1,11 @@
-.btn {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.btn-orange {
+.button-orange {
     width: 248px;
     height: 59px;
     border-radius: 50px;
@@ -36,7 +36,7 @@
     }
 }
 
-.btn-white {
+.button-white {
     width: 147px;
     height: 35px;
     font-size: 15px;
@@ -67,7 +67,7 @@
     }
 }
 
-.btn-blue {
+.button-blue {
     width: 166px;
     height: 48px;
     font-size: 15px;

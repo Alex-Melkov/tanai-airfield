@@ -248,12 +248,12 @@ window.addEventListener('load', function () {
   });
   //===================================================================================
 
-  //Инициализация мини-карты
-  let map = document.getElementById('map');
+  //Инициализация мини-карты Схема проезда на Аэродром Танай
+  let map_1 = document.getElementById('map-1');
 
-  if (map) {
+  if (map_1) {
     DG.then(function () {
-      map = DG.map('map', {
+      map_1 = DG.map('map-1', {
         center: [54.760303, 85.112495],
         zoom: 13,
       });
@@ -261,10 +261,73 @@ window.addEventListener('load', function () {
         iconUrl: 'img/pin.svg' /* Иконка маркера */,
         iconAnchor: [71, 67],
         popupAnchor: [0, 20],
-        className: 'map-icon',
+        className: 'map-1-icon',
         iconSize: [141, 67] /* Размер иконки */,
       });
-      DG.marker([54.760303, 85.112495], { icon: mapicon }).addTo(map); /* Координаты маркера */
+      DG.marker([54.760303, 85.112495], { icon: mapicon }).addTo(map_1); /* Координаты маркера */
+    });
+  }
+  //===================================================================================
+
+  //Инициализация мини-карты Представительство Аэродрома «Танай» в Новосибирске
+  let map_2 = document.getElementById('map-2');
+
+  if (map_2) {
+    DG.then(function () {
+      map_2 = DG.map('map-2', {
+        center: [54.924019, 83.000317],
+        zoom: 13,
+      });
+      mapicon = DG.icon({
+        iconUrl: 'img/pin.svg' /* Иконка маркера */,
+        iconAnchor: [71, 67],
+        popupAnchor: [0, 20],
+        className: 'map-2-icon',
+        iconSize: [141, 67] /* Размер иконки */,
+      });
+      DG.marker([54.924019, 83.000317], { icon: mapicon }).addTo(map_2); /* Координаты маркера */
+    });
+  }
+  //===================================================================================
+
+  //Инициализация мини-карты Представительство Аэродрома «Танай» в Кемерово
+  let map_3 = document.getElementById('map-3');
+
+  if (map_3) {
+    DG.then(function () {
+      map_3 = DG.map('map-3', {
+        center: [55.356488, 86.120525],
+        zoom: 13,
+      });
+      mapicon = DG.icon({
+        iconUrl: 'img/pin.svg' /* Иконка маркера */,
+        iconAnchor: [71, 67],
+        popupAnchor: [0, 20],
+        className: 'map-3-icon',
+        iconSize: [141, 67] /* Размер иконки */,
+      });
+      DG.marker([55.356488, 86.120525], { icon: mapicon }).addTo(map_3); /* Координаты маркера */
+    });
+  }
+  //===================================================================================
+
+  //Инициализация мини-карты Гостиничный комплекс Аэродром Танай
+  let map_4 = document.getElementById('map-4');
+
+  if (map_4) {
+    DG.then(function () {
+      map_4 = DG.map('map-4', {
+        center: [54.754724, 85.114861],
+        zoom: 13,
+      });
+      mapicon = DG.icon({
+        iconUrl: 'img/pin.svg' /* Иконка маркера */,
+        iconAnchor: [71, 67],
+        popupAnchor: [0, 20],
+        className: 'map-4-icon',
+        iconSize: [141, 67] /* Размер иконки */,
+      });
+      DG.marker([54.754724, 85.114861], { icon: mapicon }).addTo(map_4); /* Координаты маркера */
     });
   }
   //===================================================================================
@@ -272,5 +335,38 @@ window.addEventListener('load', function () {
   //Отключаем перетаскивание у модалок
   Fancybox.bind('[data-fancybox]', {
     dragToClose: false,
+  });
+  //===================================================================================
+
+  //Фильтр табов на странице Контакты
+  let tab_item = document.querySelectorAll('.contacts-bottom__container__content__tab-list__item');
+  let adress_item = document.querySelectorAll('.contacts-bottom__container__content__adress__item');
+
+  let active = [];
+  for (let i = 0; i < tab_item.length; i++) {
+      active.push(tab_item[i])
+  }
+
+  document.querySelector('.contacts-bottom__container__content__tab-list').addEventListener('click', event => {
+      if (event.target.tagName !== 'LI') return false;
+
+      
+      let filterClass = event.target.dataset['filter'].slice(-1);
+      let filterClass2 = event.target.dataset['filter'];
+
+      adress_item.forEach( elem => {
+          elem.classList.remove('visible');
+          if (elem.classList.contains(filterClass2)) {
+              elem.classList.add('visible')
+          }
+      });
+
+
+      tab_item.forEach( clas => {
+          clas.classList.remove('active-tab')
+          if (!active[filterClass].classList.contains('active-tab')) {
+              active[filterClass].classList.add('active-tab')
+          }
+      });
   });
 });

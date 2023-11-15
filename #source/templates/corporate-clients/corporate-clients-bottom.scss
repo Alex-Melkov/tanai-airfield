@@ -169,6 +169,7 @@
         .corporate-clients-bottom-swiper-slide {
             width: 100%;
             height: auto;
+            cursor: grab;
             .slide-content {
                 display: flex;
                 flex-direction: column;
@@ -188,10 +189,11 @@
                     img {
                         width: 100%;
                         height: auto;
+                        object-fit: cover;
                         aspect-ratio: 8 / 5;
 
                         @include media_from('lg') {
-                            aspect-ratio: auto;
+                            aspect-ratio: 6 / 5;
                         }
                     }
                 }

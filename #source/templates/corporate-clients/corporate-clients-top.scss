@@ -169,6 +169,7 @@
         .corporate-clients-top-swiper-1-slide {
             width: 100%;
             height: auto;
+            cursor: grab;
             .slide-content {
                 width: 100%;
                 height: auto;
@@ -238,6 +239,7 @@
         .corporate-clients-top-swiper-2-slide {
             width: 100%;
             height: auto;
+            cursor: grab;
             .slide-content {
                 width: 100%;
                 height: auto;
@@ -245,7 +247,7 @@
                 overflow: hidden;
 
                 img {
-                    max-width: 100%;
+                    width: 100%;
                     height: auto;
                 }
             }

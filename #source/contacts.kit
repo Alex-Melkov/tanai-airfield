@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css.map" type="text/css" />
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mask"></div>
+      <div class="content">
+        <!-- @import "layout/header/header.html" -->
+        <main>
+          <h2 class="contacts-header heading-h2 container">Контакты</h2>
+            <section class="contacts-top">
+                <div class="contacts-top__container container">
+                    <h3>Схема проезда на Аэродром Танай</h3>
+                    <div class="contacts-top__container__content">
+                        <!-- @import "components/driving-route/driving-route.html" -->
+                    </div>
+                </div>
+            </section>
+            <section class="contacts-bottom">
+                <div class="contacts-bottom__container container">
+                    <div class="contacts-bottom__container__content">
+                        <ul class="contacts-bottom__container__content__tab-list">
+                            <li class="contacts-bottom__container__content__tab-list__item active-tab" data-filter="item-0">Представительство Аэродрома «Танай» в Новосибирске</li>
+                            <li class="contacts-bottom__container__content__tab-list__item" data-filter="item-1">Представительство Аэродрома «Танай» в Кемерово</li>
+                            <li class="contacts-bottom__container__content__tab-list__item" data-filter="item-2">Гостиничный комплекс Аэродром Танай</li>
+                        </ul>
+                        <div class="contacts-bottom__container__content__adress">
+                            <div class="contacts-bottom__container__content__adress__item item-0 visible">
+                                <ul class="contacts-bottom__container__content__adress__item__info-list">
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Адрес</h4>
+                                        <p>рп. Краснообск Восточная 31/1</p>
+                                    </li>
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Телефон</h4>
+                                        <a href="tel:79139177965">+7 (913) 917-79-65</a>
+                                    </li>
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Режим работы</h4>
+                                        <p>Пн-Пт с 10:00 до18:00</p>
+                                    </li>
+                                </ul>
+                                <div id="map-2" class="contacts-bottom__container__content__adress__item__map"></div>
+                            </div>
+                            <div class="contacts-bottom__container__content__adress__item item-1">
+                                <ul class="contacts-bottom__container__content__adress__item__info-list">
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Адрес</h4>
+                                        <p>
+                                            Аэротруба «Кузбасс Арена»
+                                            Вход №1, 2 этаж, ресепшн
+                                            г. Кемерово, Притомский проспект, 10
+                                        </p>
+                                    </li>
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Телефон</h4>
+                                        <a href="tel:78003011633">+7 (800) 301-16-33</a>
+                                    </li>
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Режим работы</h4>
+                                        <p>Пн-Вс 10:00 - 22:00</p>
+                                    </li>
+                                </ul>
+                                <div id="map-3" class="contacts-bottom__container__content__adress__item__map"></div>
+                            </div>
+                            <div class="contacts-bottom__container__content__adress__item item-2">
+                                <ul class="contacts-bottom__container__content__adress__item__info-list">
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Адрес</h4>
+                                        <p>
+                                            Кемеровская обл, р-н Промышленновский, село Журавлево, ул Авиационная, 1
+                                        </p>
+                                    </li>
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Телефон</h4>
+                                        <a href="tel:79050688775">+7 (905) 068-87-75</a>
+                                    </li>
+                                    <li class="contacts-bottom__container__content__adress__item__info-list__elem">
+                                        <h4>Режим работы</h4>
+                                        <p>Пн-Вс 09:00 - 21:00</p>
+                                    </li>
+                                </ul>
+                                <div id="map-4" class="contacts-bottom__container__content__adress__item__map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+      </div>
+      <!-- @import "layout/footer/footer.html" -->
+    </div>
+    <div id="modal-subscribe" class="fancybox__content" style="display: none">
+      <!-- @import "layout/modal-subscribe/modal-subscribe.html" -->
+    </div<script type="text/javascript" src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>>
+    <script type="text/javascript" src="js/fancybox.umd.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
