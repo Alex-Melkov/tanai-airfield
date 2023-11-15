@@ -201,6 +201,7 @@ window.addEventListener('load', function () {
   });
   //===================================================================================
 
+  //Инициализация свайпера Корпоративы
   const corporate_clients_top_swiper_1 = new Swiper('.corporate-clients-top-swiper-1', {
     direction: 'horizontal',
     loop: true,
@@ -213,6 +214,7 @@ window.addEventListener('load', function () {
   });
   //===================================================================================
 
+  //Инициализация свайпера Свадебные торжества
   const corporate_clients_top_swiper_2 = new Swiper('.corporate-clients-top-swiper-2', {
     direction: 'horizontal',
     loop: true,
@@ -220,6 +222,27 @@ window.addEventListener('load', function () {
     spaceBetween: 30,
     pagination: {
       el: '.corporate-clients-top-swiper-2-pagination',
+      clickable: true,
+    },
+  });
+  //===================================================================================
+
+  //Инициализация свайпера Конференц-зал
+  const corporate_clients_bottom_swiper = new Swiper('.corporate-clients-bottom-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    breakpoints: {
+      320: {
+        spaceBetween: 20,
+        slidesPerView: 1,
+      },
+      991: {
+        spaceBetween: 25,
+        slidesPerView: 3,
+      },
+    },
+    pagination: {
+      el: '.corporate-clients-bottom-swiper-pagination',
       clickable: true,
     },
   });
