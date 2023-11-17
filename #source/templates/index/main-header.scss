@@ -207,6 +207,7 @@
 
                 &:hover,
                 &:active {
+                    color: $font-color-white;
                     transform: scale(1.3);
                     opacity: 1;
                 }

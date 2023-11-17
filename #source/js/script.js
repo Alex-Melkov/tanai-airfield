@@ -341,32 +341,33 @@ window.addEventListener('load', function () {
   //Фильтр табов на странице Контакты
   let tab_item = document.querySelectorAll('.contacts-bottom__container__content__tab-list__item');
   let adress_item = document.querySelectorAll('.contacts-bottom__container__content__adress__item');
+  let tab_list = document.querySelector('.contacts-bottom__container__content__tab-list');
 
-  let active = [];
-  for (let i = 0; i < tab_item.length; i++) {
-      active.push(tab_item[i])
-  }
+  if (tab_list) {
+    let active = [];
+    for (let i = 0; i < tab_item.length; i++) {
+      active.push(tab_item[i]);
+    }
 
-  document.querySelector('.contacts-bottom__container__content__tab-list').addEventListener('click', event => {
+    tab_list.addEventListener('click', (event) => {
       if (event.target.tagName !== 'LI') return false;
 
-      
       let filterClass = event.target.dataset['filter'].slice(-1);
       let filterClass2 = event.target.dataset['filter'];
 
-      adress_item.forEach( elem => {
-          elem.classList.remove('visible');
-          if (elem.classList.contains(filterClass2)) {
-              elem.classList.add('visible')
-          }
+      adress_item.forEach((elem) => {
+        elem.classList.remove('visible');
+        if (elem.classList.contains(filterClass2)) {
+          elem.classList.add('visible');
+        }
       });
 
-
-      tab_item.forEach( clas => {
-          clas.classList.remove('active-tab')
-          if (!active[filterClass].classList.contains('active-tab')) {
-              active[filterClass].classList.add('active-tab')
-          }
+      tab_item.forEach((clas) => {
+        clas.classList.remove('active-tab');
+        if (!active[filterClass].classList.contains('active-tab')) {
+          active[filterClass].classList.add('active-tab');
+        }
       });
-  });
+    });
+  }
 });

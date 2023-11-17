@@ -108,11 +108,12 @@
             }
 
             &__adress {
-                width: 300%;
+                width: 100%;
                 display: flex;
                 &__item {
                     position: relative;
                     width: 100%;
+                    min-width: 100%;
                     display: flex;
                     opacity: 0;
                     gap: 5%;

@@ -1,0 +1,88 @@
+.blog-main {
+    width: 100%;
+    padding-bottom: 70px;
+
+    @include media_from('lg') {
+        padding-bottom: 140px;
+    }
+
+    @include media_from('3xl') {
+        padding-bottom: 200px;
+    }
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @include media_from('sm') {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include media_from('xl') {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+
+            @include media_from('sm') {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 30px;
+                row-gap: 40px;
+            }
+    
+            @include media_from('lg') {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &__item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+
+                @include media_from('sm') {
+                    gap: 16px;
+                }
+        
+                @include media_from('lg') {
+                    gap: 20px;
+                }
+
+                &__image {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 0.85rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-align: center;
+                    color: $font-color-black-main;
+
+                    @include media_from('sm') {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

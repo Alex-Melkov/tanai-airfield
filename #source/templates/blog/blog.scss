@@ -1,0 +1,30 @@
+@import "./blog-main.scss";
+
+.blog-header {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-top: 245px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include media_from('sm') {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include media_from('lg') {
+        margin-bottom: 80px;
+        text-align: left;
+    }
+
+    @include media_from('xl') {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @include media_from('3xl') {
+        margin-top: 226px;
+    }
+}
