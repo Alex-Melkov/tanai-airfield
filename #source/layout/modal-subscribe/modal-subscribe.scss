@@ -1,6 +1,6 @@
 .fancybox__container {
     .fancybox__carousel {
-        .fancybox__slide  {
+        .fancybox__slide .fancybox__content.fancybox-modal-subscribe  {
             padding: 0;
             background-color: $font-color-white;
 
@@ -9,7 +9,7 @@
                 padding: 40px;
             }
 
-            .fancybox__content {
+            .fancybox__content.fancybox-modal-subscribe {
                 width: 100%;
                 max-width: 1230px;
                 display: flex;

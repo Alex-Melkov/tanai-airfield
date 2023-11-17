@@ -1,0 +1,49 @@
+@import "./article-main.scss";
+
+.article-header {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-top: 245px;
+    margin-bottom: 60px;
+    text-align: left;
+
+    @include media_from('sm') {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include media_from('lg') {
+        margin-bottom: 80px;
+    }
+
+    @include media_from('xl') {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @include media_from('3xl') {
+        margin-top: 226px;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.2;
+        color: $font-color-black-main;
+        margin: 0;
+        padding: 0;
+
+        @include media_from('sm') {
+            font-size: 1.35rem;
+        }
+
+        @include media_from('lg') {
+            width: 66%;
+            font-size: 1.5rem;
+        }
+    }
+}

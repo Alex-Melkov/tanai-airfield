@@ -2002,17 +2002,17 @@ body.lock {
   opacity: 0.8;
 }
 
-.fancybox__container .fancybox__carousel .fancybox__slide {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe {
   padding: 0;
   background-color: #FDFDFD;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe {
     background-color: transparent;
     padding: 40px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe {
   width: 100%;
   max-width: 1230px;
   display: flex;
@@ -2021,19 +2021,19 @@ body.lock {
   background-color: #FDFDFD;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe {
     height: auto;
     border-radius: 40px;
     padding: 60px 40px 40px 40px;
     box-shadow: 3px 9px 29px 7px rgba(0, 0, 0, 0.1);
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe {
   width: 100%;
   max-width: 703px;
   color: #1F1E1E;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__header {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__header {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2043,29 +2043,29 @@ body.lock {
   text-align: center;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__header {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__header {
     font-size: 26px;
     margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__header {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__header {
     font-size: 36px;
     margin-bottom: 80px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block {
     margin-bottom: 80px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__title {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__title {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -2074,50 +2074,50 @@ body.lock {
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__title {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__title {
     font-size: 24px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content {
     flex-direction: row;
     gap: 30px;
   }
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content {
     gap: 40px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item:hover .modal-subscribe__form__wrapper__height-block__content__item__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item:hover .modal-subscribe__form__wrapper__height-block__content__item__text {
   color: #7b97fd;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item input {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item input {
   visibility: hidden;
   position: absolute;
   top: 0;
   left: -20px;
   transform: scale(0);
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item input:checked + .modal-subscribe__form__wrapper__height-block__content__item__checkbox {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item input:checked + .modal-subscribe__form__wrapper__height-block__content__item__checkbox {
   background-image: url("/img/modal-subscribe-checked-icon-blue.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item__checkbox {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item__checkbox {
   width: 24px;
   min-width: 24px;
   height: 24px;
@@ -2125,13 +2125,13 @@ body.lock {
   background-color: #3455C9;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item__checkbox {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item__checkbox {
     width: 18px;
     min-width: 18px;
     height: 18px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item__text {
   font-family: "Noto Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2141,15 +2141,15 @@ body.lock {
   transition: color 0.3s ease;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__height-block__content__item__text {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__height-block__content__item__text {
     font-size: 16px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__inputs__item {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__inputs__item {
   width: 100%;
   height: 43px;
   border-radius: 100px;
@@ -2166,30 +2166,30 @@ body.lock {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__inputs__item {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__inputs__item {
     height: 53px;
     font-size: 18px;
     padding: 17px 30px 18px 30px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__inputs__item::placeholder {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__inputs__item::placeholder {
   opacity: 0.8;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__inputs__item:focus {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__inputs__item:focus {
   outline: 1px solid #3455C9;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons {
   width: max-content;
   margin: 0 auto;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person {
   background-color: transparent;
   gap: 10px;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person__icon {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person__icon {
   transition: all 0.3s ease;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person__text {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2198,25 +2198,25 @@ body.lock {
   color: #3455C9;
   transition: color 0.3s ease;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person:hover .modal-subscribe__form__wrapper__name-block__buttons__add-person__icon {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person:hover .modal-subscribe__form__wrapper__name-block__buttons__add-person__icon {
   stroke: #7b97fd;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person:hover .modal-subscribe__form__wrapper__name-block__buttons__add-person__icon path {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person:hover .modal-subscribe__form__wrapper__name-block__buttons__add-person__icon path {
   fill: #7b97fd;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person:hover .modal-subscribe__form__wrapper__name-block__buttons__add-person__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person:hover .modal-subscribe__form__wrapper__name-block__buttons__add-person__text {
   color: #7b97fd;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__add-person:disabled {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__add-person:disabled {
   opacity: 0.5;
   cursor: default;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person {
   background-color: transparent;
   gap: 10px;
   margin-top: 20px;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person__icon {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person__icon {
   position: relative;
   width: 24px;
   height: 24px;
@@ -2224,7 +2224,7 @@ body.lock {
   border: 1px solid #3455C9;
   transition: all 0.3s ease;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person__icon::before {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person__icon::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2234,7 +2234,7 @@ body.lock {
   height: 1px;
   background-color: #3455C9;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person__text {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2243,21 +2243,21 @@ body.lock {
   color: #3455C9;
   transition: color 0.3s ease;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person:hover .modal-subscribe__form__wrapper__name-block__buttons__remove-person__icon::before {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person:hover .modal-subscribe__form__wrapper__name-block__buttons__remove-person__icon::before {
   height: 2px;
   background-color: #7b97fd;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person:hover .modal-subscribe__form__wrapper__name-block__buttons__remove-person__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person:hover .modal-subscribe__form__wrapper__name-block__buttons__remove-person__text {
   color: #7b97fd;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person:disabled {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person:disabled {
   opacity: 0.5;
   cursor: default;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__name-block__buttons__remove-person.hidden {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__name-block__buttons__remove-person.hidden {
   display: none;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2265,25 +2265,25 @@ body.lock {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block {
     margin-bottom: 30px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__tel {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__tel {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__tel {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__tel {
     max-width: 340px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__tel input {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__tel input {
   width: 100%;
   height: 43px;
   border-radius: 100px;
@@ -2299,27 +2299,27 @@ body.lock {
   color: #232424;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__tel input {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__tel input {
     height: 53px;
     font-size: 18px;
     padding: 17px 30px 18px 30px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__tel input::placeholder {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__tel input::placeholder {
   opacity: 0.8;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__tel input:focus {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__tel input:focus {
   outline: 1px solid #3455C9;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__email {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__email {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__email {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__email {
     max-width: 340px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__email input {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__email input {
   width: 100%;
   height: 43px;
   border-radius: 100px;
@@ -2335,28 +2335,28 @@ body.lock {
   color: #232424;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__email input {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__email input {
     height: 53px;
     font-size: 18px;
     padding: 17px 30px 18px 30px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__email input::placeholder {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__email input::placeholder {
   opacity: 0.8;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__tel-and-email-block__email input:focus {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__tel-and-email-block__email input:focus {
   outline: 1px solid #3455C9;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__gift-block {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__gift-block {
   width: 100%;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__gift-block {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__gift-block {
     margin-bottom: 30px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__gift-block input {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__gift-block input {
   width: 100%;
   height: 43px;
   border-radius: 100px;
@@ -2372,50 +2372,50 @@ body.lock {
   color: #232424;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__gift-block input {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__gift-block input {
     height: 53px;
     font-size: 18px;
     padding: 17px 30px 18px 30px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__gift-block input::placeholder {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__gift-block input::placeholder {
   opacity: 0.8;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__gift-block input:focus {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__gift-block input:focus {
   outline: 1px solid #3455C9;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block {
     margin-bottom: 60px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container input {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container input {
   visibility: hidden;
   position: absolute;
   top: 0;
   left: -20px;
   transform: scale(0);
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container input:checked + .modal-subscribe__form__wrapper__personal-data-block__container__checkbox {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container input:checked + .modal-subscribe__form__wrapper__personal-data-block__container__checkbox {
   background-image: url("/img/modal-subscribe-checked-icon-black.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container__checkbox {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container__checkbox {
   width: 12px;
   min-width: 12px;
   height: 12px;
@@ -2423,13 +2423,13 @@ body.lock {
   background-color: #1F1E1E;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container__checkbox {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container__checkbox {
     width: 18px;
     min-width: 18px;
     height: 18px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container__text {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container__text {
   font-family: "Noto Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -2438,11 +2438,11 @@ body.lock {
   color: #1F1E1E;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__personal-data-block__container__text {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__personal-data-block__container__text {
     font-size: 16px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__send-btn {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__send-btn {
   width: 248px;
   height: 59px;
   border-radius: 50px;
@@ -2455,7 +2455,7 @@ body.lock {
   margin: 0 auto;
 }
 @media only screen and (min-width: 576px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__send-btn {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__send-btn {
     width: 315px;
     height: 73px;
     font-size: 18px;
@@ -2463,14 +2463,14 @@ body.lock {
   }
 }
 @media only screen and (min-width: 991px) {
-  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__send-btn {
+  .fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__send-btn {
     width: 354px;
     height: 78px;
     font-size: 20px;
     line-height: 78px;
   }
 }
-.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content .modal-subscribe__form__wrapper__send-btn:hover {
+.fancybox__container .fancybox__carousel .fancybox__slide .fancybox__content.fancybox-modal-subscribe .fancybox__content.fancybox-modal-subscribe .modal-subscribe__form__wrapper__send-btn:hover {
   opacity: 0.8;
 }
 
@@ -7851,7 +7851,7 @@ body.lock {
   font-size: 0.85rem;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.2;
   text-align: center;
   color: #1F1E1E;
 }
@@ -7891,6 +7891,175 @@ body.lock {
 @media only screen and (min-width: 1921px) {
   .blog-header {
     margin-top: 226px;
+  }
+}
+
+.article-main {
+  width: 100%;
+  padding-bottom: 70px;
+  color: #1F1E1E;
+}
+@media only screen and (min-width: 991px) {
+  .article-main {
+    padding-bottom: 140px;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .article-main {
+    padding-bottom: 200px;
+  }
+}
+.article-main__container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media only screen and (min-width: 576px) {
+  .article-main__container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .article-main__container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.article-main__container__content {
+  width: 100%;
+}
+.article-main__container__content__text {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .article-main__container__content__text {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .article-main__container__content__text {
+    margin-bottom: 40px;
+  }
+}
+.article-main__container__content__text h3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 576px) {
+  .article-main__container__content__text h3 {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .article-main__container__content__text h3 {
+    margin-bottom: 30px;
+  }
+}
+.article-main__container__content__text p {
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .article-main__container__content__text p {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .article-main__container__content__text p {
+    margin-bottom: 40px;
+  }
+}
+.article-main__container__content__text p:last-of-type {
+  margin-bottom: 0;
+}
+.article-main__container__content__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .article-main__container__content__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 991px) {
+  .article-main__container__content__images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .article-main__container__content__images {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+.article-main__container__content__images a {
+  cursor: pointer;
+}
+.article-main__container__content__images a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-header {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  margin-top: 245px;
+  margin-bottom: 60px;
+  text-align: left;
+}
+@media only screen and (min-width: 576px) {
+  .article-header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .article-header {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .article-header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .article-header {
+    margin-top: 226px;
+  }
+}
+.article-header h2 {
+  width: 100%;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1F1E1E;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 576px) {
+  .article-header h2 {
+    font-size: 1.35rem;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .article-header h2 {
+    width: 66%;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
