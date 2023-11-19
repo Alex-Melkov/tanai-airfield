@@ -99,8 +99,12 @@
     
                     @include media_from('xl') {
                         top: 50px;
-                        left: 25px;
+                        left: -10%;
                         transform: rotate(-15deg);
+                    }
+
+                    @include media_from('3xl') {
+                        left: 25px;
                     }
                 }
     
@@ -110,8 +114,12 @@
                     @include media_from('xl') {
                         display: block;
                         top: 50px;
-                        right: 25px;
+                        right: -10%;
                         transform: rotate(15deg);
+                    }
+
+                    @include media_from('3xl') {
+                        right: 25px;
                     }
                 }
             }

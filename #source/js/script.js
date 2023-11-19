@@ -15,6 +15,7 @@ window.addEventListener('load', function () {
 
   //Скрипт добавляет/удаляет паддинг справа header при открытии/закрытии модального окна
   const btns_open_modal = document.querySelectorAll('[data-fancybox]');
+  const btns_open_modal_subscribe = document.querySelectorAll('[data-fancybox="modal-subscribe"]');
   const header = document.querySelector('.header');
 
   for (let btn of btns_open_modal) {
@@ -23,6 +24,19 @@ window.addEventListener('load', function () {
 
       lock.classList.add('lock');
       header.style.paddingRight = lockPaddingValue;
+    });
+  }
+
+  for (let btn of btns_open_modal_subscribe) {
+    btn.addEventListener('click', function (e) {
+      let lockPaddingValue = window.innerWidth - header.offsetWidth + 'px';
+
+      lock.classList.add('lock');
+      header.style.paddingRight = lockPaddingValue;
+      setTimeout(function () {
+        const fancybox__container = document.querySelector('.fancybox__container');
+        fancybox__container.classList.add('fancybox-modal-subscribe');
+      }, 0);
     });
   }
 
@@ -46,56 +60,60 @@ window.addEventListener('load', function () {
     '.modal-subscribe__form__wrapper__name-block__buttons__remove-person',
   );
 
-  btn_add_person.addEventListener('click', function (e) {
-    const container_inputs = document.querySelector(
-      '.modal-subscribe__form__wrapper__name-block__inputs',
-    );
-    const inputs = document.querySelectorAll(
-      '.modal-subscribe__form__wrapper__name-block__inputs__item',
-    );
+  if (btn_add_person) {
+    btn_add_person.addEventListener('click', function (e) {
+      const container_inputs = document.querySelector(
+        '.modal-subscribe__form__wrapper__name-block__inputs',
+      );
+      const inputs = document.querySelectorAll(
+        '.modal-subscribe__form__wrapper__name-block__inputs__item',
+      );
 
-    function addInput() {
-      let input = document.createElement('input');
-      input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
-      input.setAttribute('type', 'text');
-      input.setAttribute('name', 'name');
-      input.setAttribute('placeholder', 'Имя и Фамилия');
-      input.setAttribute('required', true);
-      container_inputs.append(input);
-    }
+      function addInput() {
+        let input = document.createElement('input');
+        input.className = 'modal-subscribe__form__wrapper__name-block__inputs__item';
+        input.setAttribute('type', 'text');
+        input.setAttribute('name', 'name');
+        input.setAttribute('placeholder', 'Имя и Фамилия');
+        input.setAttribute('required', true);
+        container_inputs.append(input);
+      }
 
-    if (btn_remove_person.classList.contains('hidden')) {
-      btn_remove_person.classList.remove('hidden');
-    }
+      if (btn_remove_person.classList.contains('hidden')) {
+        btn_remove_person.classList.remove('hidden');
+      }
 
-    if (inputs.length < 4) {
-      addInput();
-    } else if (inputs.length === 4) {
-      addInput();
-      btn_add_person.setAttribute('disabled', true);
-    }
-  });
+      if (inputs.length < 4) {
+        addInput();
+      } else if (inputs.length === 4) {
+        addInput();
+        btn_add_person.setAttribute('disabled', true);
+      }
+    });
+  }
 
   // Скрипт удаления одного инпута с именем из modal-subscribe
-  btn_remove_person.addEventListener('click', function (e) {
-    const inputs = document.querySelectorAll(
-      '.modal-subscribe__form__wrapper__name-block__inputs__item',
-    );
+  if (btn_remove_person) {
+    btn_remove_person.addEventListener('click', function (e) {
+      const inputs = document.querySelectorAll(
+        '.modal-subscribe__form__wrapper__name-block__inputs__item',
+      );
 
-    function removeInput(input) {
-      input.remove();
-    }
-
-    if (inputs.length > 2) {
-      if (inputs.length === 5) {
-        btn_add_person.removeAttribute('disabled');
+      function removeInput(input) {
+        input.remove();
       }
-      removeInput(inputs[inputs.length - 1]);
-    } else if (inputs.length === 2) {
-      removeInput(inputs[inputs.length - 1]);
-      btn_remove_person.classList.add('hidden');
-    }
-  });
+
+      if (inputs.length > 2) {
+        if (inputs.length === 5) {
+          btn_add_person.removeAttribute('disabled');
+        }
+        removeInput(inputs[inputs.length - 1]);
+      } else if (inputs.length === 2) {
+        removeInput(inputs[inputs.length - 1]);
+        btn_remove_person.classList.add('hidden');
+      }
+    });
+  }
   //===================================================================================
 
   // Скрипт плавного перехода по якорям
@@ -335,6 +353,7 @@ window.addEventListener('load', function () {
   //Отключаем перетаскивание у модалок
   Fancybox.bind('[data-fancybox]', {
     dragToClose: false,
+    groupAttr: 'data-fancybox="images"',
   });
   //===================================================================================
 
