@@ -316,6 +316,14 @@
             &.active-menu .header-container__burger__item-center {
                 transform: scale(0);
             }
+
+            &.active-menu .header-container__burger__item-top.black-color {
+                background-color: $font-color-white;
+            }
+
+            &.active-menu .header-container__burger__item-bottom.black-color {
+                background-color: $font-color-white;
+            }
         }
     }
 
@@ -332,5 +340,32 @@
         @include media_from('xl') {
             margin-top: 10px;
         }
+    }
+}
+
+.header-container__menu + .header-container__tel.black-color {
+    .header-container__tel__icon {
+        rect {
+            transition: all 0.3s ease;
+        }
+        path {
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+.header-container__menu.active-menu + .header-container__tel.black-color {
+    .header-container__tel__icon {
+        rect {
+            fill: $font-color-white;
+        }
+
+        path {
+            fill: $color-blue;
+        }
+    }
+
+    .header-container__tel__link.black-color {
+        color: $font-color-white;
     }
 }

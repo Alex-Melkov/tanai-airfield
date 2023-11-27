@@ -496,6 +496,7 @@ body.lock {
 	width: 100%;
 	height: 100vh;
 	background: rgba(31, 30, 30, 0.80);
+    backdrop-filter: blur(15px);
 	transform: translateY(-100%);
 	transition: transform 0.3s ease;
 	z-index: 1;

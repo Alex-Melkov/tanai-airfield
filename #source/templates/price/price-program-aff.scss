@@ -1,7 +1,7 @@
 .price-program-aff {
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: $font-color-black-main;
 
     @include media_from('lg') {
@@ -38,7 +38,7 @@
             margin-bottom: 40px;
     
             @include media_from('sm') {
-                font-size: 26px;
+                font-size: 28px;
             }
     
             @include media_from('lg') {
@@ -114,14 +114,19 @@
                                 font-weight: 500;
                                 line-height: 1.2;
                                 text-transform: uppercase;
+                                margin: 0;
 
                                 @include media_from('sm') {
-                                    font-size: 28px;
+                                    font-size: 24px;
                                 }
     
                                 @include media_from('lg') {
-                                    font-size: 32px;
+                                    font-size: 28px;
                                     text-transform: none;
+                                }
+
+                                @include media_from('3xl') {
+                                    font-size: 32px;
                                 }
                             }
                         }
@@ -143,6 +148,7 @@
     
                     ul {
                         width: 100%;
+                        padding: 0;
                         margin-bottom: 30px;
     
                         @include media_from('lg') {
@@ -181,6 +187,7 @@
                                 font-style: normal;
                                 font-weight: 500;
                                 line-height: 1.2;
+                                margin: 0;
     
                                 @include media_from('sm') {
                                     font-size: 18px;

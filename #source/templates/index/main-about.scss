@@ -1,7 +1,7 @@
 .main-about {
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 
     @include media_from('lg') {
 		padding-top: 140px;
@@ -13,59 +13,58 @@
         padding-bottom: 100px;
 	}
 
-    &__container {
+    &__header {
         width: 100%;
-        margin: 0 auto;
+        text-align: left;
         padding-left: 10px;
         padding-right: 10px;
+        margin: 0 auto;
+        margin-bottom: 30px;
 
         @include media_from('sm') {
+            width: 75%;
             padding-left: 50px;
             padding-right: 50px;
+        }
+   
+        @include media_from('lg') {
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
         }
 
         @include media_from('xl') {
             padding-left: 0px;
             padding-right: 0px;
         }
-
-        &__header {
-            width: 100%;
-            text-align: left;
-            margin: 0 auto;
-            margin-bottom: 30px;
-
-            @include media_from('sm') {
-                width: 75%;
-            }
-       
-            @include media_from('lg') {
-                margin-bottom: 40px;
-                text-align: center;
-                width: 100%;
-            }
-        
-            @include media_from('3xl') {
-                margin-bottom: 100px;
-            }
     
-            &__title {
-                margin-bottom: 40px;
-    
-                @include media_from('lg') {
-                    margin-bottom: 60px;
-                }
-    
-            }
-            &__text {
-                font-size: 0.85rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 1.2;
-            }
+        @include media_from('3xl') {
+            margin-bottom: 100px;
         }
-    
-        &__top {
+
+        &__title {
+            margin-bottom: 40px;
+
+            @include media_from('lg') {
+                margin-bottom: 60px;
+            }
+
+        }
+        &__text {
+            font-size: 0.85rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0;
+        }
+    }
+
+    &__top {
+        width: 100%;
+        max-width: 2560px;
+        margin: 0 auto;
+
+        &__container {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -78,11 +77,9 @@
             @include media_from('lg') {
                 gap: 20px;
             }
-    
             &__item {
                 width: 100%;
                 display: flex;
-                align-items: center;
                 flex-direction: column;
                 gap: 10px;
     
@@ -91,16 +88,20 @@
                 }
     
                 @include media_from('lg') {
+                    width: 86%;
                     flex-direction: row;
+                    gap: 2%;
                 }
     
                 &__image {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
+                    width: 97%;
 
+                    @include media_from('sm') {
+                        width: 86%;
+                    }
+    
                     @include media_from('lg') {
-                        width: 45%;
+                        width: 53%;
                     }
                     img {
                         max-width: 100%;
@@ -110,21 +111,25 @@
     
                 &__description {
                     width: 100%;
+                    align-self: center;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     
                     @include media_from('sm') {
                         flex-direction: row;
                         align-items: center;
                         gap: 30px;
                         width: 75%;
+                        padding-left: 0;
+                        padding-right: 0;
                     }
                 
                     @include media_from('lg') {
-                        width: 55%;
-                        padding-left: 0;
-                        padding-right: 0;
+                        width: 45%;
+                        align-self: normal;
                     }
     
                     @include media_from('2xl') {
@@ -137,6 +142,7 @@
                         font-weight: 700;
                         line-height: 1.2;
                         color: $color-blue;
+                        margin: 0;
     
                         @include media_from('sm') {
                             font-size: 120px;
@@ -151,85 +157,67 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 1.2;
+                        margin: 0;
                         color: $font-color-black-main;
                     }
                 }
-
-                &:nth-of-type(1) {
-                    .main-about__container__top__item__image {
-                        margin-left: -20px;
-                        @include media_from('sm') {
-                            margin-left: -100px;
-                        } 
     
-                        @include media_from('lg') {
-                            margin-left: 0;
-                        } 
-                        img {
-                            border-radius: 0px 500px 500px 0px;
-                        }
-                    }
-                }
                 &:nth-of-type(2) {
                     flex-direction: column-reverse;
-
+    
                     @include media_from('lg') {
                         flex-direction: row;
+                        align-self: flex-end;
                     }
-                    .main-about__container__top__item__image {
-                        margin-right: -20px;
-                        @include media_from('sm') {
-                            margin-right: -100px;
-                        } 
-    
+                    .main-about__top__container__item__image {
+                        align-self: flex-end;
                         @include media_from('lg') {
-                            margin-right: 0;
-                        } 
-                        img {
-                            border-radius: 500px 0px 0px 500px;
+                            align-self: normal;
                         }
                     }
-
-                    .main-about__container__top__item__description {
+    
+                    .main-about__top__container__item__description {
                         text-align: right;
-
+    
                         @include media_from('sm') {
                             text-align: left;
                         } 
                     }
                 }
-                &:nth-of-type(3) {
-                    .main-about__container__top__item__image {
-                        margin-left: -20px;
-                        @include media_from('sm') {
-                            margin-left: -100px;
-                        } 
-    
-                        @include media_from('lg') {
-                            margin-left: 0;
-                        } 
-                        img {
-                            border-radius: 0px 500px 500px 0px;
-                        }
-                    }
-                }
             }
         }
-    
-        .btn-about {
-            margin: 80px auto 60px auto;
-    
-            @include media_from('lg') {
-                margin: 80px auto 80px auto;
-            }                
-    
-            @include media_from('3xl') {
-                margin: 100px auto 100px auto;
-            }
+    }
+
+    .btn-about {
+        margin: 40px auto 40px auto;
+
+        @include media_from('lg') {
+            margin: 80px auto 80px auto;
+        }                
+
+        @include media_from('3xl') {
+            margin: 100px auto 100px auto;
         }
-    
-        &__bottom {
+    }
+
+    &__bottom {
+        width: 100%;
+
+        &__container {
             width: 100%;
+            margin: 0 auto;
+            padding-left: 10px;
+            padding-right: 10px;
+    
+            @include media_from('sm') {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+    
+            @include media_from('xl') {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
 
             &__header {
                 margin-bottom: 30px;
@@ -312,18 +300,13 @@
                 }
 
                 &__wrapper {
-                    display: flex;
+                    width: 100%;
                     height: auto;
-                    @include media_from('sm') {
-                        height: 190px;
-                    }
 
-                    @include media_from('lg') {
-                        height: auto;
-                    }
                     &__item {
                         width: 100%;
-                        height: 213px;
+                        min-height: 213px;
+                        height: auto;
                         position: relative;
                         display: flex;
                         justify-content: center;
@@ -333,12 +316,23 @@
                         box-shadow: 3px -2px 40px 7px rgba(0, 0, 0, 0.10);
         
                         @include media_from('sm') {
-                            height: 170px;
+                            min-height: 170px;
                         }
     
                         @include media_from('lg') {
-                            max-width: 442px;
-                            height: 170px;
+                            width: 82%;
+                        }
+
+                        @include media_from('xl') {
+                            width: 80%;
+                        }
+
+                        @include media_from('2xl') {
+                            width: 78%;
+                        }
+
+                        @include media_from('3xl') {
+                            width: 74%;
                         }
         
                         &__text {
@@ -348,6 +342,7 @@
                             line-height: 1.2;
                             color: $font-color-white;
                             padding: 0 5px;
+                            margin: 0;
                             text-align: center;
                         }
                         &__image {
@@ -370,73 +365,26 @@
                             }
                         }
                     }
-        
-                        &:nth-of-type(1) {
-                            @include media_from('3xl') {
-                                justify-self: start;
-                            }  
+
+                    &:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6) {
+                        .main-about__bottom__container__grid-layout__wrapper__item {
+                            @include media_from('lg') {
+                                margin-left: auto;
+                            }
                         }
-        
-                        &:nth-of-type(2) {
-                            @include media_from('3xl') {
-                                justify-self: start;
+                    }
+
+                    &:nth-of-type(even) {
+                        .main-about__bottom__container__grid-layout__wrapper__item {
+                            @include media_from('sm') {
+                                margin-top: 20px;
                             }
 
-                            .main-about__container__bottom__grid-layout__wrapper__item {
-                                @include media_from('sm') {
-                                    align-self: end;
-                                }
-            
-                                @include media_from('lg') {
-                                    align-self: normal;
-                                }
+                            @include media_from('lg') {
+                                margin-top: 0;
                             }
                         }
-        
-                        &:nth-of-type(3) {
-                            @include media_from('3xl') {
-                                justify-self: start;
-                            } 
-                        }
-        
-                        &:nth-of-type(4) {
-                            @include media_from('3xl') {
-                                justify-self: end;
-                            }
-
-                            .main-about__container__bottom__grid-layout__wrapper__item {
-                                @include media_from('sm') {
-                                    align-self: end;
-                                }
-            
-                                @include media_from('lg') {
-                                    align-self: normal;
-                                }
-                            }
-                        }
-        
-                        &:nth-of-type(5) {
-                            @include media_from('3xl') {
-                                justify-self: end;
-                            }
-                        }
-        
-                        &:nth-of-type(6) {
-                            @include media_from('3xl') {
-                                justify-self: end;
-                            }
-
-                            .main-about__container__bottom__grid-layout__wrapper__item {
-                                @include media_from('sm') {
-                                    align-self: end;
-                                }
-            
-                                @include media_from('lg') {
-                                    align-self: normal;
-                                }
-                            }
-                        }
-                    
+                    }                
                 }
             }
         }

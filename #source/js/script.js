@@ -191,16 +191,13 @@ window.addEventListener('load', function () {
   //Инициализация свайпера Фото-Видео съёмка прыжка
   const main_photo_video_swiper = new Swiper('.main-photo-video-swiper', {
     direction: 'horizontal',
-    loop: true,
-    centeredSlides: true,
-    initialSlide: 1,
     breakpoints: {
       320: {
-        spaceBetween: 10,
+        spaceBetween: 20,
         slidesPerView: 3,
       },
       768: {
-        spaceBetween: 16,
+        spaceBetween: 20,
         slidesPerView: 3,
       },
       1200: {

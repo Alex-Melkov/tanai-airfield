@@ -1,6 +1,6 @@
 .blog-main {
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 
     @include media_from('lg') {
         padding-bottom: 140px;
@@ -29,16 +29,17 @@
         &__content {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            row-gap: 30px;
+            row-gap: 20px;
 
             @include media_from('sm') {
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: 30px;
-                row-gap: 40px;
+                row-gap: 30px;
             }
     
             @include media_from('lg') {
                 grid-template-columns: repeat(3, 1fr);
+                row-gap: 40px;
             }
 
             &__item {
@@ -57,6 +58,18 @@
                     gap: 20px;
                 }
 
+                &:hover {
+                    .blog-main__container__content__item__image {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    p {
+                        color: $color-orange;
+                    }
+                }
+
                 &__image {
                     width: 100%;
                     height: auto;
@@ -66,6 +79,7 @@
                     img {
                         max-width: 100%;
                         height: auto;
+                        transition: all 0.3s ease;
                     }
                 }
 
@@ -77,6 +91,8 @@
                     line-height: 1.2;
                     text-align: center;
                     color: $font-color-black-main;
+                    margin: 0;
+                    transition: color 0.3s ease;
 
                     @include media_from('sm') {
                         text-align: left;

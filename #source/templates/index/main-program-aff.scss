@@ -1,7 +1,7 @@
 .main-program-aff {
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     @include media_from('lg') {
         padding-top: 80px;
@@ -159,6 +159,7 @@
     
                 &__blue-list {
                     margin-bottom: 20px;
+                    padding: 0;
     
                     @include media_from('lg') {
                         margin-bottom: 30px;
@@ -244,6 +245,7 @@
                     flex-direction: column;
                     gap: 12px;
                     margin-bottom: 20px;
+                    padding: 0;
     
                     @include media_from('lg') {
                         gap: 24px;
@@ -308,6 +310,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 1.2;
+                    margin: 0;
     
                     @include media_from('sm') {
                         font-size: 15px;
@@ -410,6 +413,7 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: 1.2;
+                            margin: 0;
     
                             @include media_from('sm') {
                                 font-size: 15px;

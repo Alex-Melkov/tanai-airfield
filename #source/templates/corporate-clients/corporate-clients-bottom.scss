@@ -1,7 +1,7 @@
 .corporate-clients-bottom {
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 50px;
     color: $font-color-black-main;
 
     @include media_from('lg') {
@@ -31,7 +31,7 @@
         }
 
         h3 {
-            font-size: 2rem;
+            font-size: 1.25rem;
             font-style: normal;
             font-weight: 600;
             line-height: 1.2;
@@ -40,6 +40,7 @@
 
             @include media_from('sm') {
                 margin-bottom: 40px;
+                font-size: 2rem;
             }
     
             @include media_from('lg') {
@@ -86,6 +87,7 @@
             column-gap: 20px;
             row-gap: 40px;
             margin-bottom: 60px;
+            padding: 0;
 
             @include media_from('sm') {
                 grid-template-columns: repeat(6, 1fr);
@@ -205,7 +207,7 @@
                     text-align: center;
     
                     @include media_from('sm') {
-                        gap: 20px;
+                        gap: 10px;
                     }
 
                     b {

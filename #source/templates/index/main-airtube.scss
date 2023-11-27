@@ -1,8 +1,8 @@
 .main-airtube {
     width: 100%;
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     @include media_from('lg') {
         padding-top: 80px;
@@ -190,6 +190,8 @@
                         display: flex;
                         flex-direction: column;
                         gap: 20px;
+                        padding: 0;
+                        margin: 0;
     
                         @include media_from('lg') {
                             gap: 30px;
@@ -216,6 +218,29 @@
                             
                                 @include media_from('3xl') {
                                     font-size: 32px;
+                                }
+                            }
+
+                            a {
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 1.2;
+                                color: $font-color-black-main;
+                                margin-left: 12px;
+                                cursor: pointer;
+                                transition: color 0.3s ease;
+                                @include media_from('lg') {
+                                    font-size: 24px;
+                                    margin-left: 20px;
+                                }
+                            
+                                @include media_from('3xl') {
+                                    font-size: 32px;
+                                }
+
+                                &:hover {
+                                    color: $color-blue;
                                 }
                             }
     
